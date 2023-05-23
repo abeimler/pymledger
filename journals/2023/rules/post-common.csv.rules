@@ -1,0 +1,24 @@
+;;do not change, generated file from post-common.csv.rules template
+
+
+if GUTSCHR.*AMZ.*AMAZON PAYMENTS
+GUTSCHR.*AMZ.*AMAZON EU
+    description %beguenstigter_zahlungspflichtiger | Amazon Rueckerstattung
+    account1    Assets:Bank:Checking                                            
+    account2    Income:Sonstiges:Gutschrift:Amazon:Rueckerstattung              
+    amount      %amount                                                         
+
+
+if GUTSCHR.*Wohnungsgesellschaft mbH
+    description %beguenstigter_zahlungspflichtiger | Miete Rueckerstattung
+    account1    Assets:Bank:Checking                                            
+    account2    Income:Sonstiges:Gutschrift:Wohnung:Miete:Rueckerstattung       
+    amount      %amount                                                         
+
+
+if GUTSCHR.*Energie- und Wasserversorgung Gesellschaft
+    description %beguenstigter_zahlungspflichtiger | Energie Rueckerstattung
+    account1    Assets:Bank:Checking                                            
+    account2    Income:Sonstiges:Gutschrift:Wohnung:Energie:Rueckerstattung     
+    amount      %amount                                                         
+

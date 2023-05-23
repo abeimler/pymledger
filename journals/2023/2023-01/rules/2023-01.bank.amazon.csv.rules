@@ -1,0 +1,22 @@
+;;do not change, generated file; 2023-01
+
+;;; Amazon rules
+
+if 123-1234567-1234567.*Amazon.de.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+123-1234567-1234567.*Amazon .Mktplce.*AMAZON PAYMENTS EUROPE S.C.A.
+123-1234567-1234567.*AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
+123-1234567-1234567.*AMZN Mktp DE.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+    description AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567
+    comment type:%buchungstext, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567
+    account1    Expenses:Haushalt:Amazon                                        
+
+
+if .*Amazon.de.*CCCCCCCCCCCCCCCC.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+.*Amazon .Mktplce.*CCCCCCCCCCCCCCCC.*AMAZON PAYMENTS EUROPE S.C.A.
+.*AMZN Mktp DE.*CCCCCCCCCCCCCCCC.*AMAZON PAYMENTS EUROPE S.C.A.
+.*AMZN Mktp DE.*CCCCCCCCCCCCCCCC.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+    description AMAZON PAYMENTS EUROPE S.C.A. | Amazon
+    comment type:%buchungstext, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
+    account1    Expenses:Haushalt:Amazon                                        
+
+

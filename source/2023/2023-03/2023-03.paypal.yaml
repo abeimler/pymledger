@@ -1,0 +1,9 @@
+- account: Expenses:Hobbies:Sonstiges:PayPal
+  amount: -100.0
+- account: Expenses:Hobbies:Sonstiges:PayPal
+  amount: -25.55
+- account: Expenses:Hobbies:Merch:PayPal
+  amount: -38.0
+- account: Expenses:Sonstiges:Post
+  description: Shop der deutschen post (dpdhl group)
+  name: Shop der Deutschen Post

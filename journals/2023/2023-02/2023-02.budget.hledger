@@ -1,0 +1,18 @@
+;;do not change, generated file; $2023-02
+
+;; Budget
+2023/02/01 * Current Month Budget ; budget:
+    (Assets:Bank:Budget:Abo:Multimedia)                                    45,00 EUR
+    (Assets:Bank:Budget:Fahrgeld)                                          20,00 EUR
+    (Assets:Bank:Budget:Haushalt)                                          50,00 EUR
+    (Assets:Bank:Budget:Kleidung)                                          20,00 EUR
+    (Assets:Bank:Budget:Lebensmittel)                                     250,00 EUR
+    (Assets:Bank:Budget:Sonstiges)                                         15,00 EUR
+    (Assets:Bank:Budget:Telekommunikation)                                 55,00 EUR ; Internet
+    (Assets:Bank:Budget:Telekommunikation)                                 30,00 EUR ; Handy
+    (Assets:Bank:Budget:Telekommunikation)                                 20,00 EUR ; Rundfunk
+    (Assets:Bank:Budget:Versicherungen)                                     0,00 EUR
+    (Assets:Bank:Budget:Wohnen)                                           500,00 EUR ; Miete
+    (Assets:Bank:Budget:Wohnen)                                            50,00 EUR ; Energie und Wasser
+    (Assets:Bank:Budget:Wunschliste)                                       50,00 EUR ; Hobbies
+    (Assets:Bank:Budget:Wunschliste)                                       50,00 EUR ; Wunschliste

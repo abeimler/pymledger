@@ -1,0 +1,132 @@
+2023-01-02=2023-01-02 * (qwertz33) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH
+    Expenses:Wohnen:Nebenkosten:Strom        EUR48,00
+    Assets:Bank:Checking                    EUR-48,00
+
+2023-01-02=2023-01-02 * (qwertz32) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio
+    Expenses:Telekommunikation:Fernsehen:Rundfunk        EUR17,49
+    Assets:Bank:Checking                                EUR-17,49
+
+2023-01-02=2023-01-02 * (qwertz31) Wohnen GmbH | Wohnen GmbH  ; type:DAUERAUFTRAG, payee:Wohnen GmbH
+    Expenses:Wohnen:Miete       EUR499,20
+    Assets:Bank:Checking       EUR-499,20
+
+2023-01-03=2023-01-03 * (qwertz30) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo
+    Expenses:Hobbies:Gaming:Nintendo         EUR8,12
+    Assets:Bank:Checking                    EUR-8,12
+
+2023-01-03=2023-01-03 * (qwertz29) AUDIBLE GMBH | Amazon Audible GmbH Hörbuch  ; type:FOLGELASTSCHRIFT, payee:AUDIBLE GMBH
+    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible         EUR9,95
+    Assets:Bank:Checking                                                 EUR-9,95
+
+2023-01-03=2023-01-03 * (qwertz28) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll
+    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll         EUR6,99
+    Assets:Bank:Checking                                              EUR-6,99
+
+2023-01-03=2023-01-03 * (qwertz27) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam
+    Expenses:Hobbies:Gaming:Steam         EUR9,99
+    Assets:Bank:Checking                 EUR-9,99
+
+2023-01-03=2023-01-03 * (qwertz26) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam
+    Expenses:Hobbies:Gaming:Steam        EUR14,00
+    Assets:Bank:Checking                EUR-14,00
+
+2023-01-03=2023-01-03 * (qwertz25) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam
+    Expenses:Hobbies:Gaming:Steam        EUR25,79
+    Assets:Bank:Checking                EUR-25,79
+
+2023-01-03=2023-01-03 * (qwertz24) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+    Expenses:Lebensmittel:Einkaufen:Lidl        EUR35,00
+    Assets:Bank:Checking                       EUR-35,00
+
+2023-01-09=2023-01-09 * (qwertz23) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+    Expenses:Lebensmittel:Einkaufen:Lidl        EUR25,84
+    Assets:Bank:Checking                       EUR-25,84
+
+2023-01-13=2023-01-13 * (1234567895462) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462
+    Expenses:Kleidung:PayPal        EUR17,50
+    Assets:Bank:Checking           EUR-17,50
+
+2023-01-13=2023-01-13 * (1234567892135) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567892135
+    Expenses:Unterhaltung:Konzert        EUR97,26
+    Assets:Bank:Checking                EUR-97,26
+
+2023-01-16=2023-01-16 * (qwertz20) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+    Expenses:Lebensmittel:Einkaufen:Lidl       EUR139,26
+    Assets:Bank:Checking                      EUR-139,26
+
+2023-01-16=2023-01-16 * (qwertz19) REWE SAGT DANKE | Einkaufen Rewe  ; type:KARTENZAHLUNG, payee:REWE SAGT DANKE
+    Expenses:Lebensmittel:Einkaufen:Rewe        EUR25,80
+    Assets:Bank:Checking                       EUR-25,80
+
+2023-01-17=2023-01-17 * (qwertz18) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb
+    Expenses:Fahrtkosten:Fahrkarten:Bahn        EUR10,00
+    Assets:Bank:Checking                       EUR-10,00
+
+2023-01-19=2023-01-19 * (qwertz17) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH
+    Expenses:Lebensmittel:Essen:BurgerKing        EUR10,99
+    Assets:Bank:Checking                         EUR-10,99
+
+2023-01-23=2023-01-23 * (qwertz16) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
+    Expenses:Hobbies:Merch:PayPal       EUR200,00
+    Assets:Bank:Checking               EUR-200,00
+
+2023-01-23=2023-01-23 * (qwertz15) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
+    Expenses:Lebensmittel:Essen:Pizza        EUR21,85
+    Assets:Bank:Checking                    EUR-21,85
+
+2023-01-23=2023-01-23 * (qwertz14) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS
+    Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus         EUR8,99
+    Assets:Bank:Checking                                             EUR-8,99
+
+2023-01-23=2023-01-23 * (qwertz13) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+    Expenses:Lebensmittel:Einkaufen:Lidl        EUR45,00
+    Assets:Bank:Checking                       EUR-45,00
+
+2023-01-25=2023-01-25 * (qwertz12) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH
+    Expenses:Telekommunikation:Online-Dienste:Internet        EUR40,00
+    Assets:Bank:Checking                                     EUR-40,00
+
+2023-01-27=2023-01-27 * (qwertz11) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH
+    Expenses:Telekommunikation:Telefon:Handy        EUR25,00
+    Assets:Bank:Checking                           EUR-25,00
+
+2023-01-30=2023-01-28 * (qwertz10) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:AB BB00001234 BLZ55555555 1
+    Assets:Cash                 EUR40,00
+    Assets:Bank:Checking       EUR-40,00
+
+2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
+    Expenses:Haushalt:Amazon        EUR99,95
+    Assets:Bank:Checking           EUR-99,95
+
+2023-01-30=2023-01-30 * (qwertz8) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567
+    Expenses:Haushalt:Amazon       EUR200,00
+    Assets:Bank:Checking          EUR-200,00
+
+2023-01-30=2023-01-30 * (qwertz7) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567
+    Expenses:Haushalt:Amazon        EUR55,95
+    Assets:Bank:Checking           EUR-55,95
+
+2023-01-30=2023-01-30 * (qwertz6) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam
+    Expenses:Hobbies:Gaming:Steam        EUR19,99
+    Assets:Bank:Checking                EUR-19,99
+
+2023-01-30=2023-01-30 * (qwertz5) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+    Expenses:Lebensmittel:Einkaufen:Lidl        EUR30,99
+    Assets:Bank:Checking                       EUR-30,99
+
+2023-01-30=2023-01-30 * (qwertz4) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH
+    Expenses:Lebensmittel:Essen:BurgerKing         EUR9,00
+    Assets:Bank:Checking                          EUR-9,00
+
+2023-01-30=2023-01-30 * (qwertz3) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT
+    Expenses:Fahrtkosten:Fahrkarten:Bahn        EUR10,00
+    Assets:Bank:Checking                       EUR-10,00
+
+2023-01-30=2023-01-30 * (qwertz2) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH
+    Assets:Bank:Checking      EUR2100,00
+    Income:Salary            EUR-2100,00
+
+2023-01-31=2023-01-31 * (qwertz1) NETFLIX SERVICES GERMANY GMBH | Netflix  ; type:FOLGELASTSCHRIFT, payee:NETFLIX SERVICES GERMANY GMBH
+    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix        EUR12,99
+    Assets:Bank:Checking                                         EUR-12,99
+

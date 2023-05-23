@@ -1,0 +1,307 @@
+;;do not change, generated file 
+
+
+if Amazon.de.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+Amazon .Mktplce.*AMAZON PAYMENTS EUROPE S.C.A.
+AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
+AMZN Mktp DE.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND'
+    description %beguenstigter_zahlungspflichtiger | Amazon %verwendungszweck
+    account1    Expenses:unknown:Amazon                                         
+
+
+if PP.6330.PP.*, Ihr Einkauf bei.*PayPal'
+PP.6330.PP.*, Ihr Einkauf bei.*PAYPAL'
+PP.6330.PP.*PayPal
+PP.6330.PP.*PAYPAL
+    description %beguenstigter_zahlungspflichtiger | PayPal %verwendungszweck
+    account1    Expenses:unknown:PayPal                                         
+
+
+if KARTENZAHLUNG
+    description %beguenstigter_zahlungspflichtiger | Kartenzahlung %verwendungszweck
+    account1    Expenses:unknown:%beguenstigter_zahlungspflichtiger             
+
+
+if RECHNUNG.*Bank-Card
+RECHNUNG.*BANK.*Card
+    description Meine Bank | Bankkarte
+    account1    Expenses:Sonstiges:Bankgebuehren:Karte                          
+
+
+if ABSCHLUSS.*Abrechnung
+    description Meine Bank | Abrechnung
+    account1    Expenses:Sonstiges:Bankgebuehren                                
+
+
+if ENTGELTABSCHLUSS.*Entgeltabrechnung
+    description Entgeltabrechnung
+    account1    Expenses:Sonstiges:Bankgebuehren                                
+
+
+if AUSZAHLUNG
+AUSZAHLUNG
+    description Bank | Kartenauszahlung
+    account1    Assets:Cash                                                     
+
+
+if EINZAHLUNG
+EINZAHLUNG
+    description Bank | Karteneinzahlung
+    account1    Assets:Cash                                                     
+
+
+if LOHN.*GEHALT.*Arbeit GmbH
+    description %beguenstigter_zahlungspflichtiger | Einkommen von Arbeit GmbH
+    account1    Assets:Bank:Checking                                            
+    account2    Income:Salary                                                   
+    amount      %amount                                                         
+
+
+if Nulltarifversicherung.*Fielmann
+    description %beguenstigter_zahlungspflichtiger | Brille Fielmann Nulltarifversicherung
+    account1    Expenses:Versicherungen:Brille                                  
+
+
+if Rechtsschutzversicherung
+    description %beguenstigter_zahlungspflichtiger | Rechtsschutzversicherung
+    account1    Expenses:Versicherungen:Rechtsschutz                            
+
+
+if Privathaftpflicht.*
+    description %beguenstigter_zahlungspflichtiger | Privathaftpflicht
+    account1    Expenses:Versicherungen:Privathaftpflicht                       
+
+
+if Hausratversicherung.*
+    description %beguenstigter_zahlungspflichtiger | Hausratversicherung
+    account1    Expenses:Versicherungen:Hausratversicherung                     
+
+
+if 546789123.*Strom GmbH
+ONLINE-UEBERWEISUNG.*Strom GmbH
+    description %beguenstigter_zahlungspflichtiger | Strom GmbH
+    account1    Expenses:Wohnen:Nebenkosten:Strom                               
+
+
+if 1234/4568.00001.12.*Wohnen GmbH
+    description %beguenstigter_zahlungspflichtiger | Wohnen GmbH
+    account1    Expenses:Wohnen:Miete                                           
+
+
+if Kundennummer 12345678912/RG.*Handy Deutschland GmbH
+12345678912.*Handy Germany GmbH
+    description %beguenstigter_zahlungspflichtiger | Handy-Internet
+    account1    Expenses:Telekommunikation:Telefon:Handy                        
+
+
+if INTERNET GMBH
+INTERNET.*9876543213
+    description %beguenstigter_zahlungspflichtiger | Internet GmbH
+    account1    Expenses:Telekommunikation:Online-Dienste:Internet              
+
+
+if RF123456789123.*Rundfunk, ARD, ZDF, DRadio
+    description %beguenstigter_zahlungspflichtiger | Rundfunk, ARD, ZDF, DRadio
+    account1    Expenses:Telekommunikation:Fernsehen:Rundfunk                   
+
+
+if Netflix Monthly Subscription.*NETFLIX
+    description %beguenstigter_zahlungspflichtiger | Netflix
+    account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix          
+
+
+if KARTENZAHLUNG.*MCDONALDS
+LASTSCHRIFT.*MCDONALDS
+RECHNUNG.*MCDONALDS
+UEBERWEISUNG.*MCDONALDS
+KARTENZAHLUNG.*McDonalds
+LASTSCHRIFT.*McDonalds
+RECHNUNG.*McDonalds
+UEBERWEISUNG.*McDonalds
+KARTENZAHLUNG.*MCDONALD
+LASTSCHRIFT.*MCDONALD
+RECHNUNG.*MCDONALD
+UEBERWEISUNG.*MCDONALD
+    description %beguenstigter_zahlungspflichtiger | Essen McDonalds
+    account1    Expenses:Lebensmittel:Essen:McDonalds                           
+
+
+if KARTENZAHLUNG.*BURGER KING
+LASTSCHRIFT.*BURGER KING
+RECHNUNG.*BURGER KING
+UEBERWEISUNG.*BURGER KING
+KARTENZAHLUNG.*SCHLOSS BURGER GMBH
+LASTSCHRIFT.*SCHLOSS BURGER GMBH
+RECHNUNG.*SCHLOSS BURGER GMBH
+UEBERWEISUNG.*SCHLOSS BURGER GMBH
+    description %beguenstigter_zahlungspflichtiger | Essen Burger King
+    account1    Expenses:Lebensmittel:Essen:BurgerKing                          
+
+
+if KARTENZAHLUNG.*KFC
+LASTSCHRIFT.*KFC
+RECHNUNG.*KFC
+UEBERWEISUNG.*KFC
+    description %beguenstigter_zahlungspflichtiger | Essen KFC
+    account1    Expenses:Lebensmittel:Essen:KFC                                 
+
+
+if KARTENZAHLUNG.*SUBWAY
+LASTSCHRIFT.*SUBWAY
+RECHNUNG.*SUBWAY
+UEBERWEISUNG.*SUBWAY
+    description %beguenstigter_zahlungspflichtiger | Essen SUBWAY
+    account1    Expenses:Lebensmittel:Essen:Subway                              
+
+
+if KARTENZAHLUNG.*REWE
+LASTSCHRIFT.*REWE
+RECHNUNG.*REWE
+UEBERWEISUNG.*REWE
+KARTENZAHLUNG.*REWE SAGT DANKE
+LASTSCHRIFT.*REWE SAGT DANKE
+RECHNUNG.*REWE SAGT DANKE
+UEBERWEISUNG.*REWE SAGT DANKE
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Rewe
+    account1    Expenses:Lebensmittel:Einkaufen:Rewe                            
+
+
+if KARTENZAHLUNG.*LIDL
+LASTSCHRIFT.*LIDL
+RECHNUNG.*LIDL
+UEBERWEISUNG.*LIDL
+KARTENZAHLUNG.*DANKE, IHR LIDL
+LASTSCHRIFT.*DANKE, IHR LIDL
+RECHNUNG.*DANKE, IHR LIDL
+UEBERWEISUNG.*DANKE, IHR LIDL
+KARTENZAHLUNG.*LIDL DIENSTLEISTUNG GMBH UND CO KG
+LASTSCHRIFT.*LIDL DIENSTLEISTUNG GMBH UND CO KG
+RECHNUNG.*LIDL DIENSTLEISTUNG GMBH UND CO KG
+UEBERWEISUNG.*LIDL DIENSTLEISTUNG GMBH UND CO KG
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Lidl
+    account1    Expenses:Lebensmittel:Einkaufen:Lidl                            
+
+
+if KARTENZAHLUNG.*Kaufland
+LASTSCHRIFT.*Kaufland
+RECHNUNG.*Kaufland
+UEBERWEISUNG.*Kaufland
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Kaufland
+    account1    Expenses:Lebensmittel:Einkaufen:Kaufland                        
+
+
+if KARTENZAHLUNG.*ROSSMAN
+LASTSCHRIFT.*ROSSMAN
+RECHNUNG.*ROSSMAN
+UEBERWEISUNG.*ROSSMAN
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Rossman
+    account1    Expenses:Lebensmittel:Einkaufen:Rossman                         
+
+
+if KARTENZAHLUNG.*EDEKA
+LASTSCHRIFT.*EDEKA
+RECHNUNG.*EDEKA
+UEBERWEISUNG.*EDEKA
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Edeka
+    account1    Expenses:Lebensmittel:Einkaufen:Edeka                           
+
+
+if KARTENZAHLUNG.*ALDI
+LASTSCHRIFT.*ALDI
+RECHNUNG.*ALDI
+UEBERWEISUNG.*ALDI
+KARTENZAHLUNG.*ALDI SAGT DANKE
+LASTSCHRIFT.*ALDI SAGT DANKE
+RECHNUNG.*ALDI SAGT DANKE
+UEBERWEISUNG.*ALDI SAGT DANKE
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Aldi
+    account1    Expenses:Lebensmittel:Einkaufen:Aldi                            
+
+
+if KARTENZAHLUNG.*NETTO
+LASTSCHRIFT.*NETTO
+RECHNUNG.*NETTO
+UEBERWEISUNG.*NETTO
+KARTENZAHLUNG.*NETTO MARKEN-DISCOU
+LASTSCHRIFT.*NETTO MARKEN-DISCOU
+RECHNUNG.*NETTO MARKEN-DISCOU
+UEBERWEISUNG.*NETTO MARKEN-DISCOU
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Netto
+    account1    Expenses:Lebensmittel:Einkaufen:Netto                           
+
+
+if KARTENZAHLUNG.*APOTHEKE
+LASTSCHRIFT.*APOTHEKE
+RECHNUNG.*APOTHEKE
+UEBERWEISUNG.*APOTHEKE
+    description %beguenstigter_zahlungspflichtiger | Einkaufen Apotheke
+    account1    Expenses:Gesundheit:Medikamente:Apotheke                        
+
+
+if KARTENZAHLUNG.*MALZERS
+LASTSCHRIFT.*MALZERS
+RECHNUNG.*MALZERS
+UEBERWEISUNG.*MALZERS
+KARTENZAHLUNG.*MALZERS Backstube
+LASTSCHRIFT.*MALZERS Backstube
+RECHNUNG.*MALZERS Backstube
+UEBERWEISUNG.*MALZERS Backstube
+    description %beguenstigter_zahlungspflichtiger | Essen Baecker
+    account1    Expenses:Lebensmittel:Essen:Baecker                             
+
+
+if KARTENZAHLUNG.*BackWerk
+LASTSCHRIFT.*BackWerk
+RECHNUNG.*BackWerk
+UEBERWEISUNG.*BackWerk
+    description %beguenstigter_zahlungspflichtiger | Essen Baecker
+    account1    Expenses:Lebensmittel:Essen:Baecker                             
+
+
+if KARTENZAHLUNG.*Conrad Electronic SE
+LASTSCHRIFT.*Conrad Electronic SE
+RECHNUNG.*Conrad Electronic SE
+UEBERWEISUNG.*Conrad Electronic SE
+KARTENZAHLUNG.*Conrad Electronic Stores
+LASTSCHRIFT.*Conrad Electronic Stores
+RECHNUNG.*Conrad Electronic Stores
+UEBERWEISUNG.*Conrad Electronic Stores
+    description %beguenstigter_zahlungspflichtiger | Conrad Electronic SE
+    account1    Expenses:Computer:Hardware:Conrad                               
+
+
+if KARTENZAHLUNG.*SATURN
+LASTSCHRIFT.*SATURN
+RECHNUNG.*SATURN
+UEBERWEISUNG.*SATURN
+    description %beguenstigter_zahlungspflichtiger | Saturn E
+    account1    Expenses:Computer:Hardware:Saturn                               
+
+
+if KARTENZAHLUNG.*HORNBACH
+LASTSCHRIFT.*HORNBACH
+RECHNUNG.*HORNBACH
+UEBERWEISUNG.*HORNBACH
+    description %beguenstigter_zahlungspflichtiger | Hornbach Wohnung Einkauf
+    account1    Expenses:Haushalt:Hornbach                                      
+
+
+if KARTENZAHLUNG.*DM FIL
+LASTSCHRIFT.*DM FIL
+RECHNUNG.*DM FIL
+UEBERWEISUNG.*DM FIL
+    description %beguenstigter_zahlungspflichtiger | DM Drogerie Einkaufen
+    account1    Expenses:Haushalt:DmDrogerie                                    
+
+
+if KARTENZAHLUNG.*DB AUTOMAT
+LASTSCHRIFT.*DB AUTOMAT
+RECHNUNG.*DB AUTOMAT
+UEBERWEISUNG.*DB AUTOMAT
+KARTENZAHLUNG.*DB REISEZENTRUM
+LASTSCHRIFT.*DB REISEZENTRUM
+RECHNUNG.*DB REISEZENTRUM
+UEBERWEISUNG.*DB REISEZENTRUM
+    description %beguenstigter_zahlungspflichtiger | DB Fahrkarten
+    account1    Expenses:Fahrtkosten:Fahrkarten:Bahn                            
+

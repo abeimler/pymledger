@@ -1,0 +1,14 @@
+Auftragskonto;Buchungstag;Valutadatum;Buchungstext;Verwendungszweck;Glaeubiger ID;Mandatsreferenz;Kundenreferenz (End-to-End);Sammlerreferenz;Lastschrift Ursprungsbetrag;Auslagenersatz Ruecklastschrift;Beguenstigter/Zahlungspflichtiger;Kontonummer/IBAN;BIC (SWIFT-Code);Betrag;Waehrung;Info;code;payee
+**********************;16.05.23;16.05.23;BARGELDAUSZAHLUNG;2023-05-16T10:18 Debitk.2 2025-12;;;;;;;;;;-50;EUR;Umsatz gebucht;2023-05.0001;
+***;15.05.23;15.05.23;ERSTLASTSCHRIFT;Abo 123456789;;;;;;;DB Vertrieb GmbH;;;-49;EUR;Umsatz gebucht;2023-05.0002;DB Vertrieb GmbH                                                      
+***;08.05.23;08.05.23;KARTENZAHLUNG;2023-05-06T10:15 Debitk.2 2025-12;;;;;;;DM FIL.;;;-11,5;EUR;Umsatz gebucht;2023-05.0003;DM FIL.
+***;08.05.23;08.05.23;KARTENZAHLUNG;2023-05-06T10:57 Debitk.2 2025-12;;;;;;;LIDL DIENSTLEISTUNG GMBH UND CO KG;;;-86,78;EUR;Umsatz gebucht;2023-05.0004;LIDL DIENSTLEISTUNG GMBH UND CO KG
+***;03.05.23;03.05.23;FOLGELASTSCHRIFT;123-1234567-1234444 AMZN Mktp DE GGGGGGGGGGGGGGGG;;;;;;;AMAZON PAYMENTS EUROPE S.C.A.;;;-50,51;EUR;Umsatz gebucht;2023-05.0005;AMAZON PAYMENTS EUROPE S.C.A.
+***;03.05.23;03.05.23;FOLGELASTSCHRIFT;123-1234567-1234555 AMZN Mktp DE HHHHHHHHHHHHHHH;;;;;;;AMAZON PAYMENTS EUROPE S.C.A.;;;-20,99;EUR;Umsatz gebucht;2023-05.0006;AMAZON PAYMENTS EUROPE S.C.A.
+***;03.05.23;03.05.23;FOLGELASTSCHRIFT;1234567899873 PP.6330.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc.;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-6,99;EUR;Umsatz gebucht;2023-05.0007;PayPal Europe S.a.r.l. et Cie S.C.A
+***;02.05.23;02.05.23;KARTENZAHLUNG;2023-04-27 Debitk.2 2025-12;;;;;;;BACKWERK;;;-7,5;EUR;Umsatz gebucht;2023-05.0008;BACKWERK
+***;02.05.23;02.05.23;DAUERAUFTRAG;RF123456789123;;;;;;;Rundfunk, ARD, ZDF, DRadio;;;-17,49;EUR;Umsatz gebucht;2023-05.0009;Rundfunk ARD ZDF DRadio
+***;02.05.23;02.05.23;FOLGELASTSCHRIFT;1234567892344 PP.6330.PP . , Ihr Einkauf bei;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-20;EUR;Umsatz gebucht;2023-05.0010;PayPal Europe S.a.r.l. et Cie S.C.A
+****;02.05.23;02.05.23;FOLGELASTSCHRIFT;1234567896582 PP.6330.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-11,7;EUR;Umsatz gebucht;2023-05.0011;PayPal Europe S.a.r.l. et Cie S.C.A
+****;02.05.23;02.05.23;FOLGELASTSCHRIFT;1234567896543 PP.6330.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-22,49;EUR;Umsatz gebucht;2023-05.0012;PayPal Europe S.a.r.l. et Cie S.C.A
+****;02.05.23;29.04.23;ENTGELTABSCHLUSS;Entgeltabrechnung siehe Anlage Abrechnung;;;;;;;;;;-17,05;EUR;Umsatz gebucht;2023-05.0013;

@@ -1,0 +1,13 @@
+;;do not change, generated file; month: 2023-05
+
+;; include generated rules
+include ../../rules/bank.csv.rules
+include 2023-05.bank.amazon.csv.rules
+include 2023-05.bank.paypal.csv.rules
+include ../../rules/post-common.csv.rules
+
+
+;;; montly generated rules
+
+
+

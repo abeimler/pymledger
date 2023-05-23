@@ -1,0 +1,39 @@
+[project]
+author = "Alex Beimler"
+name = "pymledger"
+version = "0.1.0"
+description = "Generate ledger rules from yaml and then generate journals from csv"
+license = "MIT"
+readme = "README.md"
+python = "^3.6"
+
+keywords = ["accounting", "hledger", "plaintextaccounting", "german"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: German",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Office/Business :: Financial :: Accounting"
+]
+
+[dependencies]
+pyyaml = "^6.0"
+colorama = "^0.4"
+docopt = "^0.6"
+
+[dev-dependencies]
+black = { version = "^18.3-alpha.0", python = "^3.6" }
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[project.scripts]
+pymledger = "pymledger.main:main"

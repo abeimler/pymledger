@@ -1,0 +1,6 @@
+- account: Expenses:Haushalt:Amazon
+  order: 123-1234567-1234444
+  ref: GGGGGGGGGGGGGGGG
+- account: Expenses:Computer:Hardware:Amazon
+  order: 123-1234567-1234555
+  ref: HHHHHHHHHHHHHHH

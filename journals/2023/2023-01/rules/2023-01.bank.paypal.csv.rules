@@ -1,0 +1,34 @@
+;;do not change, generated file; 2023-01
+
+;;; PayPal rules
+
+if .*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*, -21,85
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-21,85
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*, -21,85
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-21,85
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    account1    Expenses:Lebensmittel:Essen:Pizza                               
+
+
+if .*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-200
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-200
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    account1    Expenses:Hobbies:Merch:PayPal                                   
+
+
+if 1234567892135.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal
+1234567892135.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567892135
+    code 1234567892135
+    account1    Expenses:Unterhaltung:Konzert                                   
+
+
+if 1234567895462.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal
+1234567895462.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462
+    code 1234567895462
+    account1    Expenses:Kleidung:PayPal                                        
+
+

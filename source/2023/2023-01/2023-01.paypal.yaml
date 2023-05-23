@@ -1,0 +1,8 @@
+- account: Expenses:Lebensmittel:Essen:Pizza
+  amount: -21.85
+- account: Expenses:Hobbies:Merch:PayPal
+  amount: -200.0
+- account: Expenses:Unterhaltung:Konzert
+  ref: '1234567892135'
+- account: Expenses:Kleidung:PayPal
+  ref: '1234567895462'

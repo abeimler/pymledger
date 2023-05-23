@@ -1,0 +1,22 @@
+;;do not change, generated file; $2023
+
+;; Forecast, for this year $2023
+~ 2023
+    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime            90,00 EUR
+    Expenses:Versicherung                                                  10,00 EUR
+    Assets:Bank:Checking
+
+;; Budget for this year months
+include 2023-01/2023-01.forecast.hledger
+include 2023-02/2023-02.forecast.hledger
+include 2023-03/2023-03.forecast.hledger
+include 2023-04/2023-04.forecast.hledger
+include 2023-05/2023-05.forecast.hledger
+include 2023-06/2023-06.forecast.hledger
+include 2023-07/2023-07.forecast.hledger
+include 2023-08/2023-08.forecast.hledger
+include 2023-09/2023-09.forecast.hledger
+include 2023-10/2023-10.forecast.hledger
+include 2023-11/2023-11.forecast.hledger
+include 2023-12/2023-12.forecast.hledger
+

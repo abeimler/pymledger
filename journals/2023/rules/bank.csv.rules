@@ -1,0 +1,69 @@
+;;do not change, generated file from bank.csv.rules template
+
+# skip first header line
+skip 1
+
+# .csv delimiter
+separator ;
+
+# name the csv fields (and assign the transaction's date, amount and code)
+fields auftragskonto, date,	date2, buchungstext, verwendungszweck, glaeubigerid, mandatsreferenz, kundenreferenz, sammlerreferenz, lastschriftursprungsbetrag, auslagenersatz_ruecklastschrift,	beguenstigter_zahlungspflichtiger, kontonummeriban, bic, amount, currency, info, code, payee
+
+# how to parse the date
+date-format %d.%m.%y
+
+code %kundenreferenz
+if %code .+
+    code %code
+
+# combine two fields to make the description
+description %beguenstigter_zahlungspflichtiger | %verwendungszweck
+
+# flip the sign on the amount
+amount      -%amount
+
+# set the currency
+currency  EUR
+
+# set the base account for all transactions
+account1    Expenses:unknown:%beguenstigter_zahlungspflichtiger
+
+# set the base account for all transactions
+account2    Assets:Bank:Checking
+
+
+# save these fields as tags
+comment     type:%buchungstext, info:%info, payee:%beguenstigter_zahlungspflichtiger 
+if %payee .+
+    comment     type:%buchungstext, info:%info, payee:%payee 
+
+# set status
+if Umsatz gebucht
+Transaction volume posted
+    status *
+    comment type:%buchungstext, payee:%beguenstigter_zahlungspflichtiger 
+if Umsatz gebucht
+Transaction volume posted
+& %payee .+
+    status *
+    comment type:%buchungstext, payee:%payee 
+
+if Umsatz vorgemerkt
+    status !
+    comment type:%buchungstext, payee:%beguenstigter_zahlungspflichtiger 
+if Umsatz vorgemerkt
+& %payee .+
+    status !
+    comment type:%buchungstext, payee:%payee 
+
+if %amount ^0
+    amount 0
+    currency EUR
+    skip
+
+
+
+
+include common.csv.rules
+include amazon.csv.rules
+include paypal.csv.rules

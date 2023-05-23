@@ -1,0 +1,29 @@
+;;do not change, generated file; month: 2023-01
+
+;; define monthly accounts 2023-01
+account Assets:Bank:Budget:Abo:Multimedia                               
+account Assets:Bank:Budget:Fahrgeld                                     
+account Assets:Bank:Budget:Haushalt                                     
+account Assets:Bank:Budget:Kleidung                                     
+account Assets:Bank:Budget:Lebensmittel                                 
+account Assets:Bank:Budget:Sonstiges                                    
+account Assets:Bank:Budget:Telekommunikation                            
+account Assets:Bank:Budget:Versicherungen                               
+account Assets:Bank:Budget:Wohnen                                       
+account Assets:Bank:Budget:Wunschliste                                  
+account Expenses:Haushalt:Amazon                                        
+account Expenses:Hobbies:Merch:PayPal                                   
+account Expenses:Kleidung:PayPal                                        
+account Expenses:Lebensmittel:Essen:Pizza                               
+account Expenses:Unterhaltung:Konzert                                   
+account Expenses:unknown:Amazon                                         
+account Expenses:unknown:PayPal                                         
+
+
+;; include generated journals
+include 2023-01.budget.hledger
+include 2023-01.bank.hledger
+include 2023-01.cash.hledger
+include 2023-01.custom.hledger
+
+include 2023-01.reconcile.hledger

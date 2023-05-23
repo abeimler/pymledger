@@ -1,0 +1,13 @@
+;;do not change, generated file; month: 2023-01
+
+;; define monthly accounts 2023-01
+account Assets:Bank:Checking                                            
+
+
+commodity 1000,00 EUR
+decimal-mark ,
+
+;; reconciles entires
+2023/01/15 monthly reconcile  ; reconcile:
+    Assets:Bank:Checking                                             0,0 EUR =    1364,65 EUR
+

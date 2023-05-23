@@ -1,0 +1,14 @@
+;;do not change, generated file from amazon.csv.rules template
+
+
+if Audible.de.*AUDIBLE GMBH
+Audible GmbH.*AUDIBLE GMBH
+    description %beguenstigter_zahlungspflichtiger | Amazon Audible GmbH Hörbuch
+    account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible   
+
+
+if AMZNPrime DE.*AMAZON EU S.A R.L.
+Prime Video.*AMAZON DIGITAL GERMANY GMBH
+    description %beguenstigter_zahlungspflichtiger | Amazon Prime
+    account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime     
+

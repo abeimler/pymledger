@@ -1,0 +1,25 @@
+;;do not change, generated file
+;
+; Persönliche Finanzen
+;
+
+
+
+;; journals years here
+include 2023/2023.hledger
+
+
+;;; "unbudget" account = checking - budget - saving
+account Assets:Bank:Unbudget
+;2023-01-01 open unbudget       ; clopen:, opening:, unbudget:
+;    Assets:Bank:Unbudget                     0,0 EUR = 0,0 EUR
+
+= Assets:Bank:Checking                    ; unbudget:
+    (Assets:Bank:Unbudget)                   *1
+
+= Assets:Bank:Budget                      ; unbudget:
+    (Assets:Bank:Unbudget)                   *-1
+
+= Assets:Bank:Saving                      ; unbudget:
+    (Assets:Bank:Unbudget)                   *-1
+

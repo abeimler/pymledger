@@ -1,0 +1,137 @@
+;;do not change, generated file; year: 2023
+
+;;; Accounts
+;; define default accounts
+account Assets                                                            ; type: A
+account Liabilities                                                       ; type: L
+account Equity                                                            ; type: E
+account Income                                                            ; type: R
+account Expenses                                                          ; type: X
+account Assets:Bank                                                       ; type: C
+account Assets:Cash                                                       ; type: C
+account Assets:Saving                                                     ; type: C
+account Assets:Saving:Cash                                                ; type: C
+account Expenses:Lebensmittel:Essen                                     
+account Expenses:Lebensmittel:Einkaufen                                 
+account Expenses:Sonstiges:Unbekannt:Bargeld                            
+
+
+;; define sub accounts
+account Assets:Bank:Budget                                              
+account Assets:Bank:Budget:Abo:Amazon:Prime                             
+account Assets:Bank:Budget:Abo:DTicket                                  
+account Assets:Bank:Budget:Abo:Gaming                                   
+account Assets:Bank:Budget:Abo:Multimedia                               
+account Assets:Bank:Budget:Fahrgeld                                     
+account Assets:Bank:Budget:Haushalt                                     
+account Assets:Bank:Budget:Kleidung                                     
+account Assets:Bank:Budget:Lebensmittel                                 
+account Assets:Bank:Budget:Sonstiges                                    
+account Assets:Bank:Budget:Spenden                                      
+account Assets:Bank:Budget:Telekommunikation                            
+account Assets:Bank:Budget:Versicherungen                               
+account Assets:Bank:Budget:Wohnen                                       
+account Assets:Bank:Budget:Wunschliste                                  
+account Assets:Bank:Checking                                            
+account Assets:Bank:Saving                                              
+account Assets:Bank:Unbudget                                            
+account Equity:OpeningClosingBalances                                   
+account Expenses:Computer                                               
+account Expenses:Computer:Hardware:Conrad                               
+account Expenses:Computer:Hardware:Saturn                               
+account Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket                
+account Expenses:Fahrtkosten:Fahrkarten:Bahn                            
+account Expenses:Gesundheit:Medikamente:Apotheke                        
+account Expenses:Haushalt                                               
+account Expenses:Haushalt:DmDrogerie                                    
+account Expenses:Haushalt:Hornbach                                      
+account Expenses:Hobbies:Buecher                                        
+account Expenses:Hobbies:Gaming                                         
+account Expenses:Hobbies:Gaming:Abo                                     
+account Expenses:Hobbies:Gaming:GOG                                     
+account Expenses:Hobbies:Gaming:HumbleBundle                            
+account Expenses:Hobbies:Gaming:Nintendo                                
+account Expenses:Hobbies:Gaming:Steam                                   
+account Expenses:Hobbies:Gaming:Ubisoft                                 
+account Expenses:Hobbies:Kunst                                          
+account Expenses:Hobbies:Merch                                          
+account Expenses:Hobbies:Musik                                          
+account Expenses:Hobbies:Pflanze                                        
+account Expenses:Kleidung                                               
+account Expenses:Lebensmittel                                           
+account Expenses:Lebensmittel:Einkaufen:Aldi                            
+account Expenses:Lebensmittel:Einkaufen:Edeka                           
+account Expenses:Lebensmittel:Einkaufen:Kaufland                        
+account Expenses:Lebensmittel:Einkaufen:Lidl                            
+account Expenses:Lebensmittel:Einkaufen:Netto                           
+account Expenses:Lebensmittel:Einkaufen:Rewe                            
+account Expenses:Lebensmittel:Einkaufen:Rossman                         
+account Expenses:Lebensmittel:Essen:Baecker                             
+account Expenses:Lebensmittel:Essen:BurgerKing                          
+account Expenses:Lebensmittel:Essen:KFC                                 
+account Expenses:Lebensmittel:Essen:McDonalds                           
+account Expenses:Lebensmittel:Essen:Subway                              
+account Expenses:Sonstiges                                              
+account Expenses:Sonstiges:AWVMeldepflicht:PayPal                       
+account Expenses:Sonstiges:Bankgebuehren                                
+account Expenses:Sonstiges:Bankgebuehren:Karte                          
+account Expenses:Spenden                                                
+account Expenses:Telekommunikation                                      
+account Expenses:Telekommunikation:Fernsehen:Rundfunk                   
+account Expenses:Telekommunikation:Online-Dienste:Internet              
+account Expenses:Telekommunikation:Telefon:Handy                        
+account Expenses:Unterhaltung:Gaming                                    
+account Expenses:Unterhaltung:Multimedia:Abo                            
+account Expenses:Unterhaltung:Multimedia:Gaming                         
+account Expenses:Unterhaltung:Multimedia:Gaming:Abo:GamePass            
+account Expenses:Unterhaltung:Multimedia:Musik:Streaming                
+account Expenses:Unterhaltung:Multimedia:Musik:Streaming:Abo:Spotify    
+account Expenses:Unterhaltung:Multimedia:Streaming                      
+account Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible   
+account Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime     
+account Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll      
+account Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus       
+account Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix          
+account Expenses:Unterhaltung:Multimedia:Streaming:Abo:Twitch           
+account Expenses:Versicherung                                           
+account Expenses:Versicherungen:Brille                                  
+account Expenses:Versicherungen:Hausratversicherung                     
+account Expenses:Versicherungen:Privathaftpflicht                       
+account Expenses:Versicherungen:Rechtsschutz                            
+account Expenses:Wohnen                                                 
+account Expenses:Wohnen:Miete                                           
+account Expenses:Wohnen:Nebenkosten:Strom                               
+account Expenses:unknown                                                
+account Expenses:unknown:%beguenstigter_zahlungspflichtiger             
+account Expenses:unknown:Amazon                                         
+account Expenses:unknown:PayPal                                         
+account Expenses:unknown:ebay                                           
+account Income:Salary                                                   
+account Income:Sonstiges:Gutschrift:Amazon:Rueckerstattung              
+account Income:Sonstiges:Gutschrift:Wohnung:Energie:Rueckerstattung     
+account Income:Sonstiges:Gutschrift:Wohnung:Miete:Rueckerstattung       
+
+
+commodity 1000,00 EUR
+decimal-mark ,
+
+Y2023
+
+include 2023.budget.hledger
+
+;; monthly journals
+include 2023-01/2023-01.hledger
+include 2023-02/2023-02.hledger
+include 2023-03/2023-03.hledger
+include 2023-04/2023-04.hledger
+include 2023-05/2023-05.hledger
+include 2023-06/2023-06.hledger
+include 2023-07/2023-07.hledger
+include 2023-08/2023-08.hledger
+include 2023-09/2023-09.hledger
+include 2023-10/2023-10.hledger
+include 2023-11/2023-11.hledger
+include 2023-12/2023-12.hledger
+
+
+include transaction-mod.hledger

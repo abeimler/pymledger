@@ -1,0 +1,22 @@
+alias Assets:Bank = Aktiva:Barvermögen:Girokonto
+alias Assets:Bank:Checking = Aktiva:Barvermögen:Girokonto:Kontostand
+alias Assets:Bank:Budget = Aktiva:Barvermögen:Girokonto:Budget
+alias Assets:Bank:Unbudget = Aktiva:Barvermögen:Girokonto:Unbudget
+alias Assets:Bank:Savings = Aktiva:Barvermögen:Girokonto:Rücklage
+alias Assets:Cash = Aktiva:Barvermögen:Bargeld:Portemonnaie
+alias Assets:Saving = Aktiva:Erspartes
+alias Assets:Saving:Cash = Aktiva:Barvermögen:Bargeld
+
+alias Equity = Anfangsbestand
+alias Equity:OpeningClosingBalances = Anfangsbestand:EröffnungsSchlussbilanz
+
+alias Expenses = Aufwendungen
+alias Expense:unknown = Aufwendungen:Sonstiges:Sonstiges
+alias Expenses:Sonstiges:Bankgebuehren = Aufwendungen:Sonstiges:Bankgebühren
+
+alias Income:Salary = Erträge:Gehalt:Gehalt
+alias Income:Salary:Zuschlag = Erträge:Gehalt:Zuschlag
+alias Income:Geschenke = Erträge:Geschenke
+alias Income:Sonstiges:Gutschrift = Erträge:Sonstiges:Gutschrift
+
+alias Liabilities = Fremdkapital

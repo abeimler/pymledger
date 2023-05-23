@@ -1,0 +1,6 @@
+- account: Expenses:Haushalt:Amazon
+  order: 123-1234567-1234599
+- account: Expenses:Haushalt:Amazon
+  order: 123-1234567-1234599
+  payee: AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+  ref: CCCCCCCCCCCCCCCC

@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  hledger-web:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      target: hledger-web
+      args:
+        # install location for hledger
+        lang: de_DE.utf8 
+    environment:
+      # setup location for hledger
+      - LANG=de_DE.utf8
+      - LC_ALL=de_DE.utf8
+      - HLEDGER_BASE_URL=http://localhost:5080
+    ports:
+      - 5080:5000
+      
+  hledger-web-api:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      target: hledger-web-api
+      args:
+        # install location for hledger
+        lang: de_DE.utf8 
+    environment:
+      # setup location for hledger
+      - LANG=de_DE.utf8
+      - LC_ALL=de_DE.utf8
+      - HLEDGER_BASE_URL=http://localhost:5081
+    ports:
+      - 5081:5001
+
+  beancount:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      target: beancount
+      args:
+        # install location for hledger
+        lang: de_DE.utf8 
+    environment:
+      # setup location for hledger
+      - LANG=de_DE.utf8
+      - LC_ALL=de_DE.utf8
+    ports:
+      - 5082:5000

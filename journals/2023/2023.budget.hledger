@@ -1,0 +1,7 @@
+;;do not change, generated file; $2023
+
+;; Budget, from every months salary
+= acct:"Income:Salary$" date:"2023"
+    (Assets:Bank:Budget:Abo:Amazon:Prime)                                    7,5 EUR
+    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR
+

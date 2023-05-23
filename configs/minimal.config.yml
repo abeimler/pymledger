@@ -1,0 +1,133 @@
+title: 'Persönliche Finanzen'
+define_accounts:
+  - account: 'Assets'       
+    type: Asset
+  - account: 'Liabilities'  
+    type: Liability
+  - account: 'Equity'       
+    type: Equity
+  - account: 'Income'     
+    type: Revenue
+  - account: 'Expenses'   
+    type: Expense
+  - account: 'Assets:Bank'
+    type: Cash
+  - account: 'Assets:Cash'
+    type: Cash
+  - account: 'Assets:Saving'
+    type: Cash
+  - account: 'Assets:Saving:Cash'
+    type: Cash
+  # define missing accounts
+  - account: Expenses:Sonstiges:Unbekannt:Bargeld
+accounts:
+  assets: 'Assets'
+  expenses: 'Expenses'
+  liabilities: 'Liabilities'
+  equity: 'Equity'
+  income: 'Income'
+  opening: 'Equity:OpeningClosingBalances'
+  checking: 'Assets:Bank:Checking'
+  paypal_unknown: 'Expenses:unknown:PayPal'
+  amazon_unknown: 'Expenses:unknown:Amazon'
+  unknown: 'Expenses:unknown'
+  cash: 'Assets:Cash'
+  salary: 'Income:Salary'
+  budget: 'Assets:Bank:Budget'
+  saving: 'Assets:Bank:Saving'
+  unbudget: 'Assets:Bank:Unbudget'
+paypal:
+  # python format with ref and name, {ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal
+  if_format:
+    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
+    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
+  payee: 'PayPal Europe S.a.r.l. et Cie S.C.A' 
+amazon:
+  # python format with order and ref, {order}.*Amazon.de.*{ref}.*AMAZON EU
+  if_format:
+    - '{order}.*Amazon.de{ref}AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND'
+    - '{order}.*Amazon .Mktplce{ref}AMAZON PAYMENTS EUROPE S.C.A.'
+    - '{order}.*AMZN Mktp DE{ref}AMAZON PAYMENTS EUROPE S.C.A.'
+  payee: 'AMAZON PAYMENTS EUROPE S.C.A.'
+amazon_rules:
+  #- if: 
+  #    - Audible.de.*AUDIBLE GMBH
+  #    - Audible GmbH.*AUDIBLE GMBH
+  #  description: Amazon Audible GmbH Hörbuch
+  #  account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible
+  #  title: Audible
+  #- if: 
+  #    - AMZNPrime DE.*AMAZON EU S.A R.L.
+  #    - Prime Video.*AMAZON DIGITAL GERMANY GMBH
+  #  description: Amazon Prime
+  #  account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime
+  #  title: Amazon Prime Video
+paypal_rules:
+  # Fallback for ebay
+  - name: 
+      - ebay
+      - EBAY
+    description: Ebay %verwendungszweck
+    account: Expenses:unknown:ebay
+    title: ebay
+  # Sonstiges
+  - name:
+      - AWV-MELDEPFLICHT
+    description: AWV-MELDEPFLICHT %verwendungszweck
+    account: Expenses:Sonstiges:AWVMeldepflicht:PayPal
+common_rules:
+  # Defaults/Fallbacks (first)
+  - if:
+      - Amazon.de.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+      - Amazon .Mktplce.*AMAZON PAYMENTS EUROPE S.C.A.
+      - AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
+    description: Amazon %verwendungszweck
+    account: Expenses:unknown:Amazon
+  - if: PP.6330.PP.*PayPal
+    description: PayPal %verwendungszweck
+    account: Expenses:unknown:PayPal
+  - if: KARTENZAHLUNG
+    description: Kartenzahlung %verwendungszweck 
+    account: Expenses:unknown:%beguenstigter_zahlungspflichtiger
+  # Bank (und Gebühren)
+  - if: ABSCHLUSS.*Abrechnung
+    account: Expenses:Sonstiges:Bankgebuehren 
+  - if: ENTGELTABSCHLUSS.*Entgeltabrechnung
+    payee_description: 'Entgeltabrechnung'
+    account: Expenses:Sonstiges:Bankgebuehren 
+  - if:
+      - AUSZAHLUNG
+      - AUSZAHLUNG
+    account: Assets:Cash
+  - if:
+      - EINZAHLUNG
+      - EINZAHLUNG
+    account: Assets:Cash
+  # Lohn
+  - if: LOHN.*GEHALT
+    account1: Assets:Bank:Checking                                                                                               
+    account2: Income:Salary  
+    income: true
+post_common_rules:
+  - credit_note: 
+      - AMZ.*AMAZON PAYMENTS
+      - AMZ.*AMAZON EU
+    description: Amazon Rueckerstattung
+    account: Income:Sonstiges:Gutschrift:Amazon:Rueckerstattung
+monthly:
+  forecast_income: 2000.0
+  # default budget for the month
+  budget:
+    # Basics
+    #- account: Assets:Bank:Budget:Telekommunikation
+    #  comment: Internet
+    #  amount: 55.0
+    #- account: Assets:Bank:Budget:Telekommunikation
+    #  comment: Rundfunk
+    #  amount: 20.0
+yearly:
+  # default budget for the year
+  #budget:
+  #  - account: Assets:Bank:Budget:Abo:Amazon:Prime
+  #    amount: 90.0
+  #    title: Amazon Prime

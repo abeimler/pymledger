@@ -1,0 +1,31 @@
+;;do not change, generated file; 2023-03
+
+;;; PayPal rules
+
+if .*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-100
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-100
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    account1    Expenses:Hobbies:Sonstiges:PayPal                               
+
+
+if .*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*, -25,55
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-25,55
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*, -25,55
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-25,55
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    account1    Expenses:Hobbies:Sonstiges:PayPal                               
+
+
+if .*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-38
+.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-38
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    account1    Expenses:Hobbies:Merch:PayPal                                   
+
+
+if .*.*PP.6330.PP.*Shop der Deutschen Post.*, Ihr Einkauf bei.*PayPal
+.*.*PP.6330.PP.*Shop der Deutschen Post.*, Ihr Einkauf bei.*PAYPAL
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (dpdhl group)
+    comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Shop der Deutschen Post
+    account1    Expenses:Sonstiges:Post                                         
+
+

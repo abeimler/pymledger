@@ -1,0 +1,26 @@
+;;do not change, generated file; month: 2023-05
+
+;; define monthly accounts 2023-05
+account Assets:Bank:Budget:Abo:DTicket                                  
+account Assets:Bank:Budget:Abo:Multimedia                               
+account Assets:Bank:Budget:Fahrgeld                                     
+account Assets:Bank:Budget:Haushalt                                     
+account Assets:Bank:Budget:Kleidung                                     
+account Assets:Bank:Budget:Lebensmittel                                 
+account Assets:Bank:Budget:Sonstiges                                    
+account Assets:Bank:Budget:Telekommunikation                            
+account Assets:Bank:Budget:Versicherungen                               
+account Assets:Bank:Budget:Wohnen                                       
+account Assets:Bank:Budget:Wunschliste                                  
+account Expenses:Computer:Hardware:Amazon                               
+account Expenses:Haushalt:Amazon                                        
+account Expenses:Spenden:PreventCancerFoundation                        
+
+
+;; include generated journals
+include 2023-05.budget.hledger
+include 2023-05.bank.hledger
+include 2023-05.cash.hledger
+include 2023-05.custom.hledger
+
+include 2023-05.reconcile.hledger

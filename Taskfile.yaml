@@ -1,0 +1,189 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  PROJECT_DIR: '{{.PROJECT_DIR | default "."}}'
+  HLEDGER: '{{.HLEDGER | default "hledger"}}'
+  HLEDGER_WEB: '{{.HLEDGER_WEB | default "hledger-web"}}'
+  LEDGER2BEANCOUNT: '{{.LEDGER2BEANCOUNT | default "ledger2beancount"}}'
+  HLEDGER_HOST: '{{.HLEDGER_HOST | default "127.0.0.1"}}'
+  HLEDGER_PORT: '{{.HLEDGER_PORT | default "5000"}}'
+  CONFIG: '{{.CONFIG | default "config.yml"}}'
+
+dotenv: ['.env']
+
+tasks:
+  default:
+    aliases: [start]
+    cmds:
+      - task: generate
+      - task: generate:beancount
+      - task: report
+      - task: view
+      
+  quick-start:
+    cmds:
+      - task: generate
+      - task: view
+  
+  generate:
+    aliases: [gen]
+    cmds:
+      ## only generate year 2022
+      #- task: generate-template
+      #  vars:
+      #    DATE: "2022"
+      #    CONFIG: 'configs/2022.config.yml'
+      ## generate year 2023
+      - task: generate-template
+        vars:
+          DATE: "2023"
+      # Add more years: "2022 2023"
+      ## generate main file
+      - task: generate-all-template
+        vars:
+          DATES: "2023" # Add more years: "2022 2023"
+      - '{{.HLEDGER}} -f all.hledger --auto print -o journals/all.journal'
+
+  check:
+    - '{{.HLEDGER}} -f all.hledger -s --auto check'
+    - '{{.HLEDGER}} -f all.hledger reg --auto Expenses:unknown'
+
+  view:
+    - '{{.HLEDGER_WEB}} -f all.hledger --capabilities=view --auto'
+
+  server:
+    - '{{.HLEDGER_WEB}} -f journals/all.journal --server --host={{.HLEDGER_HOST}} --port={{.HLEDGER_PORT}} --capabilities=view --auto'
+
+  report:
+    - task: check
+    - mkdir -p reports
+    - task: report:accounts
+    - task: report:balancesheet
+    - task: report:incomestatement
+    - task: report:transactions
+    - task: report:budget
+    - task: report:csv
+    - task: report:plot
+
+  report:accounts:
+    # account names declared and used, as a list
+    - '{{.HLEDGER}} -f all.hledger accounts --auto > reports/accounts.txt'
+    # accounts are actually a hierarchy
+    - '{{.HLEDGER}} -f all.hledger accounts --auto --tree > reports/accounts.tree.txt'
+
+  report:balancesheet:
+    # what do I own and owe ?
+    - '{{.HLEDGER}} -f all.hledger balancesheet --auto --real > reports/balancesheet.txt'
+    ## Yearly balance sheets, with commodities converted to their year-end value 
+    - '{{.HLEDGER}} -f all.hledger bs -Y -V --infer-value -R --auto -o reports/balancesheet.html'
+
+  report:incomestatement:
+    # where is it coming from and going to ?
+    - '{{.HLEDGER}} incomestatement -f all.hledger --monthly --depth 2 --auto --real > reports/incomestatement.txt'
+    ## A yearly income statement, summarised to depth 3, sorted by amount:
+    - '{{.HLEDGER}} -f all.hledger is -Y -2 -S -R -o reports/incomestatement.html'
+    - '{{.HLEDGER}} -f all.hledger is -Y -3 -S -R -o reports/incomestatement_detail.html'
+
+  report:transactions:
+    # transactions
+    - '{{.HLEDGER}} -f all.hledger -f journals/forecast.hledger aregister --forecast Assets:Bank:Checking > reports/transactions.txt'
+    - '{{.HLEDGER}} -f all.hledger register Assets:Bank:Checking > reports/checking.txt'
+
+  report:budget:
+    # budget
+    - '{{.HLEDGER}} -f all.hledger -f journals/forecast.hledger balance -R -MA -3 --budget Income:Salary Expenses > reports/budget.txt'
+    - '{{.HLEDGER}} -f all.hledger -f journals/forecast.hledger balance -R -MA -3 --budget --cumulative Income:Salary Expenses > reports/budget.cumulative.txt'
+    - '{{.HLEDGER}} -f all.hledger -f journals/forecast.hledger balance -R -M -2 --forecast Income:Salary Expenses > reports/budget.forecast.txt'
+    # budget (2023)
+    #- '{{.HLEDGER}} -f all.hledger -f journals/forecast.hledger balance --date 2023 -R -MA -3 --budget Income:Salary Expenses > reports/budget.2023.txt'
+    #- '{{.HLEDGER}} -f all.hledger -f journals/forecast.hledger balance --date 2023 -R -MA -3 --budget --cumulative Income:Salary Expenses > reports/budget.cumulative.2023.txt'
+    #- '{{.HLEDGER}} -f all.hledger -f journals/forecast.hledger balance --date 2023 -R -M -2 --forecast Income:Salary Expenses > reports/budget.forecast.2023.txt'
+
+
+  report:csv:
+    # output
+    - '{{.HLEDGER}} -f all.hledger bal -R -MA -2 Expenses -o reports/expenses.csv -O csv'
+    - '{{.HLEDGER}} -f all.hledger bal -MA -5 Assets:Bank:Budget -o reports/unbudget.csv -O csv'
+    - '{{.HLEDGER}} -f all.hledger bal --auto -MA -5 Assets:Bank:Budget -o reports/budget.csv -O csv'
+    - '{{.HLEDGER}} -f all.hledger bal --auto -MA -4 Income Assets:Bank:Budget Expenses -o reports/data.csv -O csv'
+
+  report:plot:
+    # plot
+    - '{{.HLEDGER}} -f all.hledger bal --auto -MA -2 Expenses -o reports/plot_data_expenses.csv -O csv'
+    - task: pymledger
+      vars:
+        ARGS: plot-senkey-expenses -i reports/plot_data_expenses.csv -o reports/expenses.png
+
+    - '{{.HLEDGER}} -f all.hledger bal --auto -MA -4 Assets:Bank:Budget -o reports/plot_data_budget.csv -O csv'
+    #- task: pymledger
+    #  vars:
+    #    ARGS: plot-senkey-budget -i reports/plot_data_budget.csv -o reports/budget.png
+
+    - '{{.HLEDGER}} -f all.hledger bal --auto -MA -3 Income Assets:Bank:Budget -o reports/plot_data_income_budget.csv -O csv'
+    #- task: pymledger
+    #  vars:
+    #    ARGS: plot-senkey-income-budget -i reports/plot_data_income_budget.csv -o reports/income_budget.png
+
+    - '{{.HLEDGER}} -f all.hledger bal --auto -MA Assets:Bank:Budget Expenses -o reports/plot_data_budget_expenses.csv -O csv'
+    #- task: pymledger
+    #  vars:
+    #    ARGS: plot-senkey-budget-expenses -i reports/plot_data_budget_expenses.csv -o reports/budget_expenses.png
+
+    - '{{.HLEDGER}} -f all.hledger bal --auto -MA -3 Income Expenses Assets:Bank:Budget -o reports/plot_data_income_budget_expenses.csv -O csv'
+    #- task: pymledger
+    #  vars:
+    #    ARGS: plot-senkey-income-budget-expenses -i reports/plot_data_budget_expenses.csv -o reports/plot_data_budget_income_expenses.png
+
+  generate:beancount:
+    dir: "{{.PROJECT_DIR}}"
+    cmds:
+      - task: pymledger
+        vars:
+          ARGS: --hledger-path={{.HLEDGER}} --ledger2beancount-path={{.LEDGER2BEANCOUNT}} -c {{.CONFIG}} beancount -f {{.INPUT}} -o {{.OUTPUT}}
+    vars:
+      INPUT: 'all.hledger'
+      OUTPUT: 'journals/all.beancount'
+
+  budget:
+    - task: pymledger
+      vars:
+        ARGS: -c {{.CONFIG}} budget
+
+  generate-template:
+    internal: true
+    dir: "{{.PROJECT_DIR}}"
+    cmds:
+      - task: pymledger
+        vars:
+          ARGS: --hledger-path={{.HLEDGER}} -c {{.CONFIG}} clean-up-csv {{.DATE}}
+      - task: pymledger
+        vars:
+          ARGS: -c {{.CONFIG}} gen-rules {{.DATE}}
+      - task: pymledger
+        vars:
+          ARGS: --hledger-path={{.HLEDGER}} -c {{.CONFIG}} gen-year {{.DATE}}
+
+  generate-all-template:
+    internal: true
+    dir: "{{.PROJECT_DIR}}"
+    cmds:
+      - task: pymledger
+        vars:
+          ARGS: --hledger-path={{.HLEDGER}} gen-all {{.DATES}}
+      - task: pymledger
+        vars:
+          ARGS: --hledger-path={{.HLEDGER}} -c {{.CONFIG}} gen-all-forecast {{.DATES}}
+
+  pymledger:
+    internal: true
+    dir: "{{.PROJECT_DIR}}"
+    cmds:
+      - python3 {{.PROJECT_DIR}}/scripts/pymledger/pymledger.py {{.ARGS}}
+    vars:
+      CONFIG: '{{.CONFIG | default "config.yml"}}'
+
+  docker:up:
+    - docker-compose up
+

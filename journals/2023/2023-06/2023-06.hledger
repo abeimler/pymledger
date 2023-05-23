@@ -1,0 +1,12 @@
+;;do not change, generated file; month: 2023-06
+
+;; define monthly accounts 2023-06
+
+
+;; include generated journals
+include 2023-06.budget.hledger
+include 2023-06.bank.hledger
+include 2023-06.cash.hledger
+include 2023-06.custom.hledger
+
+include 2023-06.reconcile.hledger

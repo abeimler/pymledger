@@ -1,0 +1,13 @@
+- account: Expenses:Gesundheit:Medikamente:Apotheke
+  amount: -96.1
+  comment: Hausapoteke
+- account: Expenses:Lebensmittel:Essen:PayPal
+  amount: -3.0
+  ref: '1234569874685'
+  description: Essen Ausgeben
+- account: Expenses:Haushalt:DmDrogerie
+  description: dm-drogerie
+  name: dm-drogerie
+- account: Expenses:Sonstiges:Post
+  description: Shop der deutschen post (dpdhl group)
+  name: Shop der Deutschen Post

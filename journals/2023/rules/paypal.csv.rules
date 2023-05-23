@@ -1,0 +1,139 @@
+;;do not change, generated file from paypal.csv.rules template
+
+
+if Abo 123456789.*DB Vertrieb GmbH
+    description %beguenstigter_zahlungspflichtiger | DB Reisezentrum D-Ticket
+    account1    Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket                
+
+
+if PP.6330.PP.*ebay.*PayPal.*.*.*.*
+ebay.*PayPal.*.*.*.*
+ebay.*PAYPAL.*.*.*.*
+PP.6330.PP.*EBAY.*PayPal.*.*.*.*
+EBAY.*PayPal.*.*.*.*
+EBAY.*PAYPAL.*.*.*.*
+    description %payee | PayPal Ebay %verwendungszweck
+    comment type:%buchungstext, payee:%payee, name:ebay
+    account1    Expenses:unknown:ebay                                           
+
+
+if PP.6330.PP.*Steam.*PayPal.*.*.*.*
+Steam.*PayPal.*.*.*.*
+Steam.*PAYPAL.*.*.*.*
+PP.6330.PP.*STEAM.*PayPal.*.*.*.*
+STEAM.*PayPal.*.*.*.*
+STEAM.*PAYPAL.*.*.*.*
+PP.6330.PP.*steampowered.*PayPal.*.*.*.*
+steampowered.*PayPal.*.*.*.*
+steampowered.*PAYPAL.*.*.*.*
+    description %payee | PayPal Steam
+    comment type:%buchungstext, payee:%payee, name:Steam
+    account1    Expenses:Hobbies:Gaming:Steam                                   
+
+
+if PP.6330.PP.*GOG.*PayPal.*.*.*.*
+GOG.*PayPal.*.*.*.*
+GOG.*PAYPAL.*.*.*.*
+    description %payee | PayPal GOG
+    comment type:%buchungstext, payee:%payee, name:GOG
+    account1    Expenses:Hobbies:Gaming:GOG                                     
+
+
+if PP.6330.PP.*Nintendo.*PayPal.*.*.*.*
+Nintendo.*PayPal.*.*.*.*
+Nintendo.*PAYPAL.*.*.*.*
+PP.6330.PP.*NINTENDO.*PayPal.*.*.*.*
+NINTENDO.*PayPal.*.*.*.*
+NINTENDO.*PAYPAL.*.*.*.*
+    description %payee | PayPal Nintendo
+    comment type:%buchungstext, payee:%payee, name:Nintendo
+    account1    Expenses:Hobbies:Gaming:Nintendo                                
+
+
+if PP.6330.PP.*Humble Bundle.*PayPal.*.*.*.*
+Humble Bundle.*PayPal.*.*.*.*
+Humble Bundle.*PAYPAL.*.*.*.*
+PP.6330.PP.*HUMBLEBUNDL.*PayPal.*.*.*.*
+HUMBLEBUNDL.*PayPal.*.*.*.*
+HUMBLEBUNDL.*PAYPAL.*.*.*.*
+    description %payee | PayPal Humble Bundle
+    comment type:%buchungstext, payee:%payee, name:Humble Bundle
+    account1    Expenses:Hobbies:Gaming:HumbleBundle                            
+
+
+if PP.6330.PP.*Ubisoft.*PayPal.*.*.*.*
+Ubisoft.*PayPal.*.*.*.*
+Ubisoft.*PAYPAL.*.*.*.*
+PP.6330.PP.*UBISOFTEMEA.*PayPal.*.*.*.*
+UBISOFTEMEA.*PayPal.*.*.*.*
+UBISOFTEMEA.*PAYPAL.*.*.*.*
+    description %payee | PayPal Ubisoft
+    comment type:%buchungstext, payee:%payee, name:Ubisoft
+    account1    Expenses:Hobbies:Gaming:Ubisoft                                 
+
+
+if PP.6330.PP.*Spotify.*PayPal.*.*.*.*
+Spotify.*PayPal.*.*.*.*
+Spotify.*PAYPAL.*.*.*.*
+PP.6330.PP.*SPOTIFY.*PayPal.*.*.*.*
+SPOTIFY.*PayPal.*.*.*.*
+SPOTIFY.*PAYPAL.*.*.*.*
+    description %payee | PayPal Spotify
+    comment type:%buchungstext, payee:%payee, name:Spotify
+    account1    Expenses:Unterhaltung:Multimedia:Musik:Streaming:Abo:Spotify    
+
+
+if PP.6330.PP.*DISNEYPLUS.*PayPal.*.*.*.*
+DISNEYPLUS.*PayPal.*.*.*.*
+DISNEYPLUS.*PAYPAL.*.*.*.*
+    description %payee | PayPal Disney Plus (Disney+)
+    comment type:%buchungstext, payee:%payee, name:DISNEYPLUS
+    account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus       
+
+
+if PP.6330.PP.*Twitch Interactive.*PayPal.*.*.*.*
+Twitch Interactive.*PayPal.*.*.*.*
+Twitch Interactive.*PAYPAL.*.*.*.*
+PP.6330.PP.*Twitch Interactive, Inc..*PayPal.*.*.*.*
+Twitch Interactive, Inc..*PayPal.*.*.*.*
+Twitch Interactive, Inc..*PAYPAL.*.*.*.*
+PP.6330.PP.*TWITCHINTER.*PayPal.*.*.*.*
+TWITCHINTER.*PayPal.*.*.*.*
+TWITCHINTER.*PAYPAL.*.*.*.*
+    description %payee | PayPal Twitch
+    comment type:%buchungstext, payee:%payee, name:Twitch Interactive
+    account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Twitch           
+
+
+if PP.6330.PP.*Crunchyroll.*PayPal.*.*.*.*
+Crunchyroll.*PayPal.*.*.*.*
+Crunchyroll.*PAYPAL.*.*.*.*
+PP.6330.PP.*CRUNCHYROLL.*PayPal.*.*.*.*
+CRUNCHYROLL.*PayPal.*.*.*.*
+CRUNCHYROLL.*PAYPAL.*.*.*.*
+PP.6330.PP.*Ellation Holdings.*PayPal.*.*.*.*
+Ellation Holdings.*PayPal.*.*.*.*
+Ellation Holdings.*PAYPAL.*.*.*.*
+    description %payee | PayPal Crunchyroll
+    comment type:%buchungstext, payee:%payee, name:Crunchyroll
+    account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll      
+
+
+if PP.6330.PP.*DB Vertrieb.*PayPal.*.*.*.*
+DB Vertrieb.*PayPal.*.*.*.*
+DB Vertrieb.*PAYPAL.*.*.*.*
+PP.6330.PP.*DBVERTRIEBG.*PayPal.*.*.*.*
+DBVERTRIEBG.*PayPal.*.*.*.*
+DBVERTRIEBG.*PAYPAL.*.*.*.*
+    description %payee | PayPal DB Ticket
+    comment type:%buchungstext, payee:%payee, name:DB Vertrieb
+    account1    Expenses:Fahrtkosten:Fahrkarten:Bahn                            
+
+
+if PP.6330.PP.*AWV-MELDEPFLICHT.*PayPal.*.*.*.*
+AWV-MELDEPFLICHT.*PayPal.*.*.*.*
+AWV-MELDEPFLICHT.*PAYPAL.*.*.*.*
+    description %payee | PayPal AWV-MELDEPFLICHT %verwendungszweck
+    comment type:%buchungstext, payee:%payee, name:AWV-MELDEPFLICHT
+    account1    Expenses:Sonstiges:AWVMeldepflicht:PayPal                       
+

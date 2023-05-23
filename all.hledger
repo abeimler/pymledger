@@ -1,0 +1,16 @@
+;
+; Persönliche Finanzen
+; Main File
+;
+
+;include all.aliases
+
+
+2023/01/01 * opening balances   ; opening:
+    Assets:Bank:Checking                                                  2179,78 EUR
+    Assets:Saving:Cash                                                    2000,00 EUR  
+    Assets:Cash                                                             50,50 EUR  
+    Equity:OpeningClosingBalances
+
+
+include journals/all.hledger

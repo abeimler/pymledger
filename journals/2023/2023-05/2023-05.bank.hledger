@@ -1,0 +1,52 @@
+2023-05-02=2023-04-29 * (2023-05.0013) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:
+    Expenses:Sonstiges:Bankgebuehren        EUR17,05
+    Assets:Bank:Checking                   EUR-17,05
+
+2023-05-02=2023-05-02 * (2023-05.0012) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam
+    Expenses:Hobbies:Gaming:Steam        EUR22,49
+    Assets:Bank:Checking                EUR-22,49
+
+2023-05-02=2023-05-02 * (2023-05.0011) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb
+    Expenses:Fahrtkosten:Fahrkarten:Bahn        EUR11,70
+    Assets:Bank:Checking                       EUR-11,70
+
+2023-05-02=2023-05-02 * (2023-05.0010) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal PayPal Prevent cancer foundation  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
+    Expenses:Spenden:PreventCancerFoundation        EUR20,00
+    Assets:Bank:Checking                           EUR-20,00
+
+2023-05-02=2023-05-02 * (2023-05.0009) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio
+    Expenses:Telekommunikation:Fernsehen:Rundfunk        EUR17,49
+    Assets:Bank:Checking                                EUR-17,49
+
+2023-05-02=2023-05-02 * (2023-05.0008) BACKWERK | Essen Baecker  ; type:KARTENZAHLUNG, payee:BACKWERK
+    Expenses:Lebensmittel:Essen:Baecker         EUR7,50
+    Assets:Bank:Checking                       EUR-7,50
+
+2023-05-03=2023-05-03 * (2023-05.0007) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll
+    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll         EUR6,99
+    Assets:Bank:Checking                                              EUR-6,99
+
+2023-05-03=2023-05-03 * (2023-05.0006) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234555  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234555, ref:HHHHHHHHHHHHHHH
+    Expenses:Computer:Hardware:Amazon        EUR20,99
+    Assets:Bank:Checking                    EUR-20,99
+
+2023-05-03=2023-05-03 * (2023-05.0005) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234444  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234444, ref:GGGGGGGGGGGGGGGG
+    Expenses:Haushalt:Amazon        EUR50,51
+    Assets:Bank:Checking           EUR-50,51
+
+2023-05-08=2023-05-08 * (2023-05.0004) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+    Expenses:Lebensmittel:Einkaufen:Lidl        EUR86,78
+    Assets:Bank:Checking                       EUR-86,78
+
+2023-05-08=2023-05-08 * (2023-05.0003) DM FIL. | DM Drogerie Einkaufen  ; type:KARTENZAHLUNG, payee:DM FIL.
+    Expenses:Haushalt:DmDrogerie        EUR11,50
+    Assets:Bank:Checking               EUR-11,50
+
+2023-05-15=2023-05-15 * (2023-05.0002) DB Vertrieb GmbH | DB Reisezentrum D-Ticket  ; type:ERSTLASTSCHRIFT, payee:DB Vertrieb GmbH
+    Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket        EUR49,00
+    Assets:Bank:Checking                                   EUR-49,00
+
+2023-05-16=2023-05-16 * (2023-05.0001) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:
+    Assets:Cash                 EUR50,00
+    Assets:Bank:Checking       EUR-50,00
+

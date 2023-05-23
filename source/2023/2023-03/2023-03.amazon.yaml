@@ -1,0 +1,9 @@
+- account: Expenses:Hobbies:Sonstiges:Amazon
+  order: 555-1234567-7894569
+  ref: JJJJJJJJJJJJJJJJ
+- account: Expenses:Hobbies:Merch:Amazon
+  order: 555-1234567-3216548
+  ref: IIIIIIIIIIIIIIIII
+- account: Expenses:Haushalt:Amazon
+  order: 123-1234567-5555568
+  ref: HHHHHHHHHHHHHHHH

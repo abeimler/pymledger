@@ -1,0 +1,6 @@
+- account: Expenses:Haushalt:DmDrogerie
+  description: dm-drogerie
+  name: dm-drogerie
+- account: Expenses:Lebensmittel:Essen:Pizza
+  amount: -30.0
+  ref: '1234567893215'
