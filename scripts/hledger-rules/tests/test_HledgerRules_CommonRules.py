@@ -59,6 +59,7 @@ AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
 if KARTENZAHLUNG.*LIDL
 LASTSCHRIFT.*LIDL
 RECHNUNG.*LIDL
+UEBERWEISUNG.*LIDL
     description %beguenstigter_zahlungspflichtiger | Einkaufen Lidl
     account1    Expenses:Lebensmittel:Einkaufen:Lidl                            
 
@@ -77,6 +78,7 @@ RECHNUNG.*LIDL
 if KARTENZAHLUNG.*Rewe GmbH
 LASTSCHRIFT.*Rewe GmbH
 RECHNUNG.*Rewe GmbH
+UEBERWEISUNG.*Rewe GmbH
     description %beguenstigter_zahlungspflichtiger | Einkaufen Rewe
     account1    Expenses:Lebensmittel:Einkaufen:Rewe                            
 
@@ -86,7 +88,7 @@ RECHNUNG.*Rewe GmbH
     def test_gen_common_rules_names(self):
         rules_config = [
             {
-                'name': ['REWE', 'REWE SAGT DANKE', 'DANKE REWE IHR KAUFPARK'],
+                'name': ['REWE', 'REWE SAGT DANKE'],
                 'description': 'Einkaufen Rewe',
                 'account': 'Expenses:Lebensmittel:Einkaufen:Rewe',
             }
@@ -95,12 +97,11 @@ RECHNUNG.*Rewe GmbH
 if KARTENZAHLUNG.*REWE
 LASTSCHRIFT.*REWE
 RECHNUNG.*REWE
+UEBERWEISUNG.*REWE
 KARTENZAHLUNG.*REWE SAGT DANKE
 LASTSCHRIFT.*REWE SAGT DANKE
 RECHNUNG.*REWE SAGT DANKE
-KARTENZAHLUNG.*DANKE REWE IHR KAUFPARK
-LASTSCHRIFT.*DANKE REWE IHR KAUFPARK
-RECHNUNG.*DANKE REWE IHR KAUFPARK
+UEBERWEISUNG.*REWE SAGT DANKE
     description %beguenstigter_zahlungspflichtiger | Einkaufen Rewe
     account1    Expenses:Lebensmittel:Einkaufen:Rewe                            
 
@@ -135,6 +136,7 @@ if RECHNUNG.*UNITYMEDIA
 if KARTENZAHLUNG.*LIDL
 LASTSCHRIFT.*LIDL
 RECHNUNG.*LIDL
+UEBERWEISUNG.*LIDL
     description %beguenstigter_zahlungspflichtiger | Einkaufen Lidl
     account1    Expenses:Lebensmittel:Einkaufen:Lidl                            
 

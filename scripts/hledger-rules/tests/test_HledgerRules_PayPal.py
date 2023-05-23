@@ -9,6 +9,7 @@ $rules""")
 
 
 class HledgerRulesGenPayPalRulesContentTestCase(unittest.TestCase):
+    #maxDiff = None
     def test_gen_paypal_rules_content_empty(self):
         config = {}
         expected = """;;do not change, generated file from paypal.csv.rules template

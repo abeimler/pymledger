@@ -4,6 +4,7 @@ from pymledger.HledgerPayPalRules import gen_paypal_rule
 
 
 class HledgerPayPalRulesGenPayPalRuleTestCase(unittest.TestCase):
+    #maxDiff = None
     def test_gen_paypal_rule_empty(self):
         config = {}
         rule = {}
@@ -157,9 +158,12 @@ steampowered.*PAYPAL.*.*
             'amount': -19.99,
         }
         expected = """
-if PP.6330.PP.*steampowered.*.*.*PayPal.*-19,99
-steampowered.*.*.*PayPal.*-19,99
-steampowered.*PAYPAL.*.*.*-19,99
+if PP.6330.PP.*steampowered.*.*.*PayPal.*, -19,99
+PP.6330.PP.*steampowered.*.*.*PayPal.*,-19,99
+steampowered.*.*.*PayPal.*, -19,99
+steampowered.*.*.*PayPal.*,-19,99
+steampowered.*PAYPAL.*.*.*, -19,99
+steampowered.*PAYPAL.*.*.*,-19,99
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:steampowered
     account1    Expenses:Hobbies:Gaming:Steam                                   
@@ -186,9 +190,12 @@ steampowered.*PAYPAL.*.*.*-19,99
             'currency': 'EUR'
         }
         expected = """
-if PP.6330.PP.*steampowered.*.*.*PayPal.*-19,99.*EUR
-steampowered.*.*.*PayPal.*-19,99.*EUR
-steampowered.*PAYPAL.*.*.*-19,99.*EUR
+if PP.6330.PP.*steampowered.*.*.*PayPal.*, -19,99,EUR
+PP.6330.PP.*steampowered.*.*.*PayPal.*,-19,99,EUR
+steampowered.*.*.*PayPal.*, -19,99,EUR
+steampowered.*.*.*PayPal.*,-19,99,EUR
+steampowered.*PAYPAL.*.*.*, -19,99,EUR
+steampowered.*PAYPAL.*.*.*,-19,99,EUR
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:steampowered
     account1    Expenses:Hobbies:Gaming:Steam                                   
@@ -214,9 +221,9 @@ steampowered.*PAYPAL.*.*.*-19,99.*EUR
             'amount': -649.0,
         }
         expected = """
-if PP.6330.PP.*MMS E-Commerce GmbH.*.*.*PayPal.*-649,00
-MMS E-Commerce GmbH.*.*.*PayPal.*-649,00
-MMS E-Commerce GmbH.*PAYPAL.*.*.*-649,00
+if PP.6330.PP.*MMS E-Commerce GmbH.*.*.*PayPal.*,-649
+MMS E-Commerce GmbH.*.*.*PayPal.*,-649
+MMS E-Commerce GmbH.*PAYPAL.*.*.*,-649
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Saturn
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:MMS E-Commerce GmbH
     account1    Expenses:Computer:Hardware:Saturn                               
