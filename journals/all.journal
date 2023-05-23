@@ -5,6 +5,14 @@
     Assets:Cash                         50,50 EUR
     Equity:OpeningClosingBalances
 
+2023-01-01 * Current Year Budget for month 01  ; budget:, modified:
+    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
+    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
+
 2023-01-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
     (Assets:Bank:Unbudget)                      -45,00 EUR  ; generated-posting: = Assets:Bank:Budget
@@ -34,6 +42,8 @@
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)            150,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-01-02=2023-01-02 * (qwertz33) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
     Expenses:Wohnen:Nebenkosten:Strom       48,00 EUR
@@ -198,11 +208,6 @@
     Assets:Bank:Checking                          -25,00 EUR
     (Assets:Bank:Unbudget)                        -25,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-01-30=2023-01-28 * (qwertz10) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:AB BB00001234 BLZ55555555 1, modified:
-    Assets:Cash                  40,00 EUR
-    Assets:Bank:Checking        -40,00 EUR
-    (Assets:Bank:Unbudget)      -40,00 EUR  ; generated-posting: = Assets:Bank:Checking
-
 2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
     Expenses:Haushalt:Amazon            99,95 EUR
     (Assets:Bank:Budget:Haushalt)      -99,95 EUR  ; generated-posting: = acct:"Expenses:Haushalt" date:"2023"
@@ -253,13 +258,9 @@
     (Assets:Bank:Unbudget)                    -10,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
 2023-01-30=2023-01-30 * (qwertz2) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-    Assets:Bank:Checking                      2100,00 EUR
-    (Assets:Bank:Unbudget)                    2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
-    Income:Salary                            -2100,00 EUR
-    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking       2100,00 EUR
+    (Assets:Bank:Unbudget)     2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
+    Income:Salary             -2100,00 EUR
 
 2023-01-31=2023-01-31 * (qwertz1) NETFLIX SERVICES GERMANY GMBH | Netflix  ; type:FOLGELASTSCHRIFT, payee:NETFLIX SERVICES GERMANY GMBH, modified:
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix       12,99 EUR
@@ -267,6 +268,14 @@
     (Assets:Bank:Unbudget)                                       12,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                        -12,99 EUR
     (Assets:Bank:Unbudget)                                      -12,99 EUR  ; generated-posting: = Assets:Bank:Checking
+
+2023-02-01 * Current Year Budget for month 02  ; budget:, modified:
+    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
+    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-02-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
@@ -297,6 +306,8 @@
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)             50,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-02-01=2023-02-01 * (2023-02.0020) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       17,65 EUR
@@ -415,6 +426,12 @@
     Assets:Bank:Checking                                            -8,99 EUR
     (Assets:Bank:Unbudget)                                          -8,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
+2023-02-21 * Einkaufen Rewe  ; modified:
+    Expenses:Lebensmittel:Einkaufen:Rewe       21,84 EUR
+    (Assets:Bank:Budget:Lebensmittel)         -21,84 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
+    (Assets:Bank:Unbudget)                     21,84 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Cash
+
 2023-02-24=2023-02-24 * (2023-02.0003) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
     Expenses:Telekommunikation:Online-Dienste:Internet       40,00 EUR
     (Assets:Bank:Budget:Telekommunikation)                  -40,00 EUR  ; generated-posting: = acct:"Expenses:Telekommunikation" date:"2023"
@@ -423,13 +440,9 @@
     (Assets:Bank:Unbudget)                                  -40,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
 2023-02-24=2023-02-24 * (2023-02.0002) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-    Assets:Bank:Checking                      2100,00 EUR
-    (Assets:Bank:Unbudget)                    2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
-    Income:Salary                            -2100,00 EUR
-    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking       2100,00 EUR
+    (Assets:Bank:Unbudget)     2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
+    Income:Salary             -2100,00 EUR
 
 2023-02-28=2023-02-28 * (2023-02.0001) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
     Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
@@ -437,6 +450,14 @@
     (Assets:Bank:Unbudget)                         25,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                          -25,00 EUR
     (Assets:Bank:Unbudget)                        -25,00 EUR  ; generated-posting: = Assets:Bank:Checking
+
+2023-03-01 * Current Year Budget for month 03  ; budget:, modified:
+    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
+    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-03-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
@@ -469,236 +490,232 @@
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)            150,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-01=2023-02-28 * (2023-03.0034) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
+2023-03-01=2023-02-28 * (2023-03.0032) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       16,15 EUR
     (Assets:Bank:Budget:Sonstiges)        -16,15 EUR  ; generated-posting: = acct:"Expenses:Sonstiges" date:"2023"
     (Assets:Bank:Unbudget)                 16,15 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                  -16,15 EUR
     (Assets:Bank:Unbudget)                -16,15 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-01=2023-03-01 * (2023-03.0033) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
+2023-03-01=2023-03-01 * (2023-03.0031) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
     Expenses:Telekommunikation:Fernsehen:Rundfunk       17,49 EUR
     (Assets:Bank:Budget:Telekommunikation)             -17,49 EUR  ; generated-posting: = acct:"Expenses:Telekommunikation" date:"2023"
     (Assets:Bank:Unbudget)                              17,49 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                               -17,49 EUR
     (Assets:Bank:Unbudget)                             -17,49 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-01=2023-03-01 * (2023-03.0032) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
+2023-03-01=2023-03-01 * (2023-03.0030) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
     Expenses:Wohnen:Nebenkosten:Strom       48,00 EUR
     (Assets:Bank:Budget:Wohnen)            -48,00 EUR  ; generated-posting: = acct:"Expenses:Wohnen" date:"2023"
     (Assets:Bank:Unbudget)                  48,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                   -48,00 EUR
     (Assets:Bank:Unbudget)                 -48,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-01=2023-03-01 * (2023-03.0031) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
+2023-03-01=2023-03-01 * (2023-03.0029) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
     Expenses:Lebensmittel:Essen:McDonalds       16,58 EUR
     (Assets:Bank:Budget:Lebensmittel)          -16,58 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                      16,58 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                       -16,58 EUR
     (Assets:Bank:Unbudget)                     -16,58 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-02=2023-03-02 * (2023-03.0030) Wohnen GmbH | Wohnen GmbH  ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
+2023-03-02=2023-03-02 * (2023-03.0028) Wohnen GmbH | Wohnen GmbH  ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
     Expenses:Wohnen:Miete            500,00 EUR
     (Assets:Bank:Budget:Wohnen)     -500,00 EUR  ; generated-posting: = acct:"Expenses:Wohnen" date:"2023"
     (Assets:Bank:Unbudget)           500,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking            -500,00 EUR
     (Assets:Bank:Unbudget)          -500,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-03=2023-03-03 * (2023-03.0029) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT, modified:
+2023-03-03=2023-03-03 * (2023-03.0027) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT, modified:
     Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
     (Assets:Bank:Budget:Fahrgeld)             -10,00 EUR  ; generated-posting: = acct:"Expenses:Fahrtkosten:Fahrkarten:Bahn" not:acct:"Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket" date:"2023"
     (Assets:Bank:Unbudget)                     10,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -10,00 EUR
     (Assets:Bank:Unbudget)                    -10,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-03=2023-03-03 * (2023-03.0028) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
+2023-03-03=2023-03-03 * (2023-03.0026) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
     Expenses:Lebensmittel:Essen:McDonalds        5,77 EUR
     (Assets:Bank:Budget:Lebensmittel)           -5,77 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                       5,77 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                        -5,77 EUR
     (Assets:Bank:Unbudget)                      -5,77 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-06=2023-03-06 * (2023-03.0027) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll, modified:
+2023-03-06=2023-03-06 * (2023-03.0025) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll, modified:
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll        6,99 EUR
     (Assets:Bank:Budget:Abo:Multimedia)                              -6,99 EUR  ; generated-posting: = acct:"Expenses:Unterhaltung:Multimedia:Streaming" not:acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
     (Assets:Bank:Unbudget)                                            6,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                             -6,99 EUR
     (Assets:Bank:Unbudget)                                           -6,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-06=2023-03-06 * (2023-03.0026) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
+2023-03-06=2023-03-06 * (2023-03.0024) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
     Expenses:Lebensmittel:Einkaufen:Lidl       20,23 EUR
     (Assets:Bank:Budget:Lebensmittel)         -20,23 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                     20,23 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -20,23 EUR
     (Assets:Bank:Unbudget)                    -20,23 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-08=2023-03-08 * (2023-03.0025) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (dpdhl group)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Shop der Deutschen Post, modified:
+2023-03-08=2023-03-08 * (2023-03.0023) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (dpdhl group)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Shop der Deutschen Post, modified:
     Expenses:Sonstiges:Post              30,90 EUR
     (Assets:Bank:Budget:Sonstiges)      -30,90 EUR  ; generated-posting: = acct:"Expenses:Sonstiges" date:"2023"
     (Assets:Bank:Unbudget)               30,90 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                -30,90 EUR
     (Assets:Bank:Unbudget)              -30,90 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-08=2023-03-08 * (2023-03.0024) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
+2023-03-08=2023-03-08 * (2023-03.0022) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
     Expenses:Lebensmittel:Einkaufen:Lidl       20,61 EUR
     (Assets:Bank:Budget:Lebensmittel)         -20,61 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                     20,61 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -20,61 EUR
     (Assets:Bank:Unbudget)                    -20,61 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-08=2023-03-08 * (2023-03.0023) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
+2023-03-08=2023-03-08 * (2023-03.0021) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
     Expenses:Lebensmittel:Essen:BurgerKing       13,99 EUR
     (Assets:Bank:Budget:Lebensmittel)           -13,99 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                       13,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                        -13,99 EUR
     (Assets:Bank:Unbudget)                      -13,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-10=2023-03-10 * (2023-03.0022) HORNBACH | Hornbach Wohnung Einkauf  ; type:SEPA-ELV-LASTSCHRIFT, payee:HORNBACH, modified:
+2023-03-10=2023-03-10 * (2023-03.0020) HORNBACH | Hornbach Wohnung Einkauf  ; type:SEPA-ELV-LASTSCHRIFT, payee:HORNBACH, modified:
     Expenses:Haushalt:Hornbach          13,40 EUR
     (Assets:Bank:Budget:Haushalt)      -13,40 EUR  ; generated-posting: = acct:"Expenses:Haushalt" date:"2023"
     (Assets:Bank:Unbudget)              13,40 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking               -13,40 EUR
     (Assets:Bank:Unbudget)             -13,40 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-14=2023-03-14 * (2023-03.0021) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-5555568  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-5555568, ref:HHHHHHHHHHHHHHHH, modified:
+2023-03-14=2023-03-14 * (2023-03.0019) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-5555568  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-5555568, ref:HHHHHHHHHHHHHHHH, modified:
     Expenses:Haushalt:Amazon            14,95 EUR
     (Assets:Bank:Budget:Haushalt)      -14,95 EUR  ; generated-posting: = acct:"Expenses:Haushalt" date:"2023"
     (Assets:Bank:Unbudget)              14,95 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking               -14,95 EUR
     (Assets:Bank:Unbudget)             -14,95 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-14=2023-03-14 * (2023-03.0020) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
+2023-03-14=2023-03-14 * (2023-03.0018) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
     Expenses:Fahrtkosten:Fahrkarten:Bahn       11,70 EUR
     (Assets:Bank:Budget:Fahrgeld)             -11,70 EUR  ; generated-posting: = acct:"Expenses:Fahrtkosten:Fahrkarten:Bahn" not:acct:"Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket" date:"2023"
     (Assets:Bank:Unbudget)                     11,70 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -11,70 EUR
     (Assets:Bank:Unbudget)                    -11,70 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-14=2023-03-14 * (2023-03.0019) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
+2023-03-14=2023-03-14 * (2023-03.0017) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
     Expenses:Lebensmittel:Einkaufen:Lidl       43,15 EUR
     (Assets:Bank:Budget:Lebensmittel)         -43,15 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                     43,15 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -43,15 EUR
     (Assets:Bank:Unbudget)                    -43,15 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-16=2023-03-16 * (2023-03.0018) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
+2023-03-16=2023-03-16 * (2023-03.0016) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
     Expenses:Hobbies:Merch:PayPal          38,00 EUR
     (Assets:Bank:Budget:Wunschliste)      -38,00 EUR  ; generated-posting: = acct:"Expenses:Hobbies:Merch" date:"2023"
     (Assets:Bank:Unbudget)                 38,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                  -38,00 EUR
     (Assets:Bank:Unbudget)                -38,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-16=2023-03-16 * (2023-03.0017) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
+2023-03-16=2023-03-16 * (2023-03.0015) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
     Expenses:Hobbies:Sonstiges:PayPal       25,55 EUR
     Assets:Bank:Checking                   -25,55 EUR
     (Assets:Bank:Unbudget)                 -25,55 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-21=2023-03-21 * (2023-03.0016) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS, modified:
+2023-03-21=2023-03-21 * (2023-03.0014) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS, modified:
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus        8,99 EUR
     (Assets:Bank:Budget:Abo:Multimedia)                             -8,99 EUR  ; generated-posting: = acct:"Expenses:Unterhaltung:Multimedia:Streaming" not:acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
     (Assets:Bank:Unbudget)                                           8,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                            -8,99 EUR
     (Assets:Bank:Unbudget)                                          -8,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-21=2023-03-21 * (2023-03.0015) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
+2023-03-21=2023-03-21 * (2023-03.0013) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
     Expenses:Lebensmittel:Einkaufen:Lidl       65,00 EUR
     (Assets:Bank:Budget:Lebensmittel)         -65,00 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                     65,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -65,00 EUR
     (Assets:Bank:Unbudget)                    -65,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-23=2023-03-23 * (2023-03.0014) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-3216548  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-3216548, ref:IIIIIIIIIIIIIIIII, modified:
+2023-03-23=2023-03-23 * (2023-03.0012) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-3216548  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-3216548, ref:IIIIIIIIIIIIIIIII, modified:
     Expenses:Hobbies:Merch:Amazon          15,99 EUR
     (Assets:Bank:Budget:Wunschliste)      -15,99 EUR  ; generated-posting: = acct:"Expenses:Hobbies:Merch" date:"2023"
     (Assets:Bank:Unbudget)                 15,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                  -15,99 EUR
     (Assets:Bank:Unbudget)                -15,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-23=2023-03-23 * (2023-03.0013) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-7894569  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-7894569, ref:JJJJJJJJJJJJJJJJ, modified:
+2023-03-23=2023-03-23 * (2023-03.0011) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-7894569  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-7894569, ref:JJJJJJJJJJJJJJJJ, modified:
     Expenses:Hobbies:Sonstiges:Amazon        4,45 EUR
     Assets:Bank:Checking                    -4,45 EUR
     (Assets:Bank:Unbudget)                  -4,45 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-23=2023-03-23 * (2023-03.0012) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
+2023-03-23=2023-03-23 * (2023-03.0010) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
     Expenses:Hobbies:Sonstiges:PayPal      100,00 EUR
     Assets:Bank:Checking                  -100,00 EUR
     (Assets:Bank:Unbudget)                -100,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-24=2023-03-24 * (2023-03.0011) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
+2023-03-24=2023-03-24 * (2023-03.0009) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
     Expenses:Telekommunikation:Online-Dienste:Internet       40,00 EUR
     (Assets:Bank:Budget:Telekommunikation)                  -40,00 EUR  ; generated-posting: = acct:"Expenses:Telekommunikation" date:"2023"
     (Assets:Bank:Unbudget)                                   40,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                    -40,00 EUR
     (Assets:Bank:Unbudget)                                  -40,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-28=2023-03-28 * (2023-03.0010) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
+2023-03-28=2023-03-28 * (2023-03.0008) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
     Expenses:Hobbies:Gaming:Nintendo        8,49 EUR
     (Assets:Bank:Budget:Wunschliste)       -8,49 EUR  ; generated-posting: = acct:"Expenses:Hobbies:Gaming" not:acct:"Expenses:Hobbies:Gaming:Abo" date:"2023"
     (Assets:Bank:Unbudget)                  8,49 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                   -8,49 EUR
     (Assets:Bank:Unbudget)                 -8,49 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-28=2023-03-28 * (2023-03.0009) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
+2023-03-28=2023-03-28 * (2023-03.0007) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
     Expenses:Hobbies:Gaming:Nintendo        9,99 EUR
     (Assets:Bank:Budget:Wunschliste)       -9,99 EUR  ; generated-posting: = acct:"Expenses:Hobbies:Gaming" not:acct:"Expenses:Hobbies:Gaming:Abo" date:"2023"
     (Assets:Bank:Unbudget)                  9,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                   -9,99 EUR
     (Assets:Bank:Unbudget)                 -9,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-28=2023-03-28 * (2023-03.0008) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
+2023-03-28=2023-03-28 * (2023-03.0006) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
     Expenses:Hobbies:Gaming:Nintendo        9,99 EUR
     (Assets:Bank:Budget:Wunschliste)       -9,99 EUR  ; generated-posting: = acct:"Expenses:Hobbies:Gaming" not:acct:"Expenses:Hobbies:Gaming:Abo" date:"2023"
     (Assets:Bank:Unbudget)                  9,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                   -9,99 EUR
     (Assets:Bank:Unbudget)                 -9,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-29=2023-03-29 * (2023-03.0007) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
+2023-03-29=2023-03-29 * (2023-03.0005) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
     Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
     (Assets:Bank:Budget:Telekommunikation)        -25,00 EUR  ; generated-posting: = acct:"Expenses:Telekommunikation" date:"2023"
     (Assets:Bank:Unbudget)                         25,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                          -25,00 EUR
     (Assets:Bank:Unbudget)                        -25,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-29=2023-03-29 * (2023-03.0006) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT, modified:
+2023-03-29=2023-03-29 * (2023-03.0004) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT, modified:
     Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
     (Assets:Bank:Budget:Fahrgeld)             -10,00 EUR  ; generated-posting: = acct:"Expenses:Fahrtkosten:Fahrkarten:Bahn" not:acct:"Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket" date:"2023"
     (Assets:Bank:Unbudget)                     10,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -10,00 EUR
     (Assets:Bank:Unbudget)                    -10,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-29=2023-03-29 * (2023-03.0005) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
+2023-03-29=2023-03-29 * (2023-03.0003) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
     Expenses:Lebensmittel:Essen:McDonalds        5,99 EUR
     (Assets:Bank:Budget:Lebensmittel)           -5,99 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                       5,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                        -5,99 EUR
     (Assets:Bank:Unbudget)                      -5,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-29=2023-03-29 * (2023-03.0004) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-    Assets:Bank:Checking                      2100,00 EUR
-    (Assets:Bank:Unbudget)                    2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
-    Income:Salary                            -2100,00 EUR
-    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+2023-03-29=2023-03-29 * (2023-03.0002) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
+    Assets:Bank:Checking       2100,00 EUR
+    (Assets:Bank:Unbudget)     2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
+    Income:Salary             -2100,00 EUR
 
-2023-03-29=2023-03-29 * (2023-03.0003) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:AA BB00000031 BLZ11111111 0, modified:
-    Assets:Cash                  50,00 EUR
-    Assets:Bank:Checking        -50,00 EUR
-    (Assets:Bank:Unbudget)      -50,00 EUR  ; generated-posting: = Assets:Bank:Checking
-
-2023-03-30=2023-03-30 * (2023-03.0002) Kaufland | Einkaufen Kaufland  ; type:KARTENZAHLUNG, payee:Kaufland, modified:
+2023-03-30=2023-03-30 * (2023-03.0001) Kaufland | Einkaufen Kaufland  ; type:KARTENZAHLUNG, payee:Kaufland, modified:
     Expenses:Lebensmittel:Einkaufen:Kaufland       30,00 EUR
     (Assets:Bank:Budget:Lebensmittel)             -30,00 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                         30,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                          -30,00 EUR
     (Assets:Bank:Unbudget)                        -30,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-03-30=2023-03-30 * (2023-03.0001) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:AA BB00000032 BLZ11111111 0, modified:
-    Assets:Cash                  30,00 EUR
-    Assets:Bank:Checking        -30,00 EUR
-    (Assets:Bank:Unbudget)      -30,00 EUR  ; generated-posting: = Assets:Bank:Checking
+2023-04-01 * Current Year Budget for month 04  ; budget:, modified:
+    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
+    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-04-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
@@ -729,85 +746,87 @@
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)             50,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-03=2023-04-01 * (2023-04.0022) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
+2023-04-03=2023-04-01 * (2023-04.0021) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       19,75 EUR
     (Assets:Bank:Budget:Sonstiges)        -19,75 EUR  ; generated-posting: = acct:"Expenses:Sonstiges" date:"2023"
     (Assets:Bank:Unbudget)                 19,75 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                  -19,75 EUR
     (Assets:Bank:Unbudget)                -19,75 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-03=2023-04-03 * (2023-04.0020) HANSEMERKUR SPEZIALE KV. AG | Brille Fielmann Nulltarifversicherung  ; type:FOLGELASTSCHRIFT, payee:HANSEMERKUR SPEZIALE KV. AG, modified:
+2023-04-03=2023-04-03 * (2023-04.0019) HANSEMERKUR SPEZIALE KV. AG | Brille Fielmann Nulltarifversicherung  ; type:FOLGELASTSCHRIFT, payee:HANSEMERKUR SPEZIALE KV. AG, modified:
     Expenses:Versicherungen:Brille            10,00 EUR
     (Assets:Bank:Budget:Versicherungen)      -10,00 EUR  ; generated-posting: = acct:"Expenses:Versicherung" date:"2023"
     (Assets:Bank:Unbudget)                    10,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                     -10,00 EUR
     (Assets:Bank:Unbudget)                   -10,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-03=2023-04-03 * (2023-04.0019) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
+2023-04-03=2023-04-03 * (2023-04.0018) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
     Expenses:Wohnen:Nebenkosten:Strom       50,00 EUR
     (Assets:Bank:Budget:Wohnen)            -50,00 EUR  ; generated-posting: = acct:"Expenses:Wohnen" date:"2023"
     (Assets:Bank:Unbudget)                  50,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                   -50,00 EUR
     (Assets:Bank:Unbudget)                 -50,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-03=2023-04-03 * (2023-04.0018) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
+2023-04-03=2023-04-03 * (2023-04.0017) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
     Expenses:Telekommunikation:Fernsehen:Rundfunk       17,49 EUR
     (Assets:Bank:Budget:Telekommunikation)             -17,49 EUR  ; generated-posting: = acct:"Expenses:Telekommunikation" date:"2023"
     (Assets:Bank:Unbudget)                              17,49 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                               -17,49 EUR
     (Assets:Bank:Unbudget)                             -17,49 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-03=2023-04-03 * (2023-04.0017) Wohnen GmbH | Wohnen GmbH  ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
+2023-04-03=2023-04-03 * (2023-04.0016) Wohnen GmbH | Wohnen GmbH  ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
     Expenses:Wohnen:Miete            500,00 EUR
     (Assets:Bank:Budget:Wohnen)     -500,00 EUR  ; generated-posting: = acct:"Expenses:Wohnen" date:"2023"
     (Assets:Bank:Unbudget)           500,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking            -500,00 EUR
     (Assets:Bank:Unbudget)          -500,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-03=2023-04-03 * (2023-04.0016) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
+2023-04-03=2023-04-03 * (2023-04.0015) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
     Expenses:Lebensmittel:Essen:BurgerKing       12,98 EUR
     (Assets:Bank:Budget:Lebensmittel)           -12,98 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                       12,98 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                        -12,98 EUR
     (Assets:Bank:Unbudget)                      -12,98 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-04=2023-04-04 * (2023-04.0015) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll, modified:
+2023-04-04=2023-04-04 * (2023-04.0014) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll, modified:
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll        6,99 EUR
     (Assets:Bank:Budget:Abo:Multimedia)                              -6,99 EUR  ; generated-posting: = acct:"Expenses:Unterhaltung:Multimedia:Streaming" not:acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
     (Assets:Bank:Unbudget)                                            6,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                             -6,99 EUR
     (Assets:Bank:Unbudget)                                           -6,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-04=2023-04-04 * (2023-04.0014) AUDIBLE GMBH | Amazon Audible GmbH Hörbuch  ; type:FOLGELASTSCHRIFT, payee:AUDIBLE GMBH, modified:
+2023-04-04=2023-04-04 * (2023-04.0013) AUDIBLE GMBH | Amazon Audible GmbH Hörbuch  ; type:FOLGELASTSCHRIFT, payee:AUDIBLE GMBH, modified:
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible        9,95 EUR
     (Assets:Bank:Budget:Abo:Multimedia)                                 -9,95 EUR  ; generated-posting: = acct:"Expenses:Unterhaltung:Multimedia:Streaming" not:acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
     (Assets:Bank:Unbudget)                                               9,95 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                                -9,95 EUR
     (Assets:Bank:Unbudget)                                              -9,95 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-05=2023-04-05 * (2023-04.0013) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
+2023-04-05=2023-04-05 * (2023-04.0012) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
     Expenses:Lebensmittel:Einkaufen:Lidl       24,00 EUR
     (Assets:Bank:Budget:Lebensmittel)         -24,00 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                     24,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -24,00 EUR
     (Assets:Bank:Unbudget)                    -24,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-11=2023-04-11 * (2023-04.0012) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
+2023-04-11=2023-04-11 * (2023-04.0011) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
     Expenses:Lebensmittel:Einkaufen:Lidl       25,00 EUR
     (Assets:Bank:Budget:Lebensmittel)         -25,00 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                     25,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -25,00 EUR
     (Assets:Bank:Unbudget)                    -25,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-12=2023-04-12 * (2023-04.0011) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
+2023-04-12=2023-04-12 * (2023-04.0010) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
     Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
     (Assets:Bank:Budget:Fahrgeld)             -10,00 EUR  ; generated-posting: = acct:"Expenses:Fahrtkosten:Fahrkarten:Bahn" not:acct:"Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket" date:"2023"
     (Assets:Bank:Unbudget)                     10,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                      -10,00 EUR
     (Assets:Bank:Unbudget)                    -10,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-12=2023-04-12 * (2023-04.0010) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234888  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234888, ref:FFFFFFFFFFFFFFFF, modified:
+2023-04-12=2023-04-12 * (2023-04.0009) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234888  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234888, ref:FFFFFFFFFFFFFFFF, modified:
     Expenses:Hobbies:Gaming:Amazon          8,99 EUR
     (Assets:Bank:Budget:Wunschliste)       -8,99 EUR  ; generated-posting: = acct:"Expenses:Hobbies:Gaming" not:acct:"Expenses:Hobbies:Gaming:Abo" date:"2023"
     (Assets:Bank:Unbudget)                  8,99 EUR  ; generated-posting: = Assets:Bank:Budget
@@ -821,59 +840,58 @@
     Assets:Bank:Checking                   -30,00 EUR
     (Assets:Bank:Unbudget)                 -30,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-18=2023-04-18 * (2023-04.0008) APOTHEKE | Einkaufen Apotheke  ; type:KARTENZAHLUNG, payee:APOTHEKE, modified:
+2023-04-18=2023-04-18 * (2023-04.0007) APOTHEKE | Einkaufen Apotheke  ; type:KARTENZAHLUNG, payee:APOTHEKE, modified:
     Expenses:Gesundheit:Medikamente:Apotheke        7,95 EUR
     Assets:Bank:Checking                           -7,95 EUR
     (Assets:Bank:Unbudget)                         -7,95 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-20=2023-04-20 * (2023-04.0007) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal AWV-MELDEPFLICHT . dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG ABBUCHUNG VOM PAYPAL-KONTO AWV-MELDEPFLICHT  ; type:GUTSCHR. UEBERWEISUNG, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:AWV-MELDEPFLICHT, modified:
+2023-04-20=2023-04-20 * (2023-04.0006) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal AWV-MELDEPFLICHT . dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG ABBUCHUNG VOM PAYPAL-KONTO AWV-MELDEPFLICHT  ; type:GUTSCHR. UEBERWEISUNG, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:AWV-MELDEPFLICHT, modified:
     Expenses:Sonstiges:AWVMeldepflicht:PayPal       -4,90 EUR
     (Assets:Bank:Budget:Sonstiges)                   4,90 EUR  ; generated-posting: = acct:"Expenses:Sonstiges" date:"2023"
     (Assets:Bank:Unbudget)                          -4,90 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                             4,90 EUR
     (Assets:Bank:Unbudget)                           4,90 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-21=2023-04-21 * (2023-04.0006) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS, modified:
+2023-04-21=2023-04-21 * (2023-04.0005) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS, modified:
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus        8,99 EUR
     (Assets:Bank:Budget:Abo:Multimedia)                             -8,99 EUR  ; generated-posting: = acct:"Expenses:Unterhaltung:Multimedia:Streaming" not:acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
     (Assets:Bank:Unbudget)                                           8,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                            -8,99 EUR
     (Assets:Bank:Unbudget)                                          -8,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-25=2023-04-25 * (2023-04.0005) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
+2023-04-25=2023-04-25 * (2023-04.0004) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
     Expenses:Lebensmittel:Essen:McDonalds        5,99 EUR
     (Assets:Bank:Budget:Lebensmittel)           -5,99 EUR  ; generated-posting: = acct:"Expenses:Lebensmittel" date:"2023"
     (Assets:Bank:Unbudget)                       5,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                        -5,99 EUR
     (Assets:Bank:Unbudget)                      -5,99 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-26=2023-04-26 * (2023-04.0004) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-    Assets:Bank:Checking                      2100,00 EUR
-    (Assets:Bank:Unbudget)                    2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
-    Income:Salary                            -2100,00 EUR
-    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; generated-posting: = acct:"Income:Salary$" date:"2023"
-    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+2023-04-26=2023-04-26 * (2023-04.0003) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
+    Assets:Bank:Checking       2100,00 EUR
+    (Assets:Bank:Unbudget)     2100,00 EUR  ; generated-posting: = Assets:Bank:Checking
+    Income:Salary             -2100,00 EUR
 
-2023-04-28=2023-04-28 * (2023-04.0003) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
+2023-04-28=2023-04-28 * (2023-04.0002) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
     Expenses:Telekommunikation:Online-Dienste:Internet       40,00 EUR
     (Assets:Bank:Budget:Telekommunikation)                  -40,00 EUR  ; generated-posting: = acct:"Expenses:Telekommunikation" date:"2023"
     (Assets:Bank:Unbudget)                                   40,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                                    -40,00 EUR
     (Assets:Bank:Unbudget)                                  -40,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-28=2023-04-28 * (2023-04.0002) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
+2023-04-28=2023-04-28 * (2023-04.0001) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
     Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
     (Assets:Bank:Budget:Telekommunikation)        -25,00 EUR  ; generated-posting: = acct:"Expenses:Telekommunikation" date:"2023"
     (Assets:Bank:Unbudget)                         25,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                          -25,00 EUR
     (Assets:Bank:Unbudget)                        -25,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-04-28=2023-04-28 * (2023-04.0001) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:, modified:
-    Assets:Cash                 150,00 EUR
-    Assets:Bank:Checking       -150,00 EUR
-    (Assets:Bank:Unbudget)     -150,00 EUR  ; generated-posting: = Assets:Bank:Checking
+2023-05-01 * Current Year Budget for month 05  ; budget:, modified:
+    (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
+    (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-05-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:DTicket)             49,00 EUR
@@ -906,6 +924,8 @@
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)             50,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    Assets:Bank:Checking
+    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-05-02=2023-04-29 * (2023-05.0013) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       17,05 EUR

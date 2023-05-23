@@ -14,6 +14,7 @@ account Assets:Bank:Budget:Wunschliste
 account Expenses:Gesundheit:Medikamente:Apotheke                        
 account Expenses:Haushalt:Amazon                                        
 account Expenses:Haushalt:DmDrogerie                                    
+account Expenses:Lebensmittel:Einkaufen:Rewe                            
 account Expenses:Lebensmittel:Essen:PayPal                              
 account Expenses:Sonstiges:Post                                         
 account Expenses:unknown:Amazon                                         

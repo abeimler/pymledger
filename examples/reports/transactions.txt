@@ -1,0 +1,125 @@
+Transactions in Assets:Bank:Checking and subaccounts:
+2023-01-01 opening balances                                                           As:Sa:Cash, As:Cash, Eq:OpeningClosingBalances                               2179,78 EUR   2179,78 EUR
+2023-01-02 Strom GmbH | Strom GmbH                                                    Ex:Wo:Ne:Strom                                                                -48,00 EUR   2131,78 EUR
+2023-01-02 Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio                    Ex:Te:Fe:Rundfunk                                                             -17,49 EUR   2114,29 EUR
+2023-01-02 Wohnen GmbH | Wohnen GmbH                                                  Ex:Wo:Miete                                                                  -499,20 EUR   1615,09 EUR
+2023-01-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo                      Ex:Ho:Ga:Nintendo                                                              -8,12 EUR   1606,97 EUR
+2023-01-03 AUDIBLE GMBH | Amazon Audible GmbH Hörbuch                                 Ex:Un:Mu:St:Ab:Am:Audible                                                      -9,95 EUR   1597,02 EUR
+2023-01-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll                   Ex:Un:Mu:St:Ab:Crunchyroll                                                     -6,99 EUR   1590,03 EUR
+2023-01-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam                         Ex:Ho:Ga:Steam                                                                 -9,99 EUR   1580,04 EUR
+2023-01-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam                         Ex:Ho:Ga:Steam                                                                -14,00 EUR   1566,04 EUR
+2023-01-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam                         Ex:Ho:Ga:Steam                                                                -25,79 EUR   1540,25 EUR
+2023-01-03 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -35,00 EUR   1505,25 EUR
+2023-01-09 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -25,84 EUR   1479,41 EUR
+2023-01-13 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Kl:PayPal                                                                  -17,50 EUR   1461,91 EUR
+2023-01-13 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Un:Konzert                                                                 -97,26 EUR   1364,65 EUR
+2023-01-16 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                -139,26 EUR   1225,39 EUR
+2023-01-16 REWE SAGT DANKE | Einkaufen Rewe                                           Ex:Le:Ei:Rewe                                                                 -25,80 EUR   1199,59 EUR
+2023-01-17 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket                     Ex:Fa:Fa:Bahn                                                                 -10,00 EUR   1189,59 EUR
+2023-01-19 SCHLOSS BURGER GMBH | Essen Burger King                                    Ex:Le:Es:BurgerKing                                                           -10,99 EUR   1178,60 EUR
+2023-01-23 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Ho:Me:PayPal                                                              -200,00 EUR    978,60 EUR
+2023-01-23 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Le:Es:Pizza                                                                -21,85 EUR    956,75 EUR
+2023-01-23 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)         Ex:Un:Mu:St:Ab:DisneyPlus                                                      -8,99 EUR    947,76 EUR
+2023-01-23 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -45,00 EUR    902,76 EUR
+2023-01-25 INTERNET GMBH | Internet GmbH                                              Ex:Te:On:Internet                                                             -40,00 EUR    862,76 EUR
+2023-01-27 Handy Deutschland GmbH | Handy-Internet                                    Ex:Te:Te:Handy                                                                -25,00 EUR    837,76 EUR
+2023-01-30 AMAZON PAYMENTS EUROPE S.C.A. | Amazon                                     Ex:Ha:Amazon                                                                  -99,95 EUR    737,81 EUR
+2023-01-30 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567                 Ex:Ha:Amazon                                                                 -200,00 EUR    537,81 EUR
+2023-01-30 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567                 Ex:Ha:Amazon                                                                  -55,95 EUR    481,86 EUR
+2023-01-30 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam                         Ex:Ho:Ga:Steam                                                                -19,99 EUR    461,87 EUR
+2023-01-30 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -30,99 EUR    430,88 EUR
+2023-01-30 SCHLOSS BURGER GMBH | Essen Burger King                                    Ex:Le:Es:BurgerKing                                                            -9,00 EUR    421,88 EUR
+2023-01-30 DB AUTOMAT | DB Fahrkarten                                                 Ex:Fa:Fa:Bahn                                                                 -10,00 EUR    411,88 EUR
+2023-01-30 Arbeit GmbH | Einkommen von Arbeit GmbH                                    In:Salary                                                                    2100,00 EUR   2511,88 EUR
+2023-01-31 NETFLIX SERVICES GERMANY GMBH | Netflix                                    Ex:Un:Mu:St:Ab:Netflix                                                        -12,99 EUR   2498,89 EUR
+2023-02-01 Entgeltabrechnung                                                          Ex:So:Bankgebuehren                                                           -17,65 EUR   2481,24 EUR
+2023-02-01 Strom GmbH | Strom GmbH                                                    Ex:Wo:Ne:Strom                                                                -50,00 EUR   2431,24 EUR
+2023-02-01 Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio                    Ex:Te:Fe:Rundfunk                                                             -17,49 EUR   2413,75 EUR
+2023-02-02 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Essen Ausgeben                Ex:Le:Es:PayPal                                                                -3,00 EUR   2410,75 EUR
+2023-02-02 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Ge:Me:Apotheke                                                             -96,10 EUR   2314,65 EUR
+2023-02-02 Wohnen GmbH | Wohnen GmbH                                                  Ex:Wo:Miete                                                                  -500,00 EUR   1814,65 EUR
+2023-02-03 AUDIBLE GMBH | Amazon Audible GmbH Hörbuch                                 Ex:Un:Mu:St:Ab:Am:Audible                                                      -9,95 EUR   1804,70 EUR
+2023-02-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll                   Ex:Un:Mu:St:Ab:Crunchyroll                                                     -6,99 EUR   1797,71 EUR
+2023-02-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket                     Ex:Fa:Fa:Bahn                                                                 -11,70 EUR   1786,01 EUR
+2023-02-07 AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND | Amazon 123-1234567-1234..  Ex:Ha:Amazon                                                                   -8,50 EUR   1777,51 EUR
+2023-02-08 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal dm-drogerie                   Ex:Ha:DmDrogerie                                                              -36,10 EUR   1741,41 EUR
+2023-02-09 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                -103,98 EUR   1637,43 EUR
+2023-02-14 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam                         Ex:Ho:Ga:Steam                                                                -19,99 EUR   1617,44 EUR
+2023-02-17 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234599                 Ex:Ha:Amazon                                                                   -7,00 EUR   1610,44 EUR
+2023-02-17 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234599                 Ex:Ha:Amazon                                                                  -25,00 EUR   1585,44 EUR
+2023-02-20 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -90,12 EUR   1495,32 EUR
+2023-02-21 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)         Ex:Un:Mu:St:Ab:DisneyPlus                                                      -8,99 EUR   1486,33 EUR
+2023-02-24 INTERNET GMBH | Internet GmbH                                              Ex:Te:On:Internet                                                             -40,00 EUR   1446,33 EUR
+2023-02-24 Arbeit GmbH | Einkommen von Arbeit GmbH                                    In:Salary                                                                    2100,00 EUR   3546,33 EUR
+2023-02-28 Handy Deutschland GmbH | Handy-Internet                                    Ex:Te:Te:Handy                                                                -25,00 EUR   3521,33 EUR
+2023-03-01 Entgeltabrechnung                                                          Ex:So:Bankgebuehren                                                           -16,15 EUR   3505,18 EUR
+2023-03-01 Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio                    Ex:Te:Fe:Rundfunk                                                             -17,49 EUR   3487,69 EUR
+2023-03-01 Strom GmbH | Strom GmbH                                                    Ex:Wo:Ne:Strom                                                                -48,00 EUR   3439,69 EUR
+2023-03-01 MCDONALDS | Essen McDonalds                                                Ex:Le:Es:McDonalds                                                            -16,58 EUR   3423,11 EUR
+2023-03-02 Wohnen GmbH | Wohnen GmbH                                                  Ex:Wo:Miete                                                                  -500,00 EUR   2923,11 EUR
+2023-03-03 DB AUTOMAT | DB Fahrkarten                                                 Ex:Fa:Fa:Bahn                                                                 -10,00 EUR   2913,11 EUR
+2023-03-03 MCDONALDS | Essen McDonalds                                                Ex:Le:Es:McDonalds                                                             -5,77 EUR   2907,34 EUR
+2023-03-06 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll                   Ex:Un:Mu:St:Ab:Crunchyroll                                                     -6,99 EUR   2900,35 EUR
+2023-03-06 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -20,23 EUR   2880,12 EUR
+2023-03-08 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (d..  Ex:So:Post                                                                    -30,90 EUR   2849,22 EUR
+2023-03-08 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -20,61 EUR   2828,61 EUR
+2023-03-08 SCHLOSS BURGER GMBH | Essen Burger King                                    Ex:Le:Es:BurgerKing                                                           -13,99 EUR   2814,62 EUR
+2023-03-10 HORNBACH | Hornbach Wohnung Einkauf                                        Ex:Ha:Hornbach                                                                -13,40 EUR   2801,22 EUR
+2023-03-14 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-5555568                 Ex:Ha:Amazon                                                                  -14,95 EUR   2786,27 EUR
+2023-03-14 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket                     Ex:Fa:Fa:Bahn                                                                 -11,70 EUR   2774,57 EUR
+2023-03-14 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -43,15 EUR   2731,42 EUR
+2023-03-16 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Ho:Me:PayPal                                                               -38,00 EUR   2693,42 EUR
+2023-03-16 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Ho:So:PayPal                                                               -25,55 EUR   2667,87 EUR
+2023-03-21 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)         Ex:Un:Mu:St:Ab:DisneyPlus                                                      -8,99 EUR   2658,88 EUR
+2023-03-21 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -65,00 EUR   2593,88 EUR
+2023-03-23 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-3216548                 Ex:Ho:Me:Amazon                                                               -15,99 EUR   2577,89 EUR
+2023-03-23 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-7894569                 Ex:Ho:So:Amazon                                                                -4,45 EUR   2573,44 EUR
+2023-03-23 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Ho:So:PayPal                                                              -100,00 EUR   2473,44 EUR
+2023-03-24 INTERNET GMBH | Internet GmbH                                              Ex:Te:On:Internet                                                             -40,00 EUR   2433,44 EUR
+2023-03-28 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo                      Ex:Ho:Ga:Nintendo                                                              -8,49 EUR   2424,95 EUR
+2023-03-28 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo                      Ex:Ho:Ga:Nintendo                                                              -9,99 EUR   2414,96 EUR
+2023-03-28 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo                      Ex:Ho:Ga:Nintendo                                                              -9,99 EUR   2404,97 EUR
+2023-03-29 Handy Deutschland GmbH | Handy-Internet                                    Ex:Te:Te:Handy                                                                -25,00 EUR   2379,97 EUR
+2023-03-29 DB AUTOMAT | DB Fahrkarten                                                 Ex:Fa:Fa:Bahn                                                                 -10,00 EUR   2369,97 EUR
+2023-03-29 MCDONALDS | Essen McDonalds                                                Ex:Le:Es:McDonalds                                                             -5,99 EUR   2363,98 EUR
+2023-03-29 Arbeit GmbH | Einkommen von Arbeit GmbH                                    In:Salary                                                                    2100,00 EUR   4463,98 EUR
+2023-03-30 Kaufland | Einkaufen Kaufland                                              Ex:Le:Ei:Kaufland                                                             -30,00 EUR   4433,98 EUR
+2023-04-03 Entgeltabrechnung                                                          Ex:So:Bankgebuehren                                                           -19,75 EUR   4414,23 EUR
+2023-04-03 HANSEMERKUR SPEZIALE KV. AG | Brille Fielmann Nulltarifversicherung        Ex:Ve:Brille                                                                  -10,00 EUR   4404,23 EUR
+2023-04-03 Strom GmbH | Strom GmbH                                                    Ex:Wo:Ne:Strom                                                                -50,00 EUR   4354,23 EUR
+2023-04-03 Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio                    Ex:Te:Fe:Rundfunk                                                             -17,49 EUR   4336,74 EUR
+2023-04-03 Wohnen GmbH | Wohnen GmbH                                                  Ex:Wo:Miete                                                                  -500,00 EUR   3836,74 EUR
+2023-04-03 SCHLOSS BURGER GMBH | Essen Burger King                                    Ex:Le:Es:BurgerKing                                                           -12,98 EUR   3823,76 EUR
+2023-04-04 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll                   Ex:Un:Mu:St:Ab:Crunchyroll                                                     -6,99 EUR   3816,77 EUR
+2023-04-04 AUDIBLE GMBH | Amazon Audible GmbH Hörbuch                                 Ex:Un:Mu:St:Ab:Am:Audible                                                      -9,95 EUR   3806,82 EUR
+2023-04-05 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -24,00 EUR   3782,82 EUR
+2023-04-11 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -25,00 EUR   3757,82 EUR
+2023-04-12 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket                     Ex:Fa:Fa:Bahn                                                                 -10,00 EUR   3747,82 EUR
+2023-04-12 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234888                 Ex:Ho:Ga:Amazon                                                                -8,99 EUR   3738,83 EUR
+2023-04-14 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal                               Ex:Le:Es:Pizza                                                                -30,00 EUR   3708,83 EUR
+2023-04-18 APOTHEKE | Einkaufen Apotheke                                              Ex:Ge:Me:Apotheke                                                              -7,95 EUR   3700,88 EUR
+2023-04-20 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal AWV-MELDEPFLICHT . dm-drog..  Ex:So:AW:PayPal                                                                 4,90 EUR   3705,78 EUR
+2023-04-21 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)         Ex:Un:Mu:St:Ab:DisneyPlus                                                      -8,99 EUR   3696,79 EUR
+2023-04-25 MCDONALDS | Essen McDonalds                                                Ex:Le:Es:McDonalds                                                             -5,99 EUR   3690,80 EUR
+2023-04-26 Arbeit GmbH | Einkommen von Arbeit GmbH                                    In:Salary                                                                    2100,00 EUR   5790,80 EUR
+2023-04-28 INTERNET GMBH | Internet GmbH                                              Ex:Te:On:Internet                                                             -40,00 EUR   5750,80 EUR
+2023-04-28 Handy Deutschland GmbH | Handy-Internet                                    Ex:Te:Te:Handy                                                                -25,00 EUR   5725,80 EUR
+2023-05-02 Entgeltabrechnung                                                          Ex:So:Bankgebuehren                                                           -17,05 EUR   5708,75 EUR
+2023-05-02 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam                         Ex:Ho:Ga:Steam                                                                -22,49 EUR   5686,26 EUR
+2023-05-02 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket                     Ex:Fa:Fa:Bahn                                                                 -11,70 EUR   5674,56 EUR
+2023-05-02 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal PayPal Prevent cancer foun..  Ex:Sp:PreventCancerFoundation                                                 -20,00 EUR   5654,56 EUR
+2023-05-02 Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio                    Ex:Te:Fe:Rundfunk                                                             -17,49 EUR   5637,07 EUR
+2023-05-02 BACKWERK | Essen Baecker                                                   Ex:Le:Es:Baecker                                                               -7,50 EUR   5629,57 EUR
+2023-05-03 PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll                   Ex:Un:Mu:St:Ab:Crunchyroll                                                     -6,99 EUR   5622,58 EUR
+2023-05-03 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234555                 Ex:Co:Ha:Amazon                                                               -20,99 EUR   5601,59 EUR
+2023-05-03 AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234444                 Ex:Ha:Amazon                                                                  -50,51 EUR   5551,08 EUR
+2023-05-08 LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl                        Ex:Le:Ei:Lidl                                                                 -86,78 EUR   5464,30 EUR
+2023-05-08 DM FIL. | DM Drogerie Einkaufen                                            Ex:Ha:DmDrogerie                                                              -11,50 EUR   5452,80 EUR
+2023-05-15 DB Vertrieb GmbH | DB Reisezentrum D-Ticket                                Ex:Fa:Fa:Ab:Ba:DTicket                                                        -49,00 EUR   5403,80 EUR
+2023-05-16 Bank | Kartenauszahlung                                                    As:Cash                                                                       -50,00 EUR   5353,80 EUR
+2023-06-01                                                                            Ex:Fa:Fa:Ab:Ba:DTicket, Ex:Ab:Multimedia, Ex:Fa:Fa:Bahn, Ex:Haushalt, Ex..    886,00 EUR   6239,80 EUR
+2023-07-01                                                                            Ex:Fa:Fa:Ab:Ba:DTicket, Ex:Ab:Multimedia, Ex:Fa:Fa:Bahn, Ex:Haushalt, Ex..    886,00 EUR   7125,80 EUR
+2023-08-01                                                                            Ex:Fa:Fa:Ab:Ba:DTicket, Ex:Ab:Multimedia, Ex:Fa:Fa:Bahn, Ex:Haushalt, Ex..    886,00 EUR   8011,80 EUR
+2023-09-01                                                                            Ex:Fa:Fa:Ab:Ba:DTicket, Ex:Ab:Multimedia, Ex:Fa:Fa:Bahn, Ex:Haushalt, Ex..    886,00 EUR   8897,80 EUR
+2023-10-01                                                                            Ex:Fa:Fa:Ab:Ba:DTicket, Ex:Ab:Multimedia, Ex:Fa:Fa:Bahn, Ex:Haushalt, Ex..    886,00 EUR   9783,80 EUR
+2023-11-01                                                                            Ex:Fa:Fa:Ab:Ba:DTicket, Ex:Ab:Multimedia, Ex:Fa:Fa:Bahn, Ex:Haushalt, Ex..    886,00 EUR  10669,80 EUR

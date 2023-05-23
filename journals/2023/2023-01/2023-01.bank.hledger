@@ -90,10 +90,6 @@
     Expenses:Telekommunikation:Telefon:Handy        EUR25,00
     Assets:Bank:Checking                           EUR-25,00
 
-2023-01-30=2023-01-28 * (qwertz10) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:AB BB00001234 BLZ55555555 1
-    Assets:Cash                 EUR40,00
-    Assets:Bank:Checking       EUR-40,00
-
 2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
     Expenses:Haushalt:Amazon        EUR99,95
     Assets:Bank:Checking           EUR-99,95

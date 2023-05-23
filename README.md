@@ -483,3 +483,42 @@ Die Informationen zu den Bargeldtransaktionen findest du in der Datei `YYYY-MM.c
 ```
 
 Du kannst weitere Bargeldtransaktionen in der Datei hinzufügen, um deine Ausgaben in bar im Januar 2023 zu verfolgen.
+
+
+## Weitere checks
+
+Versuche dein Budget nicht zu überstrapazieren. Das Hauptziel des Programms ist es, dein Budget sowie Ein- und Ausgaben im Überblick zu behalten. Dein `Assets:Bank:Checking` sollte immer die Transaktionen deines realen Bankkontos widerspiegeln (das sollte einfach sein, wenn du die Eingabedatei im CSV-Format von der Bank verwendest).
+
+Das Budget (`Assets:Bank:Budget`) sollte immer niedriger sein als der Betrag in `Assets:Bank:Checking`. Um zu sehen, wie viel du noch budgetieren kannst, kannst du den Kontostand des `Assets:Bank:Unbudget`-Kontos überprüfen (dieses Konto wird automatisch erstellt).
+
+Halte immer ein Auge auf die Fallback-Konten `Expenses:unknown`. Hier landen Einträge, denen noch kein spezifisches Konto zugeordnet wurde (z.B. `Expenses:unknown:PayPal`, `Expenses:unknown:Amazon`, `Expenses:unknown:UnbekanntesGeschaeft`, ...).
+
+```bash
+hledger -f all.hledger -s --auto check
+hledger -f all.hledger reg --auto Expenses:unknown
+```
+
+## Disclaimer
+
+Die Tabelle und die Beispiele, die du hier siehst, sind alle fiktiv, basieren aber auf realen Kontoauszügen (wie Amazon, PayPal usw.). Verwende dieses Projekt als Vorlage für dein [PTA (Plain Text Accounting)](https://plaintextaccounting.org/), am besten in Kombination mit Git, um alles Mögliche zu verfolgen und die Automatisierung deiner Kontoauszüge (Eingabedateien im CSV-Format) zu maximieren. Behalte dabei alle privaten Daten für dich.
+
+### Lizenz
+
+Die Lizenz für die Software findest du in der Datei [LICENSE](LICENSE).
+
+
+### Limitirungen
+
+* "Open" und "Closing" pro Monat: Derzeit bauen alle Monate noch aufeinander auf (Kontoauszüge usw.), sodass sie noch nicht unabhängig voneinander sind.
+* TODO: Erstellung von Diagrammen/Charts
+* Die Verwendung mehrerer Banken ist nicht möglich.
+
+
+
+## Links
+
+- https://plaintextaccounting.org/
+- https://hledger.org/import-csv.html
+- https://hledger.org/cookbook.html
+- https://hledger.org/budgeting.html
+- https://hledger.org/accounting.html

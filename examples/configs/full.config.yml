@@ -1,0 +1,533 @@
+title: 'Persönliche Finanzen'
+define_accounts:
+  - account: 'Assets'       
+    type: Asset
+    title: Assets
+  - account: 'Liabilities'  
+    type: Liability
+    title: Liabilities
+  - account: 'Equity'       
+    type: Equity
+    tite: Equity
+  - account: 'Income'     
+    type: Revenue
+    title: Income
+  - account: 'Expenses'   
+    type: Expense
+    title: Expenses
+  - account: 'Assets:Bank'
+    type: Cash
+    title: Bank
+  - account: 'Assets:Cash'
+    type: Cash
+    title: Cash
+  - account: 'Assets:Saving'
+    type: Cash
+    title: Saving
+  - account: 'Assets:Saving:Cash'
+    type: Cash
+    title: Saving
+  # define missing accounts
+  - account: Expenses:Lebensmittel:Essen
+    title: Essen
+  - account: Expenses:Lebensmittel:Einkaufen
+    title: Einkaufen
+  - account: Expenses:Sonstiges:Unbekannt:Bargeld
+    title: Unbekannt
+accounts:
+  assets: 'Assets'
+  expenses: 'Expenses'
+  liabilities: 'Liabilities'
+  equity: 'Equity'
+  income: 'Income'
+  opening: 'Equity:OpeningClosingBalances'
+  checking: 'Assets:Bank:Checking'
+  paypal_unknown: 'Expenses:unknown:PayPal'
+  amazon_unknown: 'Expenses:unknown:Amazon'
+  unknown: 'Expenses:unknown'
+  cash: 'Assets:Cash'
+  salary: 'Income:Salary'
+  budget: 'Assets:Bank:Budget'
+  saving: 'Assets:Bank:Saving'
+  unbudget: 'Assets:Bank:Unbudget'
+paypal:
+  #prefix: PP.6330.P
+  #suffix: PayPal
+  # python format with ref and name, {ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal
+  if_format:
+    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
+    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
+  payee: 'PayPal Europe S.a.r.l. et Cie S.C.A' 
+amazon:
+  # python format with order and ref, {order}.*Amazon.de.*{ref}.*AMAZON EU
+  if_format:
+    - '{order}.*Amazon.de{ref}AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND'
+    - '{order}.*Amazon .Mktplce{ref}AMAZON PAYMENTS EUROPE S.C.A.'
+    - '{order}.*AMZN Mktp DE{ref}AMAZON PAYMENTS EUROPE S.C.A.'
+  payee: 'AMAZON PAYMENTS EUROPE S.C.A.'
+amazon_rules:
+  - if: 
+      - Audible.de.*AUDIBLE GMBH
+      - Audible GmbH.*AUDIBLE GMBH
+    description: Amazon Audible GmbH Hörbuch
+    account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible
+    title: Audible
+  - if: 
+      - AMZNPrime DE.*AMAZON EU S.A R.L.
+      - Prime Video.*AMAZON DIGITAL GERMANY GMBH
+    description: Amazon Prime
+    account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime
+    title: Amazon Prime Video
+paypal_rules:
+  # Fallback for ebay
+  - name: 
+      - ebay
+      - EBAY
+    description: Ebay %verwendungszweck
+    account: Expenses:unknown:ebay
+    title: ebay
+  # Gaming
+  - name:
+      - Steam
+      - STEAM
+      - steampowered
+    description: Steam
+    account: Expenses:Hobbies:Gaming:Steam
+    title: Steam
+  - name: 
+      - GOG
+    description: GOG
+    account: Expenses:Hobbies:Gaming:GOG
+    title: GOG
+  - name: 
+      - Nintendo
+      - NINTENDO
+    description: Nintendo
+    account: Expenses:Hobbies:Gaming:Nintendo
+    title: Nintendo
+  - name:
+      - Humble Bundle
+      - HUMBLEBUNDL
+    description: Humble Bundle
+    account: Expenses:Hobbies:Gaming:HumbleBundle
+    title: Humble Bundle
+  - name: 
+      - Ubisoft
+      - UBISOFTEMEA
+    description: Ubisoft
+    account: Expenses:Hobbies:Gaming:Ubisoft
+    title: Ubisoft
+  # Multimedia
+  - name: 
+      - Spotify
+      - SPOTIFY
+    description: Spotify
+    account: Expenses:Unterhaltung:Multimedia:Musik:Streaming:Abo:Spotify
+    title: Spotify
+  - name: 
+      - DISNEYPLUS
+    description: Disney Plus (Disney+)
+    account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus  
+    title: Disney Plus
+  - name: 
+      - Twitch Interactive
+      - Twitch Interactive, Inc.
+      - TWITCHINTER
+    description: Twitch
+    account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Twitch
+    title: Twitch
+  - name:
+      - Crunchyroll
+      - CRUNCHYROLL
+      - Ellation Holdings
+    description: Crunchyroll
+    account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll
+    title: Crunchyroll
+  # Sonstiges
+  - name:
+      - DB Vertrieb
+      - DBVERTRIEBG
+    description: DB Ticket
+    account: Expenses:Fahrtkosten:Fahrkarten:Bahn
+    title: DB (Bahn)
+  - name:
+      - AWV-MELDEPFLICHT
+    description: AWV-MELDEPFLICHT %verwendungszweck
+    account: Expenses:Sonstiges:AWVMeldepflicht:PayPal
+common_rules:
+  # Defaults/Fallbacks (first)
+  - if:
+      - Amazon.de.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
+      - Amazon .Mktplce.*AMAZON PAYMENTS EUROPE S.C.A.
+      - AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
+    description: Amazon %verwendungszweck
+    account: Expenses:unknown:Amazon
+    title: Amazon
+  - if: PP.6330.PP.*PayPal
+    description: PayPal %verwendungszweck
+    account: Expenses:unknown:PayPal
+  - if: KARTENZAHLUNG
+    description: Kartenzahlung %verwendungszweck 
+    account: Expenses:unknown:%beguenstigter_zahlungspflichtiger
+  # Bank (und Gebühren)
+  - invoice_name:
+      - Bank-Card
+      - BANK.*Card
+    payee_description: 'Meine Bank | Bankkarte'
+    account: Expenses:Sonstiges:Bankgebuehren:Karte
+    title: Bank
+  - if: ABSCHLUSS.*Abrechnung
+    payee_description: 'Meine Bank | Abrechnung'
+    account: Expenses:Sonstiges:Bankgebuehren 
+    title: Bank
+  - if: ENTGELTABSCHLUSS.*Entgeltabrechnung
+    payee_description: 'Entgeltabrechnung'
+    account: Expenses:Sonstiges:Bankgebuehren 
+    title: Bank
+  - if:
+      - AUSZAHLUNG.*BANK
+      - AUSZAHLUNG.*Bank
+    payee_description: 'Meine Bank | Kartenauszahlung'
+    account: Assets:Cash
+    title: Kartenauszahlung
+  - if:
+      - EINZAHLUNG.*BANK
+      - EINZAHLUNG.*Bank
+    payee_description: 'Meine Bank | Karteneinzahlung'
+    account: Assets:Cash
+    title: Karteneinzahlung
+  # Lohn
+  - if: LOHN.*GEHALT.*Arbeit GmbH
+    description: Einkommen von Arbeit GmbH
+    account1: Assets:Bank:Checking                                                                                               
+    account2: Income:Salary  
+    income: true
+    title: Einkommen
+  # Versicherungen
+  - if: Nulltarifversicherung.*Fielmann 
+    description: Brille Fielmann Nulltarifversicherung
+    account: Expenses:Versicherungen:Brille   
+    title: Brille Fielmann 
+  - if: Rechtsschutzversicherung
+    description: Rechtsschutzversicherung
+    account: Expenses:Versicherungen:Rechtsschutz   
+    title: Rechtsschutzversicherung
+  - if: Privathaftpflicht.*
+    description: Privathaftpflicht
+    account: Expenses:Versicherungen:Privathaftpflicht   
+    title: Privathaftpflicht
+  - if: Hausratversicherung.*
+    description: Hausratversicherung
+    account: Expenses:Versicherungen:Hausratversicherung
+    title: Hausratversicherung
+  # Wohung/Miete 
+  - if:
+      - 546789123.*Strom GmbH
+      - ONLINE-UEBERWEISUNG.*Strom GmbH
+    description: Strom GmbH
+    account: Expenses:Wohnen:Nebenkosten:Strom
+    title: Strom
+  - if:
+      - 1234/4568.00001.12.*Wohnen GmbH
+    customer: 1234/4568.00001.12
+    description: Wohnen GmbH
+    account: Expenses:Wohnen:Miete
+    title: Miete
+  # Internet/Tele
+  - if:
+      - Kundennummer 12345678912/RG.*Handy Deutschland GmbH
+      - 12345678912.*Handy Germany GmbH
+    customer: '12345678912'
+    invoice_format: 'RG\s(\S+)\s'
+    description: Handy-Internet
+    account: Expenses:Telekommunikation:Telefon:Handy
+    title: Handy
+  - if: 
+      - INTERNET GMBH 
+      - INTERNET.*9876543213
+    customer: '9876543213'
+    invoice_format: 'RGN\s(\S+)\s'
+    description: Internet GmbH
+    account: Expenses:Telekommunikation:Online-Dienste:Internet
+    title: Internet
+  # Rundfunk
+  - if: RF123456789123.*Rundfunk, ARD, ZDF, DRadio 
+    description: Rundfunk, ARD, ZDF, DRadio
+    account: Expenses:Telekommunikation:Fernsehen:Rundfunk 
+    title: Rundfunk
+  # Abos
+  - if: Netflix Monthly Subscription.*NETFLIX
+    description: Netflix
+    account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix  
+    title: Netflix  
+  # Food   
+  - name: 
+      - MCDONALDS
+      - McDonalds
+      - MCDONALD
+    description: Essen McDonalds
+    account: Expenses:Lebensmittel:Essen:McDonalds
+    title: McDonalds
+  - name: 
+      - BURGER KING
+      - SCHLOSS BURGER GMBH
+    description: Essen Burger King
+    account: Expenses:Lebensmittel:Essen:BurgerKing
+    title: Burger King
+  - name: 
+      - KFC
+    description: Essen KFC
+    account: Expenses:Lebensmittel:Essen:KFC
+    title: KFC
+  - name: 
+      - SUBWAY
+    description: Essen SUBWAY
+    account: Expenses:Lebensmittel:Essen:Subway
+    title: Subway
+  # Einkaufen
+  - name: 
+      - REWE
+      - REWE SAGT DANKE
+      - DANKE REWE IHR KAUFPARK
+    description: Einkaufen Rewe
+    account: Expenses:Lebensmittel:Einkaufen:Rewe
+    title: Einkaufen
+  - name: 
+      - LIDL
+      - DANKE, IHR LIDL
+      - LIDL DIENSTLEISTUNG GMBH UND CO KG
+    description: Einkaufen Lidl
+    account: Expenses:Lebensmittel:Einkaufen:Lidl
+    title: Einkaufen
+  - name: 
+      - Kaufland
+    description: Einkaufen Kaufland
+    account: Expenses:Lebensmittel:Einkaufen:Kaufland
+    title: Einkaufen
+  - name: 
+      - ROSSMAN
+    description: Einkaufen Rossman
+    account: Expenses:Lebensmittel:Einkaufen:Rossman
+    title: Einkaufen
+  - name: 
+      - EDEKA
+    description: Einkaufen Edeka
+    account: Expenses:Lebensmittel:Einkaufen:Edeka
+    title: Einkaufen
+  - name: 
+      - ALDI
+      - ALDI SAGT DANKE
+    description: Einkaufen Aldi
+    account: Expenses:Lebensmittel:Einkaufen:Aldi
+    title: Einkaufen
+  - name: 
+      - NETTO
+      - NETTO MARKEN-DISCOU
+    description: Einkaufen Netto
+    account: Expenses:Lebensmittel:Einkaufen:Netto
+    title: Einkaufen
+  - name: 
+      - APOTHEKE
+    description: Einkaufen Apotheke
+    account: Expenses:Gesundheit:Medikamente:Apotheke
+    title: Apotheke
+  - name:
+      - MALZERS
+      - MALZERS Backstube
+    description: Essen Baecker
+    account: Expenses:Lebensmittel:Essen:Baecker
+    title: Baecker
+  - name:
+      - BackWerk
+    description: Essen Baecker
+    account: Expenses:Lebensmittel:Essen:Baecker
+    title: Baecker
+  - name:
+      - Conrad Electronic SE
+      - Conrad Electronic Stores
+    description: Conrad Electronic SE
+    account: Expenses:Computer:Hardware:Conrad
+    title: Hardware
+  - name:
+      - SATURN
+    description: Saturn E
+    account: Expenses:Computer:Hardware:Saturn
+    title: Hardware
+  - name:
+      - HORNBACH
+    description: Hornbach Wohnung Einkauf
+    account: Expenses:Haushalt:Hornbach
+    title: Haushalt
+  - name:
+      - DM FIL
+    description: DM Drogerie Einkaufen
+    account: Expenses:Haushalt:DmDrogerie
+    title: Haushalt
+  # Sonstiges
+  - name:
+      - DB AUTOMAT
+      - DB REISEZENTRUM
+    description: DB Fahrkarten
+    account: Expenses:Fahrtkosten:Fahrkarten:Bahn
+    title: DB Ticket
+post_common_rules:
+  - credit_note: 
+      - AMZ.*AMAZON PAYMENTS
+      - AMZ.*AMAZON EU
+    description: Amazon Rueckerstattung
+    account: Income:Sonstiges:Gutschrift:Amazon:Rueckerstattung
+  - credit_note: Wohnungsgesellschaft mbH
+    description: Miete Rueckerstattung 
+    account: Income:Sonstiges:Gutschrift:Wohnung:Miete:Rueckerstattung
+  - credit_note: Energie- und Wasserversorgung Gesellschaft
+    description: Energie Rueckerstattung
+    account: Income:Sonstiges:Gutschrift:Wohnung:Energie:Rueckerstattung
+transactions:
+  # Basics
+  - expense: Expenses:Telekommunikation
+    asset: Assets:Bank:Budget:Telekommunikation
+  - expense: Expenses:Kleidung
+    asset: Assets:Bank:Budget:Kleidung
+  - expense: Expenses:Lebensmittel
+    asset: Assets:Bank:Budget:Lebensmittel
+  - expense: Expenses:Versicherung
+    asset: Assets:Bank:Budget:Versicherungen
+  - expense: Expenses:Haushalt
+    asset: Assets:Bank:Budget:Haushalt
+  - expense: Expenses:Wohnen
+    asset: Assets:Bank:Budget:Wohnen
+  - expense: Expenses:Sonstiges
+    asset: Assets:Bank:Budget:Sonstiges
+  # Fahrtkosten
+  - expense: Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket
+    asset: Assets:Bank:Budget:Abo:DTicket
+  - expense: Expenses:Fahrtkosten:Fahrkarten:Bahn
+    asset: Assets:Bank:Budget:Fahrgeld
+    not_acct: 'Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket'
+  # Wunschliste
+  - expense: Expenses:Computer
+    asset: Assets:Bank:Budget:Wunschliste
+    not_acct: 'Expenses:Computer:Abo'
+  - expense: Expenses:Hobbies:Merch
+    asset: Assets:Bank:Budget:Wunschliste
+  - expense: Expenses:Hobbies:Musik
+    asset: Assets:Bank:Budget:Wunschliste
+  - expense: Expenses:Hobbies:Gaming
+    asset: Assets:Bank:Budget:Wunschliste
+    not_acct: 'Expenses:Hobbies:Gaming:Abo'
+  - expense: Expenses:Hobbies:Gaming:Abo
+    asset: Assets:Bank:Budget:Abo:Gaming
+  # Andere Hobbies
+  - expense: Expenses:Hobbies:Pflanze
+    asset: Assets:Bank:Budget:Haushalt
+  - expense: Expenses:Hobbies:Kunst
+    asset: Assets:Bank:Budget:Wunschliste
+  - expense: Expenses:Unterhaltung:Gaming
+    asset: Assets:Bank:Budget:Wunschliste
+  - expense: Expenses:Hobbies:Buecher
+    asset: Assets:Bank:Budget:Wunschliste
+  # Spenden
+  - expense: Expenses:Spenden
+    asset: Assets:Bank:Budget:Spenden
+    not_acct: 'Expenses:Spenden:Abo'
+  # Unterhaltung
+  ## Multimedia
+  - expense: Expenses:Unterhaltung:Multimedia:Abo
+    asset: Assets:Bank:Budget:Abo:Multimedia
+    not_acct: 'Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime'
+  - expense: Expenses:Unterhaltung:Multimedia:Streaming
+    asset: Assets:Bank:Budget:Abo:Multimedia
+    not_acct: 'Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime'
+  - expense: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime
+    asset: Assets:Bank:Budget:Abo:Amazon:Prime
+  - expense: Expenses:Unterhaltung:Multimedia:Musik:Streaming
+    asset: Assets:Bank:Budget:Abo:Multimedia
+  ## Wunschliste
+  - expense: Expenses:Unterhaltung:Gaming
+    asset: Assets:Bank:Budget:Wunschliste
+  - expense: Expenses:Unterhaltung:Multimedia:Gaming
+    asset: Assets:Bank:Budget:Wunschliste
+    not_acct: 'Expenses:Unterhaltung:Multimedia:Gaming:Abo:GamePass'
+  - expense: Expenses:Unterhaltung:Multimedia:Gaming:Abo:GamePass
+    asset: Assets:Bank:Budget:Abo:Multimedia
+monthly:
+  #use_last_income_for_budget: true
+  #budget_day: 1
+  forecast_income: 2100.0
+  # default budget for the month
+  budget:
+    # Basics
+    - account: Assets:Bank:Budget:Telekommunikation
+      comment: Internet
+      amount: 55.0
+      title: Telekommunikation
+    - account: Assets:Bank:Budget:Telekommunikation
+      comment: Handy
+      amount: 30.0
+      title: Telekommunikation
+    - account: Assets:Bank:Budget:Telekommunikation
+      comment: Rundfunk
+      amount: 20.0
+      title: Telekommunikation
+    - account: Assets:Bank:Budget:Kleidung
+      amount: 20.0
+      title: Kleidung
+    - account: Assets:Bank:Budget:Lebensmittel
+      amount: 250.0
+      title: Einkaufen
+    - account: Assets:Bank:Budget:Versicherungen
+      amount: 20.0
+      title: Versicherungen
+    # Fahrkosten
+    #- account: Assets:Bank:Budget:Fahrgeld
+    #  amount: 25.0
+    #  title: Fahrgeld
+    - account: Assets:Bank:Budget:Abo:DTicket
+      amount: 49.0
+      title: DB Ticket (Abo)
+    # Wohnung
+    - account: Assets:Bank:Budget:Wohnen
+      amount: 500.0
+      comment: Miete
+    - account: Assets:Bank:Budget:Wohnen
+      amount: 50.0
+      comment: Energie und Wasser
+    # Wunschliste
+    - account: Assets:Bank:Budget:Wunschliste
+      comment: Hobbies
+      amount: 50.0
+      title: Wunschliste
+    - account: Assets:Bank:Budget:Wunschliste
+      comment: Wunschliste
+      amount: 50.0
+      title: Wunschliste
+    # Unterhaltung
+    - account: Assets:Bank:Budget:Abo:Multimedia
+      amount: 55.0
+      title: Multimedia (Abo)
+    # Haushalt
+    - account: Assets:Bank:Budget:Haushalt
+      amount: 50.0
+      title: Haushalt
+    # Sparplan
+    - account: Assets:Bank:Saving:Notgroschen
+      amount: 200.0
+      title: Saving
+    - account: Assets:Bank:Saving:Depot
+      amount: 250.0
+      title: Sparplan
+    # Sonstiges
+    - account: Assets:Bank:Budget:Sonstiges
+      amount: 15.0
+      title: Sonstiges
+yearly:
+  #use_last_income_for_budget: true
+  # default budget for the year
+  budget:
+    - account: Assets:Bank:Budget:Abo:Amazon:Prime
+      amount: 90.0
+      title: Amazon Prime
+    - account: Assets:Bank:Budget:Versicherungen
+      amount: 10
+      comment: Fielmann
+      title: Brille (Versicherungen)

@@ -63,7 +63,11 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Cash                         50,50 EUR
   Equity:OpeningClosingBalances
 
+2023-01-01 * "Current Year Budget for month 01" ; budget:, modified:
+  Assets:Bank:Checking
+
 2023-01-01 * "Current Month Budget" ; budget:, modified:
+  Assets:Bank:Checking
 
 2023-01-02 * "Strom GmbH | Strom GmbH" ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
   Expenses:Wohnen:Nebenkosten:Strom       48,00 EUR
@@ -161,10 +165,6 @@ plugin "beancount.plugins.auto_accounts"
   Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
   Assets:Bank:Checking                          -25,00 EUR
 
-2023-01-30 * "Bank | Kartenauszahlung" ; type:BARGELDAUSZAHLUNG, payee:AB BB00001234 BLZ55555555 1, modified:
-  Assets:Cash                  40,00 EUR
-  Assets:Bank:Checking        -40,00 EUR
-
 2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
   Expenses:Haushalt:Amazon            99,95 EUR
   Assets:Bank:Checking               -99,95 EUR
@@ -194,14 +194,18 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                      -10,00 EUR
 
 2023-01-30 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking                      2100,00 EUR
-  Income:Salary                            -2100,00 EUR
+  Assets:Bank:Checking       2100,00 EUR
+  Income:Salary             -2100,00 EUR
 
 2023-01-31 * "NETFLIX SERVICES GERMANY GMBH | Netflix" ; type:FOLGELASTSCHRIFT, payee:NETFLIX SERVICES GERMANY GMBH, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix       12,99 EUR
   Assets:Bank:Checking                                        -12,99 EUR
 
+2023-02-01 * "Current Year Budget for month 02" ; budget:, modified:
+  Assets:Bank:Checking
+
 2023-02-01 * "Current Month Budget" ; budget:, modified:
+  Assets:Bank:Checking
 
 2023-02-01 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       17,65 EUR
@@ -271,19 +275,28 @@ plugin "beancount.plugins.auto_accounts"
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus        8,99 EUR
   Assets:Bank:Checking                                            -8,99 EUR
 
+2023-02-21 * "Einkaufen Rewe"
+  modified: ""
+  Expenses:Lebensmittel:Einkaufen:Rewe       21,84 EUR
+  Assets:Cash
+
 2023-02-24 * "INTERNET GMBH | Internet GmbH" ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
   Expenses:Telekommunikation:Online-Dienste:Internet       40,00 EUR
   Assets:Bank:Checking                                    -40,00 EUR
 
 2023-02-24 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking                      2100,00 EUR
-  Income:Salary                            -2100,00 EUR
+  Assets:Bank:Checking       2100,00 EUR
+  Income:Salary             -2100,00 EUR
 
 2023-02-28 * "Handy Deutschland GmbH | Handy-Internet" ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
   Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
   Assets:Bank:Checking                          -25,00 EUR
 
+2023-03-01 * "Current Year Budget for month 03" ; budget:, modified:
+  Assets:Bank:Checking
+
 2023-03-01 * "Current Month Budget" ; budget:, modified:
+  Assets:Bank:Checking
 
 2023-03-01 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       16,15 EUR
@@ -406,22 +419,18 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                        -5,99 EUR
 
 2023-03-29 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking                      2100,00 EUR
-  Income:Salary                            -2100,00 EUR
-
-2023-03-29 * "Bank | Kartenauszahlung" ; type:BARGELDAUSZAHLUNG, payee:AA BB00000031 BLZ11111111 0, modified:
-  Assets:Cash                  50,00 EUR
-  Assets:Bank:Checking        -50,00 EUR
+  Assets:Bank:Checking       2100,00 EUR
+  Income:Salary             -2100,00 EUR
 
 2023-03-30 * "Kaufland | Einkaufen Kaufland" ; type:KARTENZAHLUNG, payee:Kaufland, modified:
   Expenses:Lebensmittel:Einkaufen:Kaufland       30,00 EUR
   Assets:Bank:Checking                          -30,00 EUR
 
-2023-03-30 * "Bank | Kartenauszahlung" ; type:BARGELDAUSZAHLUNG, payee:AA BB00000032 BLZ11111111 0, modified:
-  Assets:Cash                  30,00 EUR
-  Assets:Bank:Checking        -30,00 EUR
+2023-04-01 * "Current Year Budget for month 04" ; budget:, modified:
+  Assets:Bank:Checking
 
 2023-04-01 * "Current Month Budget" ; budget:, modified:
+  Assets:Bank:Checking
 
 2023-04-03 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       19,75 EUR
@@ -492,8 +501,8 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                        -5,99 EUR
 
 2023-04-26 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking                      2100,00 EUR
-  Income:Salary                            -2100,00 EUR
+  Assets:Bank:Checking       2100,00 EUR
+  Income:Salary             -2100,00 EUR
 
 2023-04-28 * "INTERNET GMBH | Internet GmbH" ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
   Expenses:Telekommunikation:Online-Dienste:Internet       40,00 EUR
@@ -503,11 +512,11 @@ plugin "beancount.plugins.auto_accounts"
   Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
   Assets:Bank:Checking                          -25,00 EUR
 
-2023-04-28 * "Bank | Kartenauszahlung" ; type:BARGELDAUSZAHLUNG, payee:, modified:
-  Assets:Cash                 150,00 EUR
-  Assets:Bank:Checking       -150,00 EUR
+2023-05-01 * "Current Year Budget for month 05" ; budget:, modified:
+  Assets:Bank:Checking
 
 2023-05-01 * "Current Month Budget" ; budget:, modified:
+  Assets:Bank:Checking
 
 2023-05-02 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       17,05 EUR

@@ -18,8 +18,9 @@ reports/
 !reports/.gitkeep
 
 node_modules/
-input/**
-!input/samples/*
+input/
+!examples/input/
+!input/.gitignore
 !input/README.md
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,osx,macos,linux,latex,libreoffice,microsoftoffice,python

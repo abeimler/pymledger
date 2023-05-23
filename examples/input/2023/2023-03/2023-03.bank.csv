@@ -1,0 +1,33 @@
+Auftragskonto,Buchungstag,Valutadatum,Buchungstext,Verwendungszweck,Glaeubiger ID,Mandatsreferenz,Kundenreferenz (End-to-End),Sammlerreferenz,Lastschrift Ursprungsbetrag,Auslagenersatz Ruecklastschrift,Beguenstigter/Zahlungspflichtiger,Kontonummer/IBAN,BIC (SWIFT-Code),Betrag,Waehrung,Info
+DE2,30.03.23,30.03.23,KARTENZAHLUNG,2023-03-29 Debitk.2 2025-12 ,,,,,,,Kaufland,,,-30,EUR,Umsatz gebucht
+DE5,29.03.23,29.03.23,LOHN  GEHALT,LOHN / GEHALT ,,,,,,,Arbeit GmbH,,,2100,EUR,Umsatz gebucht
+DE6,29.03.23,29.03.23,KARTENZAHLUNG,2023-03-28 Debitk.2 2025-12 ,,,,,,,MCDONALDS,,,"-5,99",EUR,Umsatz gebucht
+DE7,29.03.23,29.03.23,KARTENZAHLUNG,2023-03-28 Debitk.2 2025-12 ,,,,,,,DB AUTOMAT,,,-10,EUR,Umsatz gebucht
+DE8,29.03.23,29.03.23,FOLGELASTSCHRIFT,Kundennummer 12345678912/RG 1234567893,,,,,,,Handy Deutschland GmbH     ,,,-25,EUR,Umsatz gebucht
+DE10,28.03.23,28.03.23,FOLGELASTSCHRIFT,"1026049284511 . Nintendo, Ihr Einkauf bei Nintendo ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-9,99",EUR,Umsatz gebucht
+DE11,28.03.23,28.03.23,FOLGELASTSCHRIFT,"1026049302845 . Nintendo, Ihr Einkauf bei Nintendo ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-9,99",EUR,Umsatz gebucht
+DE12,28.03.23,28.03.23,FOLGELASTSCHRIFT,"1026049582109 . Nintendo, Ihr Einkauf bei Nintendo ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-8,49",EUR,Umsatz gebucht
+DE16,24.03.23,24.03.23,FOLGELASTSCHRIFT,INTERNET GMBH KDNR.9876543213 RGN 00000000003,,,,,,,INTERNET GMBH,,,-40,EUR,Umsatz gebucht
+DE22,23.03.23,23.03.23,FOLGELASTSCHRIFT,"1234567896541 PP.6330.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,-100,EUR,Umsatz gebucht
+DE23,23.03.23,23.03.23,FOLGELASTSCHRIFT,555-1234567-7894569 Amazon.de JJJJJJJJJJJJJJJJ ,,,,,,,"AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND",,,"-4,45",EUR,Umsatz gebucht
+DE24,23.03.23,23.03.23,FOLGELASTSCHRIFT,555-1234567-3216548 AMZN Mktp DE IIIIIIIIIIIIIIIII ,,,,,,,AMAZON PAYMENTS EUROPE S.C.A.,,,"-15,99",EUR,Umsatz gebucht
+DE26,21.03.23,21.03.23,KARTENZAHLUNG,2023-03-20 Debitk.2 2025-12 ,,,,,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,,,-65,EUR,Umsatz gebucht
+DE27,21.03.23,21.03.23,FOLGELASTSCHRIFT,"1234567893214 PP.6330.PP . DisneyPlus, Ihr Einkauf bei DisneyPlus ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-8,99",EUR,Umsatz gebucht
+DE30,16.03.23,16.03.23,FOLGELASTSCHRIFT,"1234569873254 PP.6330.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-25,55",EUR,Umsatz gebucht
+DE31,16.03.23,16.03.23,FOLGELASTSCHRIFT,"1234567896543 PP.6330.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,-38,EUR,Umsatz gebucht
+DE32,14.03.23,14.03.23,KARTENZAHLUNG,2023-03-13 Debitk.2 2025-12 ,,,,,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,,,"-43,15",EUR,Umsatz gebucht
+DE33,14.03.23,14.03.23,FOLGELASTSCHRIFT,"1234567896548 PP.6330.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-11,7",EUR,Umsatz gebucht
+DE34,14.03.23,14.03.23,FOLGELASTSCHRIFT,123-1234567-5555568 AMZN Mktp DE HHHHHHHHHHHHHHHH ,,,,,,,AMAZON PAYMENTS EUROPE S.C.A.,,,"-14,95",EUR,Umsatz gebucht
+DE35,10.03.23,10.03.23,SEPA-ELV-LASTSCHRIFT,,,,,,,,HORNBACH ,,,"-13,4",EUR,Umsatz gebucht
+DE36,08.03.23,08.03.23,KARTENZAHLUNG,2023-03-06 Debitk.2 2025-12 ,,,,,,,SCHLOSS BURGER GMBH,,,"-13,99",EUR,Umsatz gebucht
+DE37,08.03.23,08.03.23,KARTENZAHLUNG,2023-03-07 Debitk.2 2025-12 ,,,,,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,,,"-20,61",EUR,Umsatz gebucht
+DE38,08.03.23,08.03.23,FOLGELASTSCHRIFT,"1025663535521 PP.6330.PP . Shop der Deutschen Post (DPDHL Group), Ihr Einkauf bei Shop der Deutschen Post (DPDHL Group) ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-30,9",EUR,Umsatz gebucht
+DE42,06.03.23,06.03.23,KARTENZAHLUNG,2023-03-03 Debitk.2 2025-12 ,,,,,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,,,"-20,23",EUR,Umsatz gebucht
+DE43,06.03.23,06.03.23,FOLGELASTSCHRIFT,"1234567896548 PP.6330.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc. ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-6,99",EUR,Umsatz gebucht
+DE44,03.03.23,03.03.23,KARTENZAHLUNG,2023-03-02 Debitk.2 2025-12 ,,,,,,,MCDONALDS,,,"-5,77",EUR,Umsatz gebucht
+DE46,03.03.23,03.03.23,KARTENZAHLUNG,2023-03-02 Debitk.2 2025-12 ,,,,,,,DB AUTOMAT,,,-10,EUR,Umsatz gebucht
+DE48,02.03.23,02.03.23,DAUERAUFTRAG,1234/4568.00001.12,,,,,,,Wohnen GmbH,,,-500,EUR,Umsatz gebucht
+DE49,01.03.23,01.03.23,KARTENZAHLUNG,2023-02-28 Debitk.2 2025-12 ,,,,,,,MCDONALDS,,,"-16,58",EUR,Umsatz gebucht
+DE51,01.03.23,01.03.23,DAUERAUFTRAG,546789123,,,,,,,Strom GmbH,,,-48,EUR,Umsatz gebucht
+DE52,01.03.23,01.03.23,DAUERAUFTRAG,RF123456789123 ,,,,,,,"Rundfunk, ARD, ZDF, DRadio",,,"-17,49",EUR,Umsatz gebucht
+DE58,01.03.23,28.02.23,ENTGELTABSCHLUSS,Entgeltabrechnung ,,,,,,,,,,"-16,15",EUR,Umsatz gebucht

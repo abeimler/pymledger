@@ -30,7 +30,8 @@ tasks:
   generate:
     aliases: [gen]
     cmds:
-      ## only generate year 2022
+      # Add more years: "2022 2023"
+      ## generate year 2022
       #- task: generate-template
       #  vars:
       #    DATE: "2022"
@@ -39,7 +40,6 @@ tasks:
       - task: generate-template
         vars:
           DATE: "2023"
-      # Add more years: "2022 2023"
       ## generate main file
       - task: generate-all-template
         vars:
@@ -110,11 +110,12 @@ tasks:
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA -4 Income Assets:Bank:Budget Expenses -o reports/data.csv -O csv'
 
   report:plot:
+    # TODO: fix plot-senkey
     # plot
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA -2 Expenses -o reports/plot_data_expenses.csv -O csv'
-    - task: hledger-rules
-      vars:
-        ARGS: plot-senkey-expenses -i reports/plot_data_expenses.csv -o reports/expenses.png
+    #- task: hledger-rules
+    #  vars:
+    #    ARGS: plot-senkey-expenses -i reports/plot_data_expenses.csv -o reports/expenses.png
 
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA -4 Assets:Bank:Budget -o reports/plot_data_budget.csv -O csv'
     #- task: hledger-rules

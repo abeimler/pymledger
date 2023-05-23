@@ -1,0 +1,16 @@
+- account: Expenses:unknown:PayPal
+  amount: -21.85
+  payee: PayPal Europe S.a.r.l. et Cie S.C.A
+  ref: '1234567893214'
+- account: Expenses:unknown:PayPal
+  amount: -200.0
+  payee: PayPal Europe S.a.r.l. et Cie S.C.A
+  ref: '1234567896541'
+- account: Expenses:unknown:PayPal
+  amount: -97.26
+  payee: PayPal Europe S.a.r.l. et Cie S.C.A
+  ref: '1234567892135'
+- account: Expenses:unknown:PayPal
+  amount: -17.5
+  payee: PayPal Europe S.a.r.l. et Cie S.C.A
+  ref: '1234567895462'

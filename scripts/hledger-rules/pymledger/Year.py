@@ -2,6 +2,8 @@ import datetime
 import os
 
 from pymledger import Const, utils, HledgerTemplates as Templates
+from pymledger.HledgerBudget import gen_budget_rules, gen_budget_rules_from_data, gen_forecast_rules, \
+    gen_forecast_rules_from_data, sort_budget_element, gen_budget_entry_empty, gen_budget_rules_from_data_yearly
 from pymledger.HledgerOpening import get_opening_from_yml_file
 from pymledger.HledgerUtils import amount_to_journal_amount_string, get_close_year_balance, get_open_year_balance
 from pymledger.Month import gen_month
@@ -78,26 +80,6 @@ def gen_year(config, year):
             if budget.get('comment'):
                 dat['comment'] = budget.get('comment')
             budget_data.append(dat)
-
-    with open(budget_filename, 'w') as file:
-        budget_accounts = ''
-        for entry in budget_data:
-            if 'account' in entry:
-                if 'yearly' in entry and entry['yearly']:
-                    amount = round(entry.get('amount', 0.0) / 12, 2)
-                    account_name = entry['account'].strip()
-                    account = Templates.BUDGET_ACCOUNT_FORMAT.format(account_name)
-                    budget_accounts = budget_accounts + Templates.BUDGET_ENTRY_FORMAT.format(account=account.strip(),
-                                                                                             amount=amount_to_journal_amount_string(
-                                                                                                 amount),
-                                                                                             currency=entry.get(
-                                                                                                 'currency',
-                                                                                                 Const.CURRENCY))
-            else:
-                utils.print_error("no account in budget")
-        file.write(
-            Templates.YEAR_BUDGET_CONTENT_TEMPLATE.substitute(account=Const.SALERY_ACCOUNT, date="{:04}".format(year),
-                                                              year="${:04}".format(year), accounts=budget_accounts))
 
     with open(forecast_filename, 'w') as file:
         budget_accounts = ''
@@ -189,3 +171,5 @@ def gen_year(config, year):
     for month in range(1, 13):
         gen_source_files = Const.GEN_ALL_MONTHS or (year == now.year and month < now.month)
         gen_month(config, year, month, none_gen_source_files=not gen_source_files)
+
+    gen_budget_rules_from_data_yearly(config, year, budget_data, budget_filename)

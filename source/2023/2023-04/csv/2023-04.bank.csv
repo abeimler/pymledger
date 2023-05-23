@@ -1,23 +1,22 @@
 Auftragskonto;Buchungstag;Valutadatum;Buchungstext;Verwendungszweck;Glaeubiger ID;Mandatsreferenz;Kundenreferenz (End-to-End);Sammlerreferenz;Lastschrift Ursprungsbetrag;Auslagenersatz Ruecklastschrift;Beguenstigter/Zahlungspflichtiger;Kontonummer/IBAN;BIC (SWIFT-Code);Betrag;Waehrung;Info;code;payee
-**-*;28.04.23;28.04.23;BARGELDAUSZAHLUNG;2023-04-28;;;;;;;;;;-150;EUR;Umsatz gebucht;2023-04.0001;
-**-*;28.04.23;28.04.23;FOLGELASTSCHRIFT;Kundennummer 12345678912/RG 1234567894;;;;;;;Handy Deutschland GmbH;;;-25;EUR;Umsatz gebucht;2023-04.0002;Handy Deutschland GmbH     
-**-*;28.04.23;28.04.23;FOLGELASTSCHRIFT;INTERNET GMBH KDNR.9876543213 RGN 00000000004;;;;;;;INTERNET GMBH;;;-40;EUR;Umsatz gebucht;2023-04.0003;INTERNET GMBH
-**-*;26.04.23;26.04.23;LOHN GEHALT;LOHN / GEHALT;;;;;;;Arbeit GmbH;;;2100;EUR;Umsatz gebucht;2023-04.0004;Arbeit GmbH
-**-*;25.04.23;25.04.23;KARTENZAHLUNG;2023-04-24 Debitk.2 2025-12;;;;;;;MCDONALDS;;;-5,99;EUR;Umsatz gebucht;2023-04.0005;MCDONALDS
-***;21.04.23;21.04.23;FOLGELASTSCHRIFT;1234567896549 PP.6330.PP . DisneyPlus, Ihr Einkauf bei DisneyPlus;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-8,99;EUR;Umsatz gebucht;2023-04.0006;PayPal Europe S.a.r.l. et Cie S.C.A
-***;20.04.23;20.04.23;GUTSCHR. UEBERWEISUNG;. dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG ABBUCHUNG VOM PAYPAL-KONTO AWV-MELDEPFLICHT;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;4,9;EUR;Umsatz gebucht;2023-04.0007;PayPal Europe S.a.r.l. et Cie S.C.A                                   
-****;18.04.23;18.04.23;KARTENZAHLUNG;2023-04-17 Debitk.2 2025-12;;;;;;;APOTHEKE;;;-7,95;EUR;Umsatz gebucht;2023-04.0008;APOTHEKE
-****;14.04.23;14.04.23;FOLGELASTSCHRIFT;1234567893215 PP.6330.PP . dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-30;EUR;Umsatz gebucht;2023-04.0009;PayPal Europe S.a.r.l. et Cie S.C.A
-****;12.04.23;12.04.23;FOLGELASTSCHRIFT;123-1234567-1234888 AMZN Mktp DE FFFFFFFFFFFFFFFF;;;;;;;AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND;;;-8,99;EUR;Umsatz gebucht;2023-04.0010;AMAZON EU S.A R.L. NIEDERLASSUNG DEUTSCHLAND
-****;12.04.23;12.04.23;FOLGELASTSCHRIFT;1234567894562 PP.6330.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-10;EUR;Umsatz gebucht;2023-04.0011;PayPal Europe S.a.r.l. et Cie S.C.A
-****;11.04.23;11.04.23;KARTENZAHLUNG;2023-04-08 Debitk.2 2025-12;;;;;;;LIDL DIENSTLEISTUNG GMBH UND CO KG;;;-25;EUR;Umsatz gebucht;2023-04.0012;LIDL DIENSTLEISTUNG GMBH UND CO KG
-****;05.04.23;05.04.23;KARTENZAHLUNG;2023-04-04 Debitk.2 2025-12;;;;;;;LIDL DIENSTLEISTUNG GMBH UND CO KG;;;-24;EUR;Umsatz gebucht;2023-04.0013;LIDL DIENSTLEISTUNG GMBH UND CO KG
-****;04.04.23;04.04.23;FOLGELASTSCHRIFT;D00-1234567-4567899 Audible Gmbh DDDDDDDDDDDDDDDD;;;;;;;AUDIBLE GMBH;;;-9,95;EUR;Umsatz gebucht;2023-04.0014;AUDIBLE GMBH
-****;04.04.23;04.04.23;FOLGELASTSCHRIFT;1234567896544 PP.6330.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc.;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-6,99;EUR;Umsatz gebucht;2023-04.0015;PayPal Europe S.a.r.l. et Cie S.C.A
-****;03.04.23;03.04.23;KARTENZAHLUNG;2023-03-31 Debitk.2 2025-12;;;;;;;SCHLOSS BURGER GMBH;;;-12,98;EUR;Umsatz gebucht;2023-04.0016;SCHLOSS BURGER GMBH
-****;03.04.23;03.04.23;DAUERAUFTRAG;1234/4568.00001.12;;;;;;;Wohnen GmbH;;;-500;EUR;Umsatz gebucht;2023-04.0017;Wohnen GmbH
-****;03.04.23;03.04.23;DAUERAUFTRAG;RF123456789123;;;;;;;Rundfunk, ARD, ZDF, DRadio;;;-17,49;EUR;Umsatz gebucht;2023-04.0018;Rundfunk ARD ZDF DRadio
-****;03.04.23;03.04.23;DAUERAUFTRAG;546789123;;;;;;;Strom GmbH;;;-50;EUR;Umsatz gebucht;2023-04.0019;Strom GmbH
-****;03.04.23;03.04.23;FOLGELASTSCHRIFT;Nulltarifversicherung Fielmann;;;;;;;HANSEMERKUR SPEZIALE KV. AG;;;-10;EUR;Umsatz gebucht;2023-04.0020;HANSEMERKUR SPEZIALE KV. AG
-****;03.04.23;01.04.23;ABSCHLUSS;Abrechnung 31.03.2023 siehe Anlage Abrechnung;;;;;;;;;;0;EUR;Umsatz gebucht;2023-04.0021;
-****;03.04.23;01.04.23;ENTGELTABSCHLUSS;Entgeltabrechnung siehe Anlage Abrechnung;;;;;;;;;;-19,75;EUR;Umsatz gebucht;2023-04.0022;
+**-*;28.04.23;28.04.23;FOLGELASTSCHRIFT;Kundennummer 12345678912/RG 1234567894;;;;;;;Handy Deutschland GmbH;;;-25;EUR;Umsatz gebucht;2023-04.0001;Handy Deutschland GmbH     
+**-*;28.04.23;28.04.23;FOLGELASTSCHRIFT;INTERNET GMBH KDNR.9876543213 RGN 00000000004;;;;;;;INTERNET GMBH;;;-40;EUR;Umsatz gebucht;2023-04.0002;INTERNET GMBH
+**-*;26.04.23;26.04.23;LOHN GEHALT;LOHN / GEHALT;;;;;;;Arbeit GmbH;;;2100;EUR;Umsatz gebucht;2023-04.0003;Arbeit GmbH
+**-*;25.04.23;25.04.23;KARTENZAHLUNG;2023-04-24 Debitk.2 2025-12;;;;;;;MCDONALDS;;;-5,99;EUR;Umsatz gebucht;2023-04.0004;MCDONALDS
+***;21.04.23;21.04.23;FOLGELASTSCHRIFT;1234567896549 PP.6330.PP . DisneyPlus, Ihr Einkauf bei DisneyPlus;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-8,99;EUR;Umsatz gebucht;2023-04.0005;PayPal Europe S.a.r.l. et Cie S.C.A
+***;20.04.23;20.04.23;GUTSCHR. UEBERWEISUNG;. dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG ABBUCHUNG VOM PAYPAL-KONTO AWV-MELDEPFLICHT;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;4,9;EUR;Umsatz gebucht;2023-04.0006;PayPal Europe S.a.r.l. et Cie S.C.A                                   
+****;18.04.23;18.04.23;KARTENZAHLUNG;2023-04-17 Debitk.2 2025-12;;;;;;;APOTHEKE;;;-7,95;EUR;Umsatz gebucht;2023-04.0007;APOTHEKE
+****;14.04.23;14.04.23;FOLGELASTSCHRIFT;1234567893215 PP.6330.PP . dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-30;EUR;Umsatz gebucht;2023-04.0008;PayPal Europe S.a.r.l. et Cie S.C.A
+****;12.04.23;12.04.23;FOLGELASTSCHRIFT;123-1234567-1234888 AMZN Mktp DE FFFFFFFFFFFFFFFF;;;;;;;AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND;;;-8,99;EUR;Umsatz gebucht;2023-04.0009;AMAZON EU S.A R.L. NIEDERLASSUNG DEUTSCHLAND
+****;12.04.23;12.04.23;FOLGELASTSCHRIFT;1234567894562 PP.6330.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-10;EUR;Umsatz gebucht;2023-04.0010;PayPal Europe S.a.r.l. et Cie S.C.A
+****;11.04.23;11.04.23;KARTENZAHLUNG;2023-04-08 Debitk.2 2025-12;;;;;;;LIDL DIENSTLEISTUNG GMBH UND CO KG;;;-25;EUR;Umsatz gebucht;2023-04.0011;LIDL DIENSTLEISTUNG GMBH UND CO KG
+****;05.04.23;05.04.23;KARTENZAHLUNG;2023-04-04 Debitk.2 2025-12;;;;;;;LIDL DIENSTLEISTUNG GMBH UND CO KG;;;-24;EUR;Umsatz gebucht;2023-04.0012;LIDL DIENSTLEISTUNG GMBH UND CO KG
+****;04.04.23;04.04.23;FOLGELASTSCHRIFT;D00-1234567-4567899 Audible Gmbh DDDDDDDDDDDDDDDD;;;;;;;AUDIBLE GMBH;;;-9,95;EUR;Umsatz gebucht;2023-04.0013;AUDIBLE GMBH
+****;04.04.23;04.04.23;FOLGELASTSCHRIFT;1234567896544 PP.6330.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc.;;;;;;;PayPal Europe S.a.r.l. et Cie S.C.A;;;-6,99;EUR;Umsatz gebucht;2023-04.0014;PayPal Europe S.a.r.l. et Cie S.C.A
+****;03.04.23;03.04.23;KARTENZAHLUNG;2023-03-31 Debitk.2 2025-12;;;;;;;SCHLOSS BURGER GMBH;;;-12,98;EUR;Umsatz gebucht;2023-04.0015;SCHLOSS BURGER GMBH
+****;03.04.23;03.04.23;DAUERAUFTRAG;1234/4568.00001.12;;;;;;;Wohnen GmbH;;;-500;EUR;Umsatz gebucht;2023-04.0016;Wohnen GmbH
+****;03.04.23;03.04.23;DAUERAUFTRAG;RF123456789123;;;;;;;Rundfunk, ARD, ZDF, DRadio;;;-17,49;EUR;Umsatz gebucht;2023-04.0017;Rundfunk ARD ZDF DRadio
+****;03.04.23;03.04.23;DAUERAUFTRAG;546789123;;;;;;;Strom GmbH;;;-50;EUR;Umsatz gebucht;2023-04.0018;Strom GmbH
+****;03.04.23;03.04.23;FOLGELASTSCHRIFT;Nulltarifversicherung Fielmann;;;;;;;HANSEMERKUR SPEZIALE KV. AG;;;-10;EUR;Umsatz gebucht;2023-04.0019;HANSEMERKUR SPEZIALE KV. AG
+****;03.04.23;01.04.23;ABSCHLUSS;Abrechnung 31.03.2023 siehe Anlage Abrechnung;;;;;;;;;;0;EUR;Umsatz gebucht;2023-04.0020;
+****;03.04.23;01.04.23;ENTGELTABSCHLUSS;Entgeltabrechnung siehe Anlage Abrechnung;;;;;;;;;;-19,75;EUR;Umsatz gebucht;2023-04.0021;

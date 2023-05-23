@@ -1,136 +1,128 @@
-2023-03-01=2023-02-28 * (2023-03.0034) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:
+2023-03-01=2023-02-28 * (2023-03.0032) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:
     Expenses:Sonstiges:Bankgebuehren        EUR16,15
     Assets:Bank:Checking                   EUR-16,15
 
-2023-03-01=2023-03-01 * (2023-03.0033) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio
+2023-03-01=2023-03-01 * (2023-03.0031) Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio  ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio
     Expenses:Telekommunikation:Fernsehen:Rundfunk        EUR17,49
     Assets:Bank:Checking                                EUR-17,49
 
-2023-03-01=2023-03-01 * (2023-03.0032) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH
+2023-03-01=2023-03-01 * (2023-03.0030) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH
     Expenses:Wohnen:Nebenkosten:Strom        EUR48,00
     Assets:Bank:Checking                    EUR-48,00
 
-2023-03-01=2023-03-01 * (2023-03.0031) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS
+2023-03-01=2023-03-01 * (2023-03.0029) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS
     Expenses:Lebensmittel:Essen:McDonalds        EUR16,58
     Assets:Bank:Checking                        EUR-16,58
 
-2023-03-02=2023-03-02 * (2023-03.0030) Wohnen GmbH | Wohnen GmbH  ; type:DAUERAUFTRAG, payee:Wohnen GmbH
+2023-03-02=2023-03-02 * (2023-03.0028) Wohnen GmbH | Wohnen GmbH  ; type:DAUERAUFTRAG, payee:Wohnen GmbH
     Expenses:Wohnen:Miete       EUR500,00
     Assets:Bank:Checking       EUR-500,00
 
-2023-03-03=2023-03-03 * (2023-03.0029) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT
+2023-03-03=2023-03-03 * (2023-03.0027) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT
     Expenses:Fahrtkosten:Fahrkarten:Bahn        EUR10,00
     Assets:Bank:Checking                       EUR-10,00
 
-2023-03-03=2023-03-03 * (2023-03.0028) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS
+2023-03-03=2023-03-03 * (2023-03.0026) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS
     Expenses:Lebensmittel:Essen:McDonalds         EUR5,77
     Assets:Bank:Checking                         EUR-5,77
 
-2023-03-06=2023-03-06 * (2023-03.0027) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll
+2023-03-06=2023-03-06 * (2023-03.0025) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll         EUR6,99
     Assets:Bank:Checking                                              EUR-6,99
 
-2023-03-06=2023-03-06 * (2023-03.0026) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+2023-03-06=2023-03-06 * (2023-03.0024) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
     Expenses:Lebensmittel:Einkaufen:Lidl        EUR20,23
     Assets:Bank:Checking                       EUR-20,23
 
-2023-03-08=2023-03-08 * (2023-03.0025) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (dpdhl group)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Shop der Deutschen Post
+2023-03-08=2023-03-08 * (2023-03.0023) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (dpdhl group)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Shop der Deutschen Post
     Expenses:Sonstiges:Post        EUR30,90
     Assets:Bank:Checking          EUR-30,90
 
-2023-03-08=2023-03-08 * (2023-03.0024) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+2023-03-08=2023-03-08 * (2023-03.0022) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
     Expenses:Lebensmittel:Einkaufen:Lidl        EUR20,61
     Assets:Bank:Checking                       EUR-20,61
 
-2023-03-08=2023-03-08 * (2023-03.0023) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH
+2023-03-08=2023-03-08 * (2023-03.0021) SCHLOSS BURGER GMBH | Essen Burger King  ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH
     Expenses:Lebensmittel:Essen:BurgerKing        EUR13,99
     Assets:Bank:Checking                         EUR-13,99
 
-2023-03-10=2023-03-10 * (2023-03.0022) HORNBACH | Hornbach Wohnung Einkauf  ; type:SEPA-ELV-LASTSCHRIFT, payee:HORNBACH
+2023-03-10=2023-03-10 * (2023-03.0020) HORNBACH | Hornbach Wohnung Einkauf  ; type:SEPA-ELV-LASTSCHRIFT, payee:HORNBACH
     Expenses:Haushalt:Hornbach        EUR13,40
     Assets:Bank:Checking             EUR-13,40
 
-2023-03-14=2023-03-14 * (2023-03.0021) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-5555568  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-5555568, ref:HHHHHHHHHHHHHHHH
+2023-03-14=2023-03-14 * (2023-03.0019) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-5555568  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-5555568, ref:HHHHHHHHHHHHHHHH
     Expenses:Haushalt:Amazon        EUR14,95
     Assets:Bank:Checking           EUR-14,95
 
-2023-03-14=2023-03-14 * (2023-03.0020) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb
+2023-03-14=2023-03-14 * (2023-03.0018) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb
     Expenses:Fahrtkosten:Fahrkarten:Bahn        EUR11,70
     Assets:Bank:Checking                       EUR-11,70
 
-2023-03-14=2023-03-14 * (2023-03.0019) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+2023-03-14=2023-03-14 * (2023-03.0017) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
     Expenses:Lebensmittel:Einkaufen:Lidl        EUR43,15
     Assets:Bank:Checking                       EUR-43,15
 
-2023-03-16=2023-03-16 * (2023-03.0018) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
+2023-03-16=2023-03-16 * (2023-03.0016) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
     Expenses:Hobbies:Merch:PayPal        EUR38,00
     Assets:Bank:Checking                EUR-38,00
 
-2023-03-16=2023-03-16 * (2023-03.0017) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
+2023-03-16=2023-03-16 * (2023-03.0015) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
     Expenses:Hobbies:Sonstiges:PayPal        EUR25,55
     Assets:Bank:Checking                    EUR-25,55
 
-2023-03-21=2023-03-21 * (2023-03.0016) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS
+2023-03-21=2023-03-21 * (2023-03.0014) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus         EUR8,99
     Assets:Bank:Checking                                             EUR-8,99
 
-2023-03-21=2023-03-21 * (2023-03.0015) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
+2023-03-21=2023-03-21 * (2023-03.0013) LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl  ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG
     Expenses:Lebensmittel:Einkaufen:Lidl        EUR65,00
     Assets:Bank:Checking                       EUR-65,00
 
-2023-03-23=2023-03-23 * (2023-03.0014) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-3216548  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-3216548, ref:IIIIIIIIIIIIIIIII
+2023-03-23=2023-03-23 * (2023-03.0012) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-3216548  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-3216548, ref:IIIIIIIIIIIIIIIII
     Expenses:Hobbies:Merch:Amazon        EUR15,99
     Assets:Bank:Checking                EUR-15,99
 
-2023-03-23=2023-03-23 * (2023-03.0013) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-7894569  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-7894569, ref:JJJJJJJJJJJJJJJJ
+2023-03-23=2023-03-23 * (2023-03.0011) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-7894569  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-7894569, ref:JJJJJJJJJJJJJJJJ
     Expenses:Hobbies:Sonstiges:Amazon         EUR4,45
     Assets:Bank:Checking                     EUR-4,45
 
-2023-03-23=2023-03-23 * (2023-03.0012) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
+2023-03-23=2023-03-23 * (2023-03.0010) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A
     Expenses:Hobbies:Sonstiges:PayPal       EUR100,00
     Assets:Bank:Checking                   EUR-100,00
 
-2023-03-24=2023-03-24 * (2023-03.0011) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH
+2023-03-24=2023-03-24 * (2023-03.0009) INTERNET GMBH | Internet GmbH  ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH
     Expenses:Telekommunikation:Online-Dienste:Internet        EUR40,00
     Assets:Bank:Checking                                     EUR-40,00
 
-2023-03-28=2023-03-28 * (2023-03.0010) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo
+2023-03-28=2023-03-28 * (2023-03.0008) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo
     Expenses:Hobbies:Gaming:Nintendo         EUR8,49
     Assets:Bank:Checking                    EUR-8,49
 
-2023-03-28=2023-03-28 * (2023-03.0009) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo
+2023-03-28=2023-03-28 * (2023-03.0007) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo
     Expenses:Hobbies:Gaming:Nintendo         EUR9,99
     Assets:Bank:Checking                    EUR-9,99
 
-2023-03-28=2023-03-28 * (2023-03.0008) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo
+2023-03-28=2023-03-28 * (2023-03.0006) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo
     Expenses:Hobbies:Gaming:Nintendo         EUR9,99
     Assets:Bank:Checking                    EUR-9,99
 
-2023-03-29=2023-03-29 * (2023-03.0007) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH
+2023-03-29=2023-03-29 * (2023-03.0005) Handy Deutschland GmbH | Handy-Internet  ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH
     Expenses:Telekommunikation:Telefon:Handy        EUR25,00
     Assets:Bank:Checking                           EUR-25,00
 
-2023-03-29=2023-03-29 * (2023-03.0006) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT
+2023-03-29=2023-03-29 * (2023-03.0004) DB AUTOMAT | DB Fahrkarten  ; type:KARTENZAHLUNG, payee:DB AUTOMAT
     Expenses:Fahrtkosten:Fahrkarten:Bahn        EUR10,00
     Assets:Bank:Checking                       EUR-10,00
 
-2023-03-29=2023-03-29 * (2023-03.0005) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS
+2023-03-29=2023-03-29 * (2023-03.0003) MCDONALDS | Essen McDonalds  ; type:KARTENZAHLUNG, payee:MCDONALDS
     Expenses:Lebensmittel:Essen:McDonalds         EUR5,99
     Assets:Bank:Checking                         EUR-5,99
 
-2023-03-29=2023-03-29 * (2023-03.0004) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH
+2023-03-29=2023-03-29 * (2023-03.0002) Arbeit GmbH | Einkommen von Arbeit GmbH  ; type:LOHN GEHALT, payee:Arbeit GmbH
     Assets:Bank:Checking      EUR2100,00
     Income:Salary            EUR-2100,00
 
-2023-03-29=2023-03-29 * (2023-03.0003) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:AA BB00000031 BLZ11111111 0
-    Assets:Cash                 EUR50,00
-    Assets:Bank:Checking       EUR-50,00
-
-2023-03-30=2023-03-30 * (2023-03.0002) Kaufland | Einkaufen Kaufland  ; type:KARTENZAHLUNG, payee:Kaufland
+2023-03-30=2023-03-30 * (2023-03.0001) Kaufland | Einkaufen Kaufland  ; type:KARTENZAHLUNG, payee:Kaufland
     Expenses:Lebensmittel:Einkaufen:Kaufland        EUR30,00
     Assets:Bank:Checking                           EUR-30,00
-
-2023-03-30=2023-03-30 * (2023-03.0001) Bank | Kartenauszahlung  ; type:BARGELDAUSZAHLUNG, payee:AA BB00000032 BLZ11111111 0
-    Assets:Cash                 EUR30,00
-    Assets:Bank:Checking       EUR-30,00
 

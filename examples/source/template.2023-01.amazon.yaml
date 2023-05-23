@@ -1,0 +1,15 @@
+- account: Expenses:unknown:Amazon
+  amount: -55.95
+  order: 123-1234567-1234567
+  payee: AMAZON PAYMENTS EUROPE S.C.A.
+  ref: AAAAAAAAAAAAAAAA
+- account: Expenses:unknown:Amazon
+  amount: -200.0
+  order: 123-1234567-1234567
+  payee: AMAZON PAYMENTS EUROPE S.C.A.
+  ref: BBBBBBBBBBBBBBBB
+- account: Expenses:unknown:Amazon
+  amount: -99.95
+  order: 123-1234567-1234568
+  payee: AMAZON PAYMENTS EUROPE S.C.A.
+  ref: CCCCCCCCCCCCCCCC
