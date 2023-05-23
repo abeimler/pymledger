@@ -1,6 +1,6 @@
 # pYMLedger - python hledger generator
 
-pYMLedger ist ein Python-Skript und ein Hilfsprogramm zur Generierung von hledger-Regeln und -Buchungen aus einer Konfigurationsdatei im YAML-Format.
+[hledger-rules](scripts/hledger-rules) ist ein Python-Skript und ein Hilfsprogramm zur Generierung von hledger-Regeln und -Buchungen aus einer Konfigurationsdatei im YAML-Format.
 
 ## Funktionen
 

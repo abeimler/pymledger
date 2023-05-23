@@ -9,7 +9,7 @@
 - account: Assets:Bank:Budget:Lebensmittel
   amount: 250.0
 - account: Assets:Bank:Budget:Sonstiges
-  amount: 15.0
+  amount: 25.0
 - account: Assets:Bank:Budget:Telekommunikation
   amount: 55.0
   comment: Internet

@@ -55,10 +55,10 @@ RUN chmod +x /taskfile_install.sh && /taskfile_install.sh -d -b /usr/local/bin
 COPY . /home/hledger
 COPY ./input /home/hledger/input
 WORKDIR /home/hledger
-ENV PYMLEDGER "/home/hledger/scripts/pymledger/pymledger.py"
+ENV PYMLEDGER_HLEDGER_RULES "/home/hledger/scripts/hledger-rules/hledger-rules.py"
 ENV PYMLEDGER_CONFIG "/home/hledger/config.yml"
 RUN git config --global --add safe.directory /home/hledger && chown -R hledger:root /home/hledger
-RUN pip install -r /home/hledger/scripts/pymledger/requirements.txt
+RUN pip install -r /home/hledger/scripts/hledger-rules/requirements.txt
 
 ENV PROJECT_DIR "/home/hledger"
 ENV HLEDGER "/usr/bin/hledger"
@@ -160,7 +160,7 @@ ENV LEDGER2BEANCOUNT "/usr/ledger2beancount/bin/ledger2beancount"
 
 WORKDIR /home/hledger
 ENV BEANCOUNT_FILE "/home/hledger/journals/all.beancount"
-RUN $PYMLEDGER --hledger-path=$HLEDGER --ledger2beancount-path=$LEDGER2BEANCOUNT -c $PYMLEDGER_CONFIG beancount -f $HLEDGER_JOURNAL_FILE -o $BEANCOUNT_FILE
+RUN $PYMLEDGER_HLEDGER_RULES --hledger-path=$HLEDGER --ledger2beancount-path=$LEDGER2BEANCOUNT -c $PYMLEDGER_CONFIG beancount -f $HLEDGER_JOURNAL_FILE -o $BEANCOUNT_FILE
 
 
 FROM yegle/fava as beancount

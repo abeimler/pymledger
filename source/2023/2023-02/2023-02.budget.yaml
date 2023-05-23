@@ -3,7 +3,7 @@
 - account: Assets:Bank:Budget:Fahrgeld
   amount: 20.0
 - account: Assets:Bank:Budget:Haushalt
-  amount: 50.0
+  amount: 65.0
 - account: Assets:Bank:Budget:Kleidung
   amount: 20.0
 - account: Assets:Bank:Budget:Lebensmittel

@@ -1,6 +1,6 @@
 [project]
 author = "Alex Beimler"
-name = "pymledger"
+name = "hledger-rules"
 version = "0.1.0"
 description = "Generate ledger rules from yaml and then generate journals from csv"
 license = "MIT"

@@ -273,8 +273,8 @@
     (Assets:Bank:Unbudget)                      -45,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Fahrgeld)                20,00 EUR
     (Assets:Bank:Unbudget)                      -20,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Haushalt)                50,00 EUR
-    (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Haushalt)                65,00 EUR
+    (Assets:Bank:Unbudget)                      -65,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Kleidung)                20,00 EUR
     (Assets:Bank:Unbudget)                      -20,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Lebensmittel)           250,00 EUR
@@ -449,8 +449,8 @@
     (Assets:Bank:Unbudget)                      -20,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Lebensmittel)           250,00 EUR
     (Assets:Bank:Unbudget)                     -250,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Sonstiges)               15,00 EUR
-    (Assets:Bank:Unbudget)                      -15,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Sonstiges)               25,00 EUR
+    (Assets:Bank:Unbudget)                      -25,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Spenden)                 20,00 EUR
     (Assets:Bank:Unbudget)                      -20,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Telekommunikation)       55,00 EUR  ; Internet
@@ -711,8 +711,8 @@
     (Assets:Bank:Unbudget)                      -20,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Lebensmittel)           250,00 EUR
     (Assets:Bank:Unbudget)                     -250,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Sonstiges)               15,00 EUR
-    (Assets:Bank:Unbudget)                      -15,00 EUR  ; generated-posting: = Assets:Bank:Budget
+    (Assets:Bank:Budget:Sonstiges)               25,00 EUR
+    (Assets:Bank:Unbudget)                      -25,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Telekommunikation)       55,00 EUR  ; Internet
     (Assets:Bank:Unbudget)                      -55,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Telekommunikation)       30,00 EUR  ; Handy
@@ -958,7 +958,7 @@
 
 2023-05-03=2023-05-03 * (2023-05.0006) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234555  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234555, ref:HHHHHHHHHHHHHHH, modified:
     Expenses:Computer:Hardware:Amazon       20,99 EUR
-    (Assets:Bank:Budget:Wunschliste)       -20,99 EUR  ; generated-posting: = acct:"Expenses:Computer" not:acct:"Expenses:Computer:Abo" date:"2023"
+    (Assets:Bank:Budget:Wunschliste)       -20,99 EUR  ; generated-posting: = acct:"Expenses:Computer" date:"2023"
     (Assets:Bank:Unbudget)                  20,99 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking                   -20,99 EUR
     (Assets:Bank:Unbudget)                 -20,99 EUR  ; generated-posting: = Assets:Bank:Checking

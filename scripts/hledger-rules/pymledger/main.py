@@ -1,25 +1,25 @@
 """Generate ledger rules from yaml and then generate journals from csv
 
 Usage:
-  pymledger [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-month <year> <month> [--opening-closing | --opening] [--strict] [--verbose] 
-  pymledger [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-year <year> [--all-months] [--opening-closing | --opening] [--strict] [--verbose] 
-  pymledger [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-all [--strict] [--verbose] <years>...
-  pymledger [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-all-forecast [--verbose] <years>...
-  pymledger [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] clean-up-csv <year> [--input-csv-delimiter=DELIMITER] [<month>] [--verbose]
-  pymledger [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] clean-up-csv -i INPUT [-o OUTPUT] [--input-csv-delimiter=DELIMITER] [--strict] [--verbose]
-  pymledger [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-rules [<year>] [--verbose]
-  pymledger [-c config.yml] accounts [--verbose]
-  pymledger [-c config.yml] beancount-options [--verbose]
-  pymledger [-c config.yml] plot-senkey --source-account=ACCOUNT -i INPUT [-o OUTPUT] [--verbose]
-  pymledger [-c config.yml] plot-senkey-budget -i INPUT [-o OUTPUT] [--verbose]
-  pymledger [-c config.yml] plot-senkey-expenses -i INPUT [-o OUTPUT] [--verbose]
-  pymledger [-c config.yml] plot-senkey-income-budget -i INPUT [-o OUTPUT] [--verbose]
-  pymledger [-c config.yml] plot-senkey-budget-expenses -i INPUT [-o OUTPUT] [--verbose]
-  pymledger [-c config.yml] plot-senkey-income-budget-expenses -i INPUT [-o OUTPUT] [--verbose]
-  pymledger [-c config.yml] budget [--balance] [--verbose]
-  pymledger [--hledger-path=HLEDGER] [--ledger2beancount-path=LEDGER2BEANCOUNT] [-c config.yml] beancount -f JOURNAL [-o OUTPUT] [--verbose]
-  pymledger -h | --help
-  pymledger --version
+  hledger-rules [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-month <year> <month> [--opening-closing | --opening] [--strict] [--verbose] 
+  hledger-rules [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-year <year> [--all-months] [--opening-closing | --opening] [--strict] [--verbose] 
+  hledger-rules [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-all [--strict] [--verbose] <years>...
+  hledger-rules [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-all-forecast [--verbose] <years>...
+  hledger-rules [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] clean-up-csv <year> [--input-csv-delimiter=DELIMITER] [<month>] [--verbose]
+  hledger-rules [--hledger-path=HLEDGER] [-c config.yml] [--output-dir=OUTPUT_DIR] clean-up-csv -i INPUT [-o OUTPUT] [--input-csv-delimiter=DELIMITER] [--strict] [--verbose]
+  hledger-rules [-c config.yml] [--output-dir=OUTPUT_DIR] [--templates-dir=TEMPLATES_DIR] gen-rules [<year>] [--verbose]
+  hledger-rules [-c config.yml] accounts [--verbose]
+  hledger-rules [-c config.yml] beancount-options [--verbose]
+  hledger-rules [-c config.yml] plot-senkey --source-account=ACCOUNT -i INPUT [-o OUTPUT] [--verbose]
+  hledger-rules [-c config.yml] plot-senkey-budget -i INPUT [-o OUTPUT] [--verbose]
+  hledger-rules [-c config.yml] plot-senkey-expenses -i INPUT [-o OUTPUT] [--verbose]
+  hledger-rules [-c config.yml] plot-senkey-income-budget -i INPUT [-o OUTPUT] [--verbose]
+  hledger-rules [-c config.yml] plot-senkey-budget-expenses -i INPUT [-o OUTPUT] [--verbose]
+  hledger-rules [-c config.yml] plot-senkey-income-budget-expenses -i INPUT [-o OUTPUT] [--verbose]
+  hledger-rules [-c config.yml] budget [--balance] [--verbose]
+  hledger-rules [--hledger-path=HLEDGER] [--ledger2beancount-path=LEDGER2BEANCOUNT] [-c config.yml] beancount -f JOURNAL [-o OUTPUT] [--verbose]
+  hledger-rules -h | --help
+  hledger-rules --version
 
 
 Commands:
@@ -428,8 +428,7 @@ def gen_beancount_options(config):
     ret = ret + Templates.BEANCOUNT_OPTION_FORMAT.format(option='name_income',
                                                          amount=Const.INCOME_ACCOUNT.capitalize()) + '\n'
     ret = ret + Templates.BEANCOUNT_OPTION_FORMAT.format(option='name_expenses',
-                                                         amount=Const.EXPENSES_ACCOUNT.capitalize())
-    ret = ret + Templates.BEANCOUNT_OPTION_FORMAT.format(option='operating_currency', amount=Const.CURRENCY) + '\n'
+                                                         amount=Const.EXPENSES_ACCOUNT.capitalize()) + '\n'
     ret = ret + Templates.BEANCOUNT_PLUGIN_FORMAT.format(plugin='beancount.plugins.auto_accounts') + '\n'
     return ret
 

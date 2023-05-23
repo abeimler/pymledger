@@ -112,34 +112,34 @@ tasks:
   report:plot:
     # plot
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA -2 Expenses -o reports/plot_data_expenses.csv -O csv'
-    - task: pymledger
+    - task: hledger-rules
       vars:
         ARGS: plot-senkey-expenses -i reports/plot_data_expenses.csv -o reports/expenses.png
 
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA -4 Assets:Bank:Budget -o reports/plot_data_budget.csv -O csv'
-    #- task: pymledger
+    #- task: hledger-rules
     #  vars:
     #    ARGS: plot-senkey-budget -i reports/plot_data_budget.csv -o reports/budget.png
 
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA -3 Income Assets:Bank:Budget -o reports/plot_data_income_budget.csv -O csv'
-    #- task: pymledger
+    #- task: hledger-rules
     #  vars:
     #    ARGS: plot-senkey-income-budget -i reports/plot_data_income_budget.csv -o reports/income_budget.png
 
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA Assets:Bank:Budget Expenses -o reports/plot_data_budget_expenses.csv -O csv'
-    #- task: pymledger
+    #- task: hledger-rules
     #  vars:
     #    ARGS: plot-senkey-budget-expenses -i reports/plot_data_budget_expenses.csv -o reports/budget_expenses.png
 
     - '{{.HLEDGER}} -f all.hledger bal --auto -MA -3 Income Expenses Assets:Bank:Budget -o reports/plot_data_income_budget_expenses.csv -O csv'
-    #- task: pymledger
+    #- task: hledger-rules
     #  vars:
     #    ARGS: plot-senkey-income-budget-expenses -i reports/plot_data_budget_expenses.csv -o reports/plot_data_budget_income_expenses.png
 
   generate:beancount:
     dir: "{{.PROJECT_DIR}}"
     cmds:
-      - task: pymledger
+      - task: hledger-rules
         vars:
           ARGS: --hledger-path={{.HLEDGER}} --ledger2beancount-path={{.LEDGER2BEANCOUNT}} -c {{.CONFIG}} beancount -f {{.INPUT}} -o {{.OUTPUT}}
     vars:
@@ -147,7 +147,7 @@ tasks:
       OUTPUT: 'journals/all.beancount'
 
   budget:
-    - task: pymledger
+    - task: hledger-rules
       vars:
         ARGS: -c {{.CONFIG}} budget
 
@@ -155,13 +155,13 @@ tasks:
     internal: true
     dir: "{{.PROJECT_DIR}}"
     cmds:
-      - task: pymledger
+      - task: hledger-rules
         vars:
           ARGS: --hledger-path={{.HLEDGER}} -c {{.CONFIG}} clean-up-csv {{.DATE}}
-      - task: pymledger
+      - task: hledger-rules
         vars:
           ARGS: -c {{.CONFIG}} gen-rules {{.DATE}}
-      - task: pymledger
+      - task: hledger-rules
         vars:
           ARGS: --hledger-path={{.HLEDGER}} -c {{.CONFIG}} gen-year {{.DATE}}
 
@@ -169,18 +169,18 @@ tasks:
     internal: true
     dir: "{{.PROJECT_DIR}}"
     cmds:
-      - task: pymledger
+      - task: hledger-rules
         vars:
           ARGS: --hledger-path={{.HLEDGER}} gen-all {{.DATES}}
-      - task: pymledger
+      - task: hledger-rules
         vars:
           ARGS: --hledger-path={{.HLEDGER}} -c {{.CONFIG}} gen-all-forecast {{.DATES}}
 
-  pymledger:
+  hledger-rules:
     internal: true
     dir: "{{.PROJECT_DIR}}"
     cmds:
-      - python3 {{.PROJECT_DIR}}/scripts/pymledger/pymledger.py {{.ARGS}}
+      - python3 {{.PROJECT_DIR}}/scripts/hledger-rules/hledger-rules.py {{.ARGS}}
     vars:
       CONFIG: '{{.CONFIG | default "config.yml"}}'
 

@@ -27,7 +27,7 @@
 = acct:"Expenses:Fahrtkosten:Fahrkarten:Bahn" not:acct:"Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket" date:"2023"
     (Assets:Bank:Budget:Fahrgeld)                                                                 *-1
 
-= acct:"Expenses:Computer" not:acct:"Expenses:Computer:Abo" date:"2023"
+= acct:"Expenses:Computer" date:"2023"
     (Assets:Bank:Budget:Wunschliste)                                                              *-1
 
 = acct:"Expenses:Hobbies:Merch" date:"2023"
