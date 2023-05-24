@@ -55,7 +55,7 @@ Daraus ergibt sich das `if_format`: `{order}.*Amazon .Mktplce{ref}`
 
 #### Amazon-Bestellungen
 
-Nachdem wir die Journale für das Jahr 2023 erstellt haben, finden Sie im Verzeichnis `source/` eine Vorlage für die Amazon-Bestellungen: [template.2023-01.amazon.yaml](source/2023/2023-01/template.2023-01.amazon.yaml)
+Nachdem wir die Journale für das Jahr 2023 erstellt haben, finden Sie im Verzeichnis `source/` eine Vorlage für die Amazon-Bestellungen: [template.2023-01.amazon.yaml](../source/2023/2023-01/template.2023-01.amazon.yaml)
 
 
 **template.2023-01.amazon.yaml**
@@ -67,7 +67,7 @@ Nachdem wir die Journale für das Jahr 2023 erstellt haben, finden Sie im Verzei
   ref: AAAAAAAAAAAAAAAA
 ```
 
-Diese Vorlage können wir verwenden, um die echten Bestellungen in [2023-01.amazon.yaml](source/2023/2023-01/2023-01.amazon.yaml) einzutragen:
+Diese Vorlage können wir verwenden, um die echten Bestellungen in [2023-01.amazon.yaml](../source/2023/2023-01/2023-01.amazon.yaml) einzutragen:
 
 ```yaml
 - account: Expenses:Haushalt:Amazon

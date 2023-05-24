@@ -74,7 +74,7 @@ ROW_NAME_VALUE = 'Betrag'
 ROW_NAME_INFO = 'Info'
 
 CSV_INPUT_DELIMITER = ','
-CSV_DELIMITER = ';'
+CSV_DELIMITER = ','
 CSV_QUOTECHAR = '"'
 
 RULE_FIELD_NAME_RECIPIENT = 'beguenstigter_zahlungspflichtiger'

@@ -4,7 +4,7 @@
 skip 1
 
 # .csv delimiter
-separator ;
+separator ,
 
 # name the csv fields (and assign the transaction's date, amount and code)
 fields auftragskonto, date,	date2, buchungstext, verwendungszweck, glaeubigerid, mandatsreferenz, kundenreferenz, sammlerreferenz, lastschriftursprungsbetrag, auslagenersatz_ruecklastschrift,	beguenstigter_zahlungspflichtiger, kontonummeriban, bic, amount, currency, info, code, payee

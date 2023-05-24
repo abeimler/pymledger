@@ -1,15 +1,16 @@
 # pYMLedger - python hledger generator
 
-[hledger-rules](scripts/hledger-rules) ist ein Python-Skript zur Generierung von hledger-Regeln und -Buchungen aus einer Konfigurationsdatei im YAML-Format.
+pYMLedger ist eine Projekt-Vorlage fürs [PTA](https://plaintextaccounting.org/), basierent auf [hledger](https://hledger.org/).
+Zusammen mit den Python-Script [hledger-rules](scripts/hledger-rules) ist es möglich hledger-Regeln und -Buchungen aus einer Konfigurationsdatei im YAML-Format zu generieren.
 
 ## Funktionen
 
-- CSV-Bereinigung: pYMLedger bietet Funktionen zum Bereinigen von CSV-Dateien vor der Generierung von hledger-Regeln und -Buchungen.
+- CSV-Bereinigung: [hledger-rules](scripts/hledger-rules) bietet Funktionen zum Bereinigen von CSV-Dateien vor der Generierung von hledger-Regeln und -Buchungen.
 - Generierung von hledger-Regeln: Das Skript kann hledger-Regeln basierend auf der in der `config.yml`-Datei angegebenen Konfiguration generieren.
 - Generierung von hledger-Buchungen: Es kann auch hledger-Buchungen aus CSV-Eingabedateien generieren.
 - Vorgegebene und häufig verwendete Aufgaben: pYMLedger enthält eine `Taskfile.yaml`, die vordefinierte Aufgaben für eine einfachere Ausführung enthält.
-- Docker-Unterstützung: Das Skript kann in einem Docker-Container ausgeführt werden, zusammen mit hledger-web für eine webbasierte Oberfläche.
-- Budgetierung und Prognose: pYMLedger unterstützt Funktionen zur Budgetierung und Prognose.
+- Docker-Unterstützung: Das Skript kann in einem Docker-Container ausgeführt werden, zusammen mit [hledger-web](https://hledger.org/1.29/hledger-web.html) für eine webbasierte Oberfläche.
+- Budgetierung und Prognose: [hledger-rules](scripts/hledger-rules) unterstützt Funktionen zur Budgetierung und Prognose.
 
 ## Installation und Abhängigkeiten
 
@@ -28,7 +29,7 @@ Bevor Sie [hledger-rules](scripts/hledger-rules/hledger-rules.py) verwenden, ste
 Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen Sie einfach diesen Schritten:
 
 1. **Eingabe und Quellen:**
-   Verwenden Sie CSV-Exporte von Ihrem Online-Banking oder die mitgelieferten [Beispieldateien](examples/input/) für Testzwecke und speicher die .csv-Dateien in [`input/`](input/), siehe [Verzeichnisstruktur](doc/GETSTARTED.md#verzeichnisstruktur).
+   Verwenden Sie CSV-Exporte (**Im [CAMT-CSV Format](https://de.wikipedia.org/wiki/Camt-Format)**) von Ihrem Online-Banking oder die mitgelieferten [Beispieldateien](examples/input/) für Testzwecke und speicher die .csv-Dateien in [`input/`](input/), siehe [Verzeichnisstruktur](doc/GETSTARTED.md#verzeichnisstruktur).
 
 2. **CSV-Dateien bereinigen:**
    Führen Sie den Befehl aus, um die CSV-Dateien zu bereinigen und in das Verzeichnis `source` zu verschieben:
@@ -37,7 +38,7 @@ Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen 
    ```
 
 3. **Regeln erstellen:**
-   Erstellen Sie Regeln für Lastschriften, Überweisungen usw. im Block `common_rules` in der Datei `config.yml`, siehe [Erste Schritte](doc/GETSTARTED.md) für mehr details.
+   Erstellen Sie Regeln für Lastschriften, Überweisungen usw. im Block `common_rules` in der Datei `config.yml`, siehe [Erste Schritte](doc/GETSTARTED.md#erstellung-der-regeln) für mehr details.
 
 4. **Regeln generieren:**
    Generieren Sie die Regeln mit dem folgenden Befehl:
@@ -55,7 +56,7 @@ Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen 
    Sobald alle Ausgabenregeln eingetragen sind, können Sie zur [Budgetierung](doc/BUDGET.md) übergehen.
 
 7. **Spezielle Regeln:**
-   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe vermeiden möchten, können Sie vordefinierte Regeln in der Datei `config.yml` erstellen. Weitere Informationen finden Sie [doc/Amazon](doc/AMAZON.md) und [doc/PayPal](doc/PAYPAL.md).
+   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe verwenden möchten, können Sie vordefinierte Regeln in die `config.yml` Datei eintragen. Weitere Informationen finden Sie in [doc/Amazon](doc/AMAZON.md) und [doc/PayPal](doc/PAYPAL.md).
 
 Möchten Sie weitere Informationen und detaillierte Anweisungen? Lesen Sie [hier mehr](doc/GETSTARTED.md).
 

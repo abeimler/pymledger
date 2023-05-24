@@ -39,20 +39,20 @@ Bevor wir aus den CSV-Dateien `rules` und `journals` generieren, sollten wir die
 python3 ./scripts/hledger-rules/hledger-rules.py -c config.yml clean-up-csv 2023
 ```
 
-_Die CSV-Dateien aus den [input/2023](input/2023) (für das Jahr **`2023`**) werden etwas "gesäubert" und in [source/2023](source/2023/) gepackt._
+_Die CSV-Dateien aus den [../input/2023](input/2023) (für das Jahr **`2023`**) werden etwas "gesäubert" und in [../source/2023](source/2023/) gepackt._
 
 
 
 ### Lastschrift, Überweisungen, etc. - (gemeinsame) Regeln
 
-Lassen Sie uns nun die CSV-Dateien im Verzeichnis [source/2023](source/2023/) betrachten. Dort sollten alle monatlichen Kontoauszüge unserer Bank zu finden sein.
+Lassen Sie uns nun die CSV-Dateien im Verzeichnis [../source/2023](source/2023/) betrachten. Dort sollten alle monatlichen Kontoauszüge unserer Bank zu finden sein.
 Wir können uns zunächst auf die **Ausgaben** (`Expenses`) konzentrieren und Zeile für Zeile durchgehen, um für jeden Eintrag/Ausgabe eine `rule` zu erstellen.
 
 #### Beispiel: Wohnen
 
 Betrachten wir beispielsweise die CSV-Datei für Januar 2023. Darin befindet sich eine Zeile mit dem Verwendungszweck "Wohnen" (wichtig sind hier nur die Spalten "Verwendungszweck" und "Begünstigter/Zahlungspflichtiger").
 
-**([source/2023/2023-01/csv/2023-01.bank.csv](source/2023/2023-01/csv/2023-01.bank.csv))**
+**([source/2023/2023-01/csv/2023-01.bank.csv](../source/2023/2023-01/csv/2023-01.bank.csv))**
 ```csv
 ****,02.01.23,02.01.23,DAUERAUFTRAG,1234/4568.00001.12,***,,,****,,,Wohnen GmbH,,,"-499,2",EUR,Umsatz gebucht,2023-01.0031,Wohnen GmbH
 ```
@@ -85,7 +85,7 @@ Nachdem wir die Regeln in unsere `config.yml` eingetragen haben, können wir die
 python3 ./scripts/hledger-rules/hledger-rules.py -c config.yml gen-rules 2023
 ```
 
-_Die Regeln werden im Verzeichnis [journals/2023/rules/](journals/2023/rules) gespeichert._
+_Die Regeln werden im Verzeichnis [journals/2023/rules/](../journals/2023/rules) gespeichert._
 
 **common.csv.rules**
 ```journal
@@ -104,7 +104,7 @@ python3 ./scripts/hledger-rules/hledger-rules.py -c config.yml gen-rules 2023
 python3 ./scripts/hledger-rules/hledger-rules.py --hledger-path=/usr/bin/hledger -c config.yml gen-year 2023
 ```
 
-_Die erstellten Journals werden im Verzeichnis [journals/2023/](journals/2023) gespeichert._
+_Die erstellten Journals werden im Verzeichnis [journals/2023/](../journals/2023) gespeichert._
 
 **2023-01.bank.hledger**
 ```hledger

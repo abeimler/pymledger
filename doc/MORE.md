@@ -2,7 +2,7 @@
 
 Das `account` `Assets:Bank:Checking` sollte den Betrag auf deinem Bankkonto oder die Einnahmen/Ausgaben aus der (input) .csv-Datei widerspiegeln.
 
-Möglicherweise musst du die Eröffnungsbilanz in der Datei [all.hledger](all.hledger) anpassen:
+Möglicherweise musst du die Eröffnungsbilanz in der Datei [all.hledger](../all.hledger) anpassen:
 
 ```hledger
 2023/01/01 * opening balances   ; opening:

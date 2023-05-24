@@ -83,7 +83,7 @@ def amount_to_journal_amount_string(amount):
 
 def is_amount_whole(amount):
     if isinstance(amount, str):
-        return amount.replace('.', Const.DECIMAL_MARK).find(",") >= 0
+        return amount.replace('.', Const.DECIMAL_MARK).find(Const.DECIMAL_MARK) >= 0
     if isinstance(amount, int):
         return True
     if isinstance(amount, float):
