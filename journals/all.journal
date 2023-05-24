@@ -8,7 +8,7 @@
 2023-01-01 * Current Year Budget for month 01  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking
     (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
@@ -272,7 +272,7 @@
 2023-02-01 * Current Year Budget for month 02  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking
     (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
@@ -454,7 +454,7 @@
 2023-03-01 * Current Year Budget for month 03  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking
     (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
@@ -712,7 +712,7 @@
 2023-04-01 * Current Year Budget for month 04  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking
     (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
@@ -888,7 +888,7 @@
 2023-05-01 * Current Year Budget for month 05  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Amazon:Prime)        7,50 EUR
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
-    (Assets:Bank:Budget:Versicherungen)          0,83 EUR
+    (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking
     (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
@@ -1015,4 +1015,8 @@
     Assets:Cash                  50,00 EUR
     Assets:Bank:Checking        -50,00 EUR
     (Assets:Bank:Unbudget)      -50,00 EUR  ; generated-posting: = Assets:Bank:Checking
+
+2023-05-18 * Geburtstagsgeld von Eltern
+    Income:Geschenk:Eltern:Bargeld      -50,00 EUR
+    Assets:Cash
 

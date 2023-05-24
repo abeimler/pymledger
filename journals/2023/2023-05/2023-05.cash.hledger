@@ -1,4 +1,7 @@
 ;;do not change, generated file; 2023-05
 
 ;;; Cash entires
+2023/05/18 * Geburtstagsgeld von Eltern
+    Income:Geschenk:Eltern:Bargeld                                       -50,00 EUR
+    Assets:Cash
 

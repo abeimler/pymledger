@@ -112,7 +112,16 @@ def gen_budget_rules_from_data_yearly(config, year, budget_data, budget_filename
                         amount = round(entry.get('amount', 0.0) / 12, 2)
                         account_name = entry['account'].strip()
                         account = Templates.BUDGET_ACCOUNT_FORMAT.format(account_name)
-                        budget_accounts = budget_accounts + Templates.BUDGET_ENTRY_FORMAT.format(account=account.strip(),
+                        if 'comment' in entry:
+                            budget_accounts = budget_accounts + Templates.BUDGET_ENTRY_WITH_COMMENT_FORMAT.format(account=account.strip(),
+                                                                                                amount=amount_to_journal_amount_string(
+                                                                                                    amount),
+                                                                                                currency=entry.get(
+                                                                                                    'currency',
+                                                                                                    Const.CURRENCY),
+                                                                                                comment=entry.get('comment'))
+                        else:
+                            budget_accounts = budget_accounts + Templates.BUDGET_ENTRY_FORMAT.format(account=account.strip(),
                                                                                                 amount=amount_to_journal_amount_string(
                                                                                                     amount),
                                                                                                 currency=entry.get(
@@ -140,7 +149,16 @@ def gen_budget_rules_from_data_yearly(config, year, budget_data, budget_filename
                                 amount = round(entry.get('amount', 0.0) / 12, 2)
                                 account_name = entry['account'].strip()
                                 account = Templates.BUDGET_ACCOUNT_FORMAT.format(account_name)
-                                budget_accounts = budget_accounts + Templates.BUDGET_ENTRY_FORMAT.format(account=account.strip(),
+                                if 'comment' in entry:
+                                    budget_accounts = budget_accounts + Templates.BUDGET_ENTRY_WITH_COMMENT_FORMAT.format(account=account.strip(),
+                                                                                                        amount=amount_to_journal_amount_string(
+                                                                                                            amount),
+                                                                                                        currency=entry.get(
+                                                                                                            'currency',
+                                                                                                            Const.CURRENCY),
+                                                                                                        comment=entry.get('comment'))
+                                else:
+                                    budget_accounts = budget_accounts + Templates.BUDGET_ENTRY_FORMAT.format(account=account.strip(),
                                                                                                         amount=amount_to_journal_amount_string(
                                                                                                             amount),
                                                                                                         currency=entry.get(
@@ -181,11 +199,18 @@ def gen_forecast_rules_from_data(config, year, month, data, forecast_filename):
                     expense_account = "{}:{}".format(Const.EXPENSES_ACCOUNT,
                                                      account_name.replace(Const.BUDGET_ACCOUNT, ''))
                 if expense_account:
-                    accounts = accounts + Templates.FORECAST_ENTRY_FORMAT.format(account=expense_account.strip(),
+                    if 'comment' in entry:
+                        accounts = accounts + Templates.FORECAST_ENTRY_WITH_COMMENT_FORMAT.format(account=expense_account.strip(),
                                                                                  amount=amount_to_journal_amount_string(
                                                                                      entry.get('amount', 0.0)),
                                                                                  currency=entry.get('currency',
-                                                                                                    Const.CURRENCY))
+                                                                                                    Const.CURRENCY), comment=entry.get('comment'))
+                    else:
+                        accounts = accounts + Templates.FORECAST_ENTRY_FORMAT.format(account=expense_account.strip(),
+                                                                                    amount=amount_to_journal_amount_string(
+                                                                                        entry.get('amount', 0.0)),
+                                                                                    currency=entry.get('currency',
+                                                                                                        Const.CURRENCY))
                     ret.add(expense_account)
             else:
                 utils.print_error("no account in budget")

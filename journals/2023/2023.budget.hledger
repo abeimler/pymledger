@@ -3,22 +3,22 @@
 ;; Budget
 2023-01-01 * Current Year Budget for month 01; budget:
     (Assets:Bank:Budget:Abo:Amazon:Prime)                                    7,5 EUR
-    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR
+    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR ; Fielmann
     Assets:Bank:Checking
 2023-02-01 * Current Year Budget for month 02; budget:
     (Assets:Bank:Budget:Abo:Amazon:Prime)                                    7,5 EUR
-    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR
+    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR ; Fielmann
     Assets:Bank:Checking
 2023-03-01 * Current Year Budget for month 03; budget:
     (Assets:Bank:Budget:Abo:Amazon:Prime)                                    7,5 EUR
-    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR
+    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR ; Fielmann
     Assets:Bank:Checking
 2023-04-01 * Current Year Budget for month 04; budget:
     (Assets:Bank:Budget:Abo:Amazon:Prime)                                    7,5 EUR
-    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR
+    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR ; Fielmann
     Assets:Bank:Checking
 2023-05-01 * Current Year Budget for month 05; budget:
     (Assets:Bank:Budget:Abo:Amazon:Prime)                                    7,5 EUR
-    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR
+    (Assets:Bank:Budget:Versicherungen)                                    0,830 EUR ; Fielmann
     Assets:Bank:Checking
 

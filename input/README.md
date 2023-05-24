@@ -1,10 +1,17 @@
 # CSV Dateien von der Bank
 
-Original `.csv`-Dateien von der Bank (Monatliche exports) im CAMT-CSV Format.
+Original `.csv`-Dateien von der Bank (Monatliche exports) im [CAMT-CSV Format](https://de.wikipedia.org/wiki/Camt-Format).
+
+## CAMT-CSV Format
+
+Folge Header muss die CSV beinhalten:
+```csv
+Auftragskonto,Buchungstag,Valutadatum,Buchungstext,Verwendungszweck,Glaeubiger ID,Mandatsreferenz,Kundenreferenz (End-to-End),Sammlerreferenz,Lastschrift Ursprungsbetrag,Auslagenersatz Ruecklastschrift,Beguenstigter/Zahlungspflichtiger,Kontonummer/IBAN,BIC (SWIFT-Code),Betrag,Waehrung,Info
+```
 
 ## Ordner Struktur
 
-Folgende Struktur sollten die Ordner haben in [input/](input/):
+Folgende Struktur sollten die Ordner haben in [input/](../input/):
 
 ```
 ├── input/
@@ -17,10 +24,6 @@ Folgende Struktur sollten die Ordner haben in [input/](input/):
 
 Mit "YYYY-MM"-Format für den Ordner und "YYYY-MM.bank.csv" für die CAMT-CSV Datei.
 
-## git
-
-Ich persönlich hab die input's aus den git ignored.
-
 ### input/ -> source/
 
-Aus den `input/**/*.bank.csv`'s werden die Quelle Dateien für das Journals, "gesäubert" und in [source/](source/) abgelegt.
+Aus den `input/**/*.bank.csv`'s werden die CSV-Quelle-Dateien für die Journals, "gesäubert" und in [source/](../source/) abgelegt.

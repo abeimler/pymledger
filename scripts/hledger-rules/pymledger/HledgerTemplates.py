@@ -282,6 +282,7 @@ CURRENT_MONTH_BUDGET_CONTENT_EMPTY_TEMPLATE = Template(""";;do not change, gener
 
 FORECAST_ACCOUNT_FORMAT = "{}"
 FORECAST_ENTRY_FORMAT = JOURNAL_ENTRY_FORMAT
+FORECAST_ENTRY_WITH_COMMENT_FORMAT = JOURNAL_ENTRY_WITH_COMMENT_FORMAT
 FORECAST_CONTENT_TEMPLATE = Template(""";;do not change, generated file; ${year}-${month}
 
 ;; Forecast, for this month ${year}-${month}
@@ -320,6 +321,10 @@ ${rules}
 
 CASH_JOURNAL_ENTRY_FORMAT = """{year:04}/{month:02}/{day:02} * {description}
     {account:<64} {amount:>10} {currency}
+    {cash_account}
+"""
+CASH_JOURNAL_ENTRY_WITH_COMMENT_FORMAT = """{year:04}/{month:02}/{day:02} * {description}
+    {account:<64} {amount:>10} {currency} ; {comment}
     {cash_account}
 """
 CASH_JOURNAL_CONTENT_TEMPLATE = Template(""";;do not change, generated file; ${year}-${month}

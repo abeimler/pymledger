@@ -1,0 +1,5 @@
+- account: Income:Geschenk:Eltern:Bargeld
+  day: 18
+  description: Geburtstagsgeld von Eltern
+  amount: 50.0
+  income: true

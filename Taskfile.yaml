@@ -26,6 +26,12 @@ tasks:
     cmds:
       - task: generate
       - task: view
+
+  generate:all:
+    cmds:
+      - task: generate
+      - task: generate:beancount
+      - task: report
   
   generate:
     aliases: [gen]

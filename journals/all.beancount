@@ -53,6 +53,7 @@ plugin "beancount.plugins.auto_accounts"
 1970-01-01 open Expenses:Versicherungen:Brille
 1970-01-01 open Expenses:Wohnen:Miete
 1970-01-01 open Expenses:Wohnen:Nebenkosten:Strom
+1970-01-01 open Income:Geschenk:Eltern:Bargeld
 1970-01-01 open Income:Salary
 
 1970-01-01 commodity EUR
@@ -569,4 +570,8 @@ plugin "beancount.plugins.auto_accounts"
 2023-05-16 * "Bank | Kartenauszahlung" ; type:BARGELDAUSZAHLUNG, payee:, modified:
   Assets:Cash                  50,00 EUR
   Assets:Bank:Checking        -50,00 EUR
+
+2023-05-18 * "Geburtstagsgeld von Eltern"
+  Income:Geschenk:Eltern:Bargeld      -50,00 EUR
+  Assets:Cash
 

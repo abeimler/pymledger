@@ -190,7 +190,9 @@ def gen_month(config, year, month, none_gen_source_files=False):
                 for cash in cash_data:
                     if 'account' in cash:
                         account_name = cash['account'].strip()
-                        cash_entires = cash_entires + Templates.CASH_JOURNAL_ENTRY_FORMAT.format(year=year, month=month,
+                        amount_factor = -1.0 if 'income' in cash and cash['income'] else 1.0
+                        if 'comment' in cash:
+                            cash_entires = cash_entires + Templates.CASH_JOURNAL_ENTRY_FORMAT.format(year=year, month=month,
                                                                                                  day=int(cash.get('day',
                                                                                                                   1)),
                                                                                                  description=cash.get(
@@ -198,7 +200,22 @@ def gen_month(config, year, month, none_gen_source_files=False):
                                                                                                  account=account_name,
                                                                                                  amount=amount_to_journal_amount_string(
                                                                                                      cash.get('amount',
-                                                                                                              0.0)),
+                                                                                                              0.0) * amount_factor),
+                                                                                                 currency=cash.get(
+                                                                                                     'currency',
+                                                                                                     Const.CURRENCY),
+                                                                                                 cash_account=Const.CASH_ACCOUNT,
+                                                                                                 comment=cash.get('comment', ''))
+                        else:
+                            cash_entires = cash_entires + Templates.CASH_JOURNAL_ENTRY_FORMAT.format(year=year, month=month,
+                                                                                                 day=int(cash.get('day',
+                                                                                                                  1)),
+                                                                                                 description=cash.get(
+                                                                                                     'description', ''),
+                                                                                                 account=account_name,
+                                                                                                 amount=amount_to_journal_amount_string(
+                                                                                                     cash.get('amount',
+                                                                                                              0.0) * amount_factor),
                                                                                                  currency=cash.get(
                                                                                                      'currency',
                                                                                                      Const.CURRENCY),

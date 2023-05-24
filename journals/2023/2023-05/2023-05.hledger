@@ -15,6 +15,7 @@ account Assets:Bank:Budget:Wunschliste
 account Expenses:Computer:Hardware:Amazon                               
 account Expenses:Haushalt:Amazon                                        
 account Expenses:Spenden:PreventCancerFoundation                        
+account Income:Geschenk:Eltern:Bargeld                                  
 
 
 ;; include generated journals
