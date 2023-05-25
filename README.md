@@ -1,7 +1,7 @@
 # pYMLedger - python hledger generator
 
 pYMLedger ist eine Projekt-Vorlage fürs [PTA](https://plaintextaccounting.org/), basierent auf [hledger](https://hledger.org/).
-Zusammen mit den Python-Script [hledger-rules](scripts/hledger-rules) ist es möglich hledger-Regeln und -Buchungen aus einer Konfigurationsdatei im YAML-Format zu generieren.
+Zusammen mit den Python-Skript [hledger-rules](scripts/hledger-rules) ist es möglich hledger-Regeln und -Buchungen aus einer Konfigurationsdatei im YAML-Format zu generieren.
 
 ## Funktionen
 
@@ -226,6 +226,7 @@ hledger-web -f all.hledger --capabilities=view --auto
 
 ## Disclaimer
 
+Ich bin kein Finanzberater und das Tool ist auch mehr zum Budgeten gedacht.
 Die Tabelle und die Beispiele, die du hier siehst, sind alle fiktiv, basieren aber auf realen Kontoauszügen (wie Amazon, PayPal usw.). Verwende dieses Projekt als Vorlage für dein [PTA (Plain Text Accounting)](https://plaintextaccounting.org/), am besten in Kombination mit Git, um alles Mögliche zu verfolgen und die Automatisierung deiner Kontoauszüge (Eingabedateien im CSV-Format) zu maximieren. Behalte dabei alle privaten Daten für dich.
 
 
@@ -234,11 +235,12 @@ Die Tabelle und die Beispiele, die du hier siehst, sind alle fiktiv, basieren ab
 Die Lizenz für die Software findest du in der Datei [LICENSE](LICENSE).
 
 
-### Limitirungen
+### Limitierung
 
 * "Open" und "Closing" pro Monat: Derzeit bauen alle Monate noch aufeinander auf (Kontoauszüge usw.), sodass sie noch nicht unabhängig voneinander sind.
 * TODO: Erstellung von Diagrammen/Charts
 * Die Verwendung mehrerer Banken ist nicht möglich.
+* Budget aufteile in ein Monats sind nicht möglich (es ist nur möglich den Monatstag zum budgeten zu ändern)
 
 
 
