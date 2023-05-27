@@ -166,15 +166,15 @@ plugin "beancount.plugins.auto_accounts"
   Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
   Assets:Bank:Checking                          -25,00 EUR
 
-2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon {order} - Neuer Staubsauger" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
+2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon Neuer Staubsauger" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
   Expenses:Haushalt:Amazon            99,95 EUR
   Assets:Bank:Checking               -99,95 EUR
 
-2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
+2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
   Expenses:Haushalt:Amazon           200,00 EUR
   Assets:Bank:Checking              -200,00 EUR
 
-2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
+2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
   Expenses:Haushalt:Amazon            55,95 EUR
   Assets:Bank:Checking               -55,95 EUR
 

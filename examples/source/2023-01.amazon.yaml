@@ -8,3 +8,6 @@
 - account: Expenses:Haushalt:Amazon
   ref: 8ABCDE5FGH45IJKL
   description: Tischlampe
+- account: Expenses:Haushalt:Amazon
+  order: 123-1234567-1234567
+  description: "{order} - Microwelle"

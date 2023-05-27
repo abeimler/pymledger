@@ -50,10 +50,12 @@ def gen_amazon_rule(config, rule, filename_yaml=None):
         elif 'payee' in config['amazon'] and config['amazon']['payee']:
             payee = config['amazon']['payee']
 
-        full_description = Templates.AMAZON_DESCRIPTION_FORMAT.format(description=description.strip())
+        new_description=description.format(order=order, ref=rule.get('ref', ''))
+
+        full_description = Templates.AMAZON_DESCRIPTION_FORMAT.format(description=new_description.strip())
         if payee:
             full_description = Templates.AMAZON_DESCRIPTION_PAYEE_FORMAT.format(payee=payee,
-                                                                                description=description.strip())
+                                                                                description=new_description.strip())
         if 'full_description' in rule:
             full_description = rule['full_description'] if 'full_description' in rule else ''
 

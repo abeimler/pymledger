@@ -90,15 +90,15 @@
     Expenses:Telekommunikation:Telefon:Handy        EUR25,00
     Assets:Bank:Checking                           EUR-25,00
 
-2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon {order} - Neuer Staubsauger  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
+2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon Neuer Staubsauger  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
     Expenses:Haushalt:Amazon        EUR99,95
     Assets:Bank:Checking           EUR-99,95
 
-2023-01-30=2023-01-30 * (qwertz8) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567
+2023-01-30=2023-01-30 * (qwertz8) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567
     Expenses:Haushalt:Amazon       EUR200,00
     Assets:Bank:Checking          EUR-200,00
 
-2023-01-30=2023-01-30 * (qwertz7) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567
+2023-01-30=2023-01-30 * (qwertz7) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567
     Expenses:Haushalt:Amazon        EUR55,95
     Assets:Bank:Checking           EUR-55,95
 

@@ -47,11 +47,14 @@ def gen_paypal_rule(config, rule, filename_yaml=None):
     elif 'payee' in config['paypal'] and config['paypal']['payee']:
         payee = config['paypal']['payee']
 
+    
+    new_description=description.format(name=name, ref=rule.get('ref', ''))
+
     if payee:
-        full_description = Templates.PAYPAL_DESCRIPTION_PAYEE_FORMAT.format(description=description.strip(),
+        full_description = Templates.PAYPAL_DESCRIPTION_PAYEE_FORMAT.format(description=new_description.strip(),
                                                                             payee=payee)
     else:
-        full_description = Templates.PAYPAL_DESCRIPTION_FORMAT.format(description=description.strip())
+        full_description = Templates.PAYPAL_DESCRIPTION_FORMAT.format(description=new_description.strip())
     if 'full_description' in rule:
         full_description = rule['full_description']
 

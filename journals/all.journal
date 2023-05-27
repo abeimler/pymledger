@@ -208,21 +208,21 @@
     Assets:Bank:Checking                          -25,00 EUR
     (Assets:Bank:Unbudget)                        -25,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon {order} - Neuer Staubsauger  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
+2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon Neuer Staubsauger  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
     Expenses:Haushalt:Amazon            99,95 EUR
     (Assets:Bank:Budget:Haushalt)      -99,95 EUR  ; generated-posting: = acct:"Expenses:Haushalt" date:"2023"
     (Assets:Bank:Unbudget)              99,95 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking               -99,95 EUR
     (Assets:Bank:Unbudget)             -99,95 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-01-30=2023-01-30 * (qwertz8) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
+2023-01-30=2023-01-30 * (qwertz8) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
     Expenses:Haushalt:Amazon           200,00 EUR
     (Assets:Bank:Budget:Haushalt)     -200,00 EUR  ; generated-posting: = acct:"Expenses:Haushalt" date:"2023"
     (Assets:Bank:Unbudget)             200,00 EUR  ; generated-posting: = Assets:Bank:Budget
     Assets:Bank:Checking              -200,00 EUR
     (Assets:Bank:Unbudget)            -200,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-01-30=2023-01-30 * (qwertz7) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
+2023-01-30=2023-01-30 * (qwertz7) AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
     Expenses:Haushalt:Amazon            55,95 EUR
     (Assets:Bank:Budget:Haushalt)      -55,95 EUR  ; generated-posting: = acct:"Expenses:Haushalt" date:"2023"
     (Assets:Bank:Unbudget)              55,95 EUR  ; generated-posting: = Assets:Bank:Budget
