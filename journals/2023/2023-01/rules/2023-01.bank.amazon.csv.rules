@@ -15,7 +15,7 @@ if .*Amazon.de.*CCCCCCCCCCCCCCCC.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
 .*Amazon .Mktplce.*CCCCCCCCCCCCCCCC.*AMAZON PAYMENTS EUROPE S.C.A.
 .*AMZN Mktp DE.*CCCCCCCCCCCCCCCC.*AMAZON PAYMENTS EUROPE S.C.A.
 .*AMZN Mktp DE.*CCCCCCCCCCCCCCCC.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND
-    description AMAZON PAYMENTS EUROPE S.C.A. | Amazon
+    description AMAZON PAYMENTS EUROPE S.C.A. | Amazon {order} - Neuer Staubsauger
     comment type:%buchungstext, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
     account1    Expenses:Haushalt:Amazon                                        
 

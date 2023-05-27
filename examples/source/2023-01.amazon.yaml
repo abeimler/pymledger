@@ -1,0 +1,10 @@
+# Amazon payment via Bank for order: 123-1234567-8912345
+- account: Expenses:Haushalt:Amazon
+  order: 123-1234567-8912345
+# more orders
+- account: Expenses:Unterhaltung:Multimedia:Amazon
+  order: 123-1234565-1234567
+  ref: 5ABCD56ED1F2G34H
+- account: Expenses:Haushalt:Amazon
+  ref: 8ABCDE5FGH45IJKL
+  description: Tischlampe

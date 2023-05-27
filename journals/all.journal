@@ -122,7 +122,7 @@
     Assets:Bank:Checking                      -25,84 EUR
     (Assets:Bank:Unbudget)                    -25,84 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-01-13=2023-01-13 * (1234567895462) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462, modified:
+2023-01-13=2023-01-13 * (1234567895462) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Hose  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462, modified:
     Expenses:Kleidung:PayPal            17,50 EUR
     (Assets:Bank:Budget:Kleidung)      -17,50 EUR  ; generated-posting: = acct:"Expenses:Kleidung" date:"2023"
     (Assets:Bank:Unbudget)              17,50 EUR  ; generated-posting: = Assets:Bank:Budget
@@ -208,7 +208,7 @@
     Assets:Bank:Checking                          -25,00 EUR
     (Assets:Bank:Unbudget)                        -25,00 EUR  ; generated-posting: = Assets:Bank:Checking
 
-2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
+2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon {order} - Neuer Staubsauger  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
     Expenses:Haushalt:Amazon            99,95 EUR
     (Assets:Bank:Budget:Haushalt)      -99,95 EUR  ; generated-posting: = acct:"Expenses:Haushalt" date:"2023"
     (Assets:Bank:Unbudget)              99,95 EUR  ; generated-posting: = Assets:Bank:Budget

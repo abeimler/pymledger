@@ -42,7 +42,7 @@
     Expenses:Lebensmittel:Einkaufen:Lidl        EUR25,84
     Assets:Bank:Checking                       EUR-25,84
 
-2023-01-13=2023-01-13 * (1234567895462) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462
+2023-01-13=2023-01-13 * (1234567895462) PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Hose  ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462
     Expenses:Kleidung:PayPal        EUR17,50
     Assets:Bank:Checking           EUR-17,50
 
@@ -90,7 +90,7 @@
     Expenses:Telekommunikation:Telefon:Handy        EUR25,00
     Assets:Bank:Checking                           EUR-25,00
 
-2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
+2023-01-30=2023-01-30 * (qwertz9) AMAZON PAYMENTS EUROPE S.C.A. | Amazon {order} - Neuer Staubsauger  ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC
     Expenses:Haushalt:Amazon        EUR99,95
     Assets:Bank:Checking           EUR-99,95
 

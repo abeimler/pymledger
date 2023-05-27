@@ -114,7 +114,7 @@ plugin "beancount.plugins.auto_accounts"
   Expenses:Lebensmittel:Einkaufen:Lidl       25,84 EUR
   Assets:Bank:Checking                      -25,84 EUR
 
-2023-01-13 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462, modified:
+2023-01-13 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Hose" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462, modified:
   Expenses:Kleidung:PayPal            17,50 EUR
   Assets:Bank:Checking               -17,50 EUR
 
@@ -166,7 +166,7 @@ plugin "beancount.plugins.auto_accounts"
   Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
   Assets:Bank:Checking                          -25,00 EUR
 
-2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
+2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon {order} - Neuer Staubsauger" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
   Expenses:Haushalt:Amazon            99,95 EUR
   Assets:Bank:Checking               -99,95 EUR
 

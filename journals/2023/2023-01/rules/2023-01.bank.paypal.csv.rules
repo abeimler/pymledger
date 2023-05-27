@@ -26,7 +26,7 @@ if 1234567892135.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal
 
 if 1234567895462.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal
 1234567895462.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL
-    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Hose
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462
     code 1234567895462
     account1    Expenses:Kleidung:PayPal                                        

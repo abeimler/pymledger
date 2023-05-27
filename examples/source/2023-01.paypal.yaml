@@ -1,0 +1,12 @@
+# rule for Ikea payment with paypal
+- name: "Danisches Bettenlager GmbH Co. KG"
+  description: "Danisches bettenlager gmbh co. kg"
+  account: Expenses:Haushalt:Ikea
+  ref: "12345678901234"
+# more rules for paypal
+- name:
+    - Steam
+    - STEAM
+    - steampowered
+  description: Steam
+  account: Expenses:Hobbies:Gaming:Steam

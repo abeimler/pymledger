@@ -1,0 +1,4 @@
+# Custom rule for month 2023-01, custom transfer for private ebay buy
+- if: ONLINE-UEBERWEISUNG.*ebay.*Waschmaschine.*Max Mustermann
+  account: Expenses:Haushalt:Ebay
+  description: Gebrauchte Waschmaschine (Kleinanzeige)
