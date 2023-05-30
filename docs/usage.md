@@ -1,12 +1,14 @@
-## Erste Schritte
+## Verwendung
+
+Um pYMLedger nutzen zu können, müssen Sie zunächst CSV-Exporte von Ihrem Online-Banking erstellen, um Ihre Finanzdaten zu verwalten. Sie können entweder die originalen CSV-Dateien verwenden, die von Ihrer Bank exportiert wurden, oder die mitgelieferten Beispieldateien im Verzeichnis input/samples zum Testen nutzen.
 
 ### Eingabe und Quellen
 
-Um mit pYMLedger zu beginnen, können Sie CSV-Exporte von Ihrem Online-Banking verwenden. Alternativ können Sie die mitgelieferten Beispieldateien im Verzeichnis `input/samples` für Testzwecke verwenden.
+Bitte stellen Sie sicher, dass jeder Kontoauszug (CAMT-CSV-Export) nur einen Monat abdeckt.
 
 #### CSV-Dateien von der Bank
 
-Verwenden Sie die originalen `.csv`-Dateien, die von Ihrer Bank exportiert wurden. Die Dateien sollten im **CAMT-CSV**-Format vorliegen.
+Die CSV-Dateien sollten im CAMT-CSV-Format vorliegen und die folgenden Spalten enthalten, wobei die Spalten durch Kommas getrennt sein müssen:
 
 **(Die Spalten in der CSV-Datei MÜSSEN durch (`,`) Kommas getrennt sein)**
 

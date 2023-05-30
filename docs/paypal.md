@@ -4,7 +4,7 @@
 
 Um vorerst alle möglichen PayPal-Käufe zu kategorisieren, legen wir eine Regel als Fallback fest:
 
-**config.yml
+**config.yml**
 ```yml
 common_rules:
   # Defaults/Fallbacks (first)
@@ -56,7 +56,7 @@ Daraus ergibt sich das `if_format`: `{ref}.*PP.6330.PP.*{name}, Ihr Einkauf bei.
 
 #### Monatliche PayPal-Käufe
 
-Nachdem wir die Journale für das Jahr 2023 erstellt haben, finden Sie im Verzeichnis `source/` eine Vorlage für die PayPal-Käufe: [template.2023-01.paypal.yaml](../source/2023/2023-01/template.2023-01.paypal.yaml)
+Nachdem wir die Quellen für das Jahr 2023 erstellt haben, finden Sie im Verzeichnis `source/` eine Vorlage für die PayPal-Käufe: [template.2023-01.paypal.yaml](../source/2023/2023-01/template.2023-01.paypal.yaml)
 
 **template.2023-01.paypal.yaml**
 ```yml

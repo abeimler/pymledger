@@ -55,7 +55,7 @@ Daraus ergibt sich das `if_format`: `{order}.*Amazon .Mktplce{ref}`
 
 #### Amazon-Bestellungen
 
-Nachdem wir die Journale für das Jahr 2023 erstellt haben, finden Sie im Verzeichnis `source/` eine Vorlage für die Amazon-Bestellungen: [template.2023-01.amazon.yaml](../source/2023/2023-01/template.2023-01.amazon.yaml)
+Nachdem wir die Quellen für das Jahr 2023 erstellt haben, finden Sie im Verzeichnis `source/` eine Vorlage für die Amazon-Bestellungen: [template.2023-01.amazon.yaml](../source/2023/2023-01/template.2023-01.amazon.yaml)
 
 
 **template.2023-01.amazon.yaml**
@@ -106,14 +106,6 @@ amazon_rules:
       - Prime Video.*AMAZON DIGITAL GERMANY GMBH
     description: Amazon Prime
     account: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime
-paypal_rules:
-  # Gaming
-  - name:
-      - Steam
-      - STEAM
-      - steampowered
-    description: Steam
-    account: Expenses:Hobbies:Gaming:Steam
 ```
 
 

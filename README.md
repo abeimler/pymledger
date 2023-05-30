@@ -7,21 +7,13 @@ Zusammen mit den Python-Skript [hledger-rules](scripts/hledger-rules) ist es mö
 
 - CSV-Bereinigung: [hledger-rules](scripts/hledger-rules) bietet Funktionen zum Bereinigen von CSV-Dateien vor der Generierung von hledger-Regeln und -Buchungen.
 - Generierung von hledger-Regeln: Das Skript kann hledger-Regeln basierend auf der in der `config.yml`-Datei angegebenen Konfiguration generieren.
-- Generierung von hledger-Buchungen: Es kann auch hledger-Buchungen aus CSV-Eingabedateien generieren.
 - Vorgegebene und häufig verwendete Aufgaben: pYMLedger enthält eine `Taskfile.yaml`, die vordefinierte Aufgaben für eine einfachere Ausführung enthält.
 - Docker-Unterstützung: Das Skript kann in einem Docker-Container ausgeführt werden, zusammen mit [hledger-web](https://hledger.org/1.29/hledger-web.html) für eine webbasierte Oberfläche.
 - Budgetierung und Prognose: [hledger-rules](scripts/hledger-rules) unterstützt Funktionen zur Budgetierung und Prognose.
 
 ## Installation und Abhängigkeiten
 
-Bevor Sie [hledger-rules](scripts/hledger-rules/hledger-rules.py) verwenden, stellen Sie sicher, dass die folgenden Abhängigkeiten installiert sind:
-
-- [python3](https://www.python.org/downloads/)
-- Python-Abhängigkeiten: Installieren Sie die erforderlichen Python-Abhängigkeiten mit dem Befehl `pip install -r ./scripts/pymledger/requirements.txt`.
-- [hledger](https://hledger.org/install.html)
-- [hledger-web](https://hledger.org/install.html)
-- [task](https://taskfile.dev/installation/)
-- [ledger2beancount](https://github.com/beancount/ledger2beancount) (optional)
+Bevor Sie [hledger-rules](scripts/hledger-rules/hledger-rules.py) verwenden, stellen Sie sicher, dass die folgenden Abhängigkeiten installiert, siehe dazu [Installation](docs/install.md).
 
 
 ## Schnell-Start
@@ -29,16 +21,16 @@ Bevor Sie [hledger-rules](scripts/hledger-rules/hledger-rules.py) verwenden, ste
 Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen Sie einfach diesen Schritten:
 
 1. **Eingabe und Quellen:**
-   Verwenden Sie CSV-Exporte (**Im [CAMT-CSV Format](https://de.wikipedia.org/wiki/Camt-Format)**) von Ihrem Online-Banking oder die mitgelieferten [Beispieldateien](examples/input/) für Testzwecke und speicher die .csv-Dateien in [`input/`](input/), siehe [Verzeichnisstruktur](doc/GETSTARTED.md#verzeichnisstruktur).
+   Verwenden Sie CSV-Exporte (**Im [CAMT-CSV Format](https://de.wikipedia.org/wiki/Camt-Format)**) von Ihrem Online-Banking oder die mitgelieferten [Beispieldateien](examples/input/) für Testzwecke und speicher die .csv-Dateien in [`input/`](input/), siehe [Verzeichnisstruktur](docs/GETSTARTED.md#verzeichnisstruktur).
 
 2. **CSV-Dateien bereinigen:**
-   Führen Sie den Befehl aus, um die CSV-Dateien zu bereinigen und in das Verzeichnis `source` zu verschieben:
+   Führen Sie den Befehl aus, um die CSV-Dateien zu bereinigen und in das Verzeichnis `source` zu speichern:
    ```bash
    python3 ./scripts/hledger-rules/hledger-rules.py -c config.yml clean-up-csv 2023
    ```
 
 3. **Regeln erstellen:**
-   Erstellen Sie Regeln für Lastschriften, Überweisungen usw. im Block `common_rules` in der Datei `config.yml`, siehe [Erste Schritte](doc/GETSTARTED.md#erstellung-der-regeln) für mehr details.
+   Erstellen Sie Regeln für Lastschriften, Überweisungen usw. im Block `common_rules` in der Datei `config.yml`, siehe [Verwendung](docs/usage.md#erstellung-der-regeln) für mehr details.
 
 4. **Regeln generieren:**
    Generieren Sie die Regeln mit dem folgenden Befehl:
@@ -53,12 +45,12 @@ Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen 
    ```
 
 6. **Budgetierung:**
-   Sobald alle Ausgabenregeln eingetragen sind, können Sie zur [Budgetierung](doc/BUDGET.md) übergehen.
+   Sobald alle Ausgabenregeln eingetragen sind, können Sie zur [Budgetierung](docs/budget.md) übergehen.
 
 7. **Spezielle Regeln:**
-   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe verwenden möchten, können Sie vordefinierte Regeln in die `config.yml` Datei eintragen. Weitere Informationen finden Sie in [doc/Amazon](doc/AMAZON.md) und [doc/PayPal](doc/PAYPAL.md).
+   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe haben, können Sie vordefinierte Regeln in die `config.yml` Datei eintragen. Weitere Informationen finden Sie in [doc/Amazon](docs/amazon.md) und [doc/PayPal](docs/paypal.md).
 
-Möchten Sie weitere Informationen und detaillierte Anweisungen? Lesen Sie [hier mehr](doc/GETSTARTED.md).
+Möchten Sie weitere Informationen und detaillierte Anweisungen? Lesen Sie [hier mehr](docs/usage.md).
 
 
 ### Beispiel
@@ -221,12 +213,13 @@ python3 ./scripts/hledger-rules/hledger-rules.py --hledger-path=/usr/bin/hledger
 hledger-web -f all.hledger --capabilities=view --auto
 ```
 
+![hledger-web](docs/img/screenshot.png)
 
 ---
 
 ## Disclaimer
 
-Ich bin kein Finanzberater und das Tool ist auch mehr zum Budgeten gedacht.
+Ich bin kein Finanzberater und das Tool ist auch mehr zum Budgeten gedacht und für Persönliche Finanzen.
 Die Tabelle und die Beispiele, die du hier siehst, sind alle fiktiv, basieren aber auf realen Kontoauszügen (wie Amazon, PayPal usw.). Verwende dieses Projekt als Vorlage für dein [PTA (Plain Text Accounting)](https://plaintextaccounting.org/), am besten in Kombination mit Git, um alles Mögliche zu verfolgen und die Automatisierung deiner Kontoauszüge (Eingabedateien im CSV-Format) zu maximieren. Behalte dabei alle privaten Daten für dich.
 
 
@@ -240,7 +233,7 @@ Die Lizenz für die Software findest du in der Datei [LICENSE](LICENSE).
 * "Open" und "Closing" pro Monat: Derzeit bauen alle Monate noch aufeinander auf (Kontoauszüge usw.), sodass sie noch nicht unabhängig voneinander sind.
 * TODO: Erstellung von Diagrammen/Charts
 * Die Verwendung mehrerer Banken ist nicht möglich.
-* Budget aufteile in ein Monats sind nicht möglich (es ist nur möglich den Monatstag zum budgeten zu ändern)
+* Budget aufteile in einem Monat ist nicht möglich (es ist nur möglich den Monatstag zum budgeten zu ändern)
 
 
 
