@@ -3,7 +3,7 @@ name: Github Pages
 on:
   push:
     tags: '*'
-    branches: [ "main", "feature/docs" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
