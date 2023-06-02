@@ -21,7 +21,7 @@ jobs:
     - name: Install
       run: |
         pip install sphinx
-        pip install -q GitPython sphinx-rtd-theme breathe sphinx-sitemap sphinxcontrib-moderncmakedomain myst-parser pandoc-include
+        pip install -q GitPython sphinx-rtd-theme breathe sphinx-sitemap sphinxcontrib-moderncmakedomain myst-parser pandoc-include sphinxcontrib-spelling 
     - name: Build
       uses: ammaraskar/sphinx-action@master
       with:

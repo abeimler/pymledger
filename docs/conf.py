@@ -18,14 +18,14 @@ version = '0.1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinxcontrib.spelling',
+    #'sphinxcontrib.spelling',
 ]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 language = 'de'
-spelling_lang = 'de_DE'
+#spelling_lang = 'de_DE'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
