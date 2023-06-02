@@ -48,7 +48,7 @@ Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen 
    Sobald alle Ausgabenregeln eingetragen sind, können Sie zur [Budgetierung](https://abeimler.github.io/pymledger/usage/index.html#budgetierung) übergehen.
 
 7. **Spezielle Regeln:**
-   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe haben, können Sie vordefinierte Regeln in die `config.yml` Datei eintragen. Weitere Informationen finden Sie in [Amazon Spezielle Regeln](https://abeimler.github.io/pymledger/usage/special_rules/amazon.html) und [PayPal Spezielle Regeln]([docs/paypal.md](https://abeimler.github.io/pymledger/usage/special_rules/paypal.html).
+   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe haben, können Sie vordefinierte Regeln in die `config.yml` Datei eintragen. Weitere Informationen finden Sie in [Amazon Spezielle Regeln](https://abeimler.github.io/pymledger/usage/special_rules/amazon.html) und [PayPal Spezielle Regeln](https://abeimler.github.io/pymledger/usage/special_rules/paypal.html).
 
 Möchten Sie weitere Informationen und detaillierte Anweisungen? Lesen Sie [hier mehr](https://abeimler.github.io/pymledger/usage/index.html#verwendung).
 
