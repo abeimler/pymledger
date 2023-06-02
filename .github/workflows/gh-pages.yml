@@ -1,8 +1,5 @@
 name: Github Pages
 on:
-  pull_request:
-    branches:
-      - master
   push:
     tags: '*'
     branches: [ "main", "feature/docs" ]
