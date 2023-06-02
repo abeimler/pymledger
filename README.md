@@ -13,7 +13,7 @@ Zusammen mit den Python-Skript [hledger-rules](scripts/hledger-rules) ist es mö
 
 ## Installation und Abhängigkeiten
 
-Bevor Sie [hledger-rules](scripts/hledger-rules/hledger-rules.py) verwenden, stellen Sie sicher, dass die folgenden Abhängigkeiten installiert, siehe dazu [Installation](docs/install.md).
+Bevor Sie [hledger-rules](scripts/hledger-rules/hledger-rules.py) verwenden, stellen Sie sicher, dass die folgenden Abhängigkeiten installiert, siehe dazu [Installation](https://abeimler.github.io/pymledger/install.html).
 
 
 ## Schnell-Start
@@ -21,7 +21,7 @@ Bevor Sie [hledger-rules](scripts/hledger-rules/hledger-rules.py) verwenden, ste
 Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen Sie einfach diesen Schritten:
 
 1. **Eingabe und Quellen:**
-   Verwenden Sie CSV-Exporte (**Im [CAMT-CSV Format](https://de.wikipedia.org/wiki/Camt-Format)**) von Ihrem Online-Banking oder die mitgelieferten [Beispieldateien](examples/input/) für Testzwecke und speicher die .csv-Dateien in [`input/`](input/), siehe [Verzeichnisstruktur](docs/GETSTARTED.md#verzeichnisstruktur).
+   Verwenden Sie CSV-Exporte (**Im [CAMT-CSV Format](https://de.wikipedia.org/wiki/Camt-Format)**) von Ihrem Online-Banking oder die mitgelieferten [Beispieldateien](examples/input/) für Testzwecke und speicher die .csv-Dateien in [`input/`](input/), siehe [Verzeichnisstruktur](https://abeimler.github.io/pymledger/usage/index.html#verzeichnisstruktur).
 
 2. **CSV-Dateien bereinigen:**
    Führen Sie den Befehl aus, um die CSV-Dateien zu bereinigen und in das Verzeichnis `source` zu speichern:
@@ -30,7 +30,7 @@ Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen 
    ```
 
 3. **Regeln erstellen:**
-   Erstellen Sie Regeln für Lastschriften, Überweisungen usw. im Block `common_rules` in der Datei `config.yml`, siehe [Verwendung](docs/usage.md#erstellung-der-regeln) für mehr details.
+   Erstellen Sie Regeln für Lastschriften, Überweisungen usw. im Block `common_rules` in der Datei `config.yml`, siehe [Verwendung](https://abeimler.github.io/pymledger/usage/index.html#verwendung) für mehr details.
 
 4. **Regeln generieren:**
    Generieren Sie die Regeln mit dem folgenden Befehl:
@@ -45,12 +45,12 @@ Um mit dein [PTA](https://plaintextaccounting.org/) schnell zu beginnen, folgen 
    ```
 
 6. **Budgetierung:**
-   Sobald alle Ausgabenregeln eingetragen sind, können Sie zur [Budgetierung](docs/budget.md) übergehen.
+   Sobald alle Ausgabenregeln eingetragen sind, können Sie zur [Budgetierung](https://abeimler.github.io/pymledger/usage/index.html#budgetierung) übergehen.
 
 7. **Spezielle Regeln:**
-   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe haben, können Sie vordefinierte Regeln in die `config.yml` Datei eintragen. Weitere Informationen finden Sie in [doc/Amazon](docs/amazon.md) und [doc/PayPal](docs/paypal.md).
+   Wenn Sie komplexe Regeln für Amazon-Bestellungen und PayPal-Käufe haben, können Sie vordefinierte Regeln in die `config.yml` Datei eintragen. Weitere Informationen finden Sie in [Amazon Spezielle Regeln](https://abeimler.github.io/pymledger/usage/special_rules/amazon.html) und [PayPal Spezielle Regeln]([docs/paypal.md](https://abeimler.github.io/pymledger/usage/special_rules/paypal.html).
 
-Möchten Sie weitere Informationen und detaillierte Anweisungen? Lesen Sie [hier mehr](docs/usage.md).
+Möchten Sie weitere Informationen und detaillierte Anweisungen? Lesen Sie [hier mehr](https://abeimler.github.io/pymledger/usage/index.html#verwendung).
 
 
 ### Beispiel
