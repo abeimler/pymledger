@@ -169,7 +169,7 @@ def gen_year(config, year):
                 utils.print_succ("write yearly closed journal, {:04}: {}".format(year, closed_year_filename))
 
     for month in range(1, 13):
-        gen_source_files = Const.GEN_ALL_MONTHS or (year == now.year and month < now.month)
+        gen_source_files = Const.GEN_ALL_MONTHS or (year == now.year and month <= now.month)
         gen_month(config, year, month, none_gen_source_files=not gen_source_files)
 
     gen_budget_rules_from_data_yearly(config, year, budget_data, budget_filename)
