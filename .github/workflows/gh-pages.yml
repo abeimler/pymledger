@@ -5,7 +5,6 @@ on:
       - master
   push:
     tags: '*'
-  push:
     branches: [ "main", "feature/docs" ]
   pull_request:
     branches: [ "main" ]
