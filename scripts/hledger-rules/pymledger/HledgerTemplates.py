@@ -262,7 +262,6 @@ CURRENT_MONTH_BUDGET_CONTENT_TEMPLATE = Template(""";;do not change, generated f
 ;; Budget
 ${date} * Current Month Budget ; budget:
 ${accounts}
-    ${account}
 """)
 CURRENT_YEAR_BUDGET_CONTENT_TEMPLATE = Template(""";;do not change, generated file; ${year}
 
@@ -271,7 +270,6 @@ ${entires}
 """)
 CURRENT_YEAR_BUDGET_CONTENT_ENTRY_TEMPLATE = Template("""${date} * Current Year Budget for month ${month}; budget:
 ${accounts}
-    ${account}
 """)
 
 CURRENT_MONTH_BUDGET_CONTENT_EMPTY_TEMPLATE = Template(""";;do not change, generated file; ${year}-${month}

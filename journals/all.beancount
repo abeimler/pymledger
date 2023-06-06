@@ -65,10 +65,8 @@ plugin "beancount.plugins.auto_accounts"
   Equity:OpeningClosingBalances
 
 2023-01-01 * "Current Year Budget for month 01" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-01-01 * "Current Month Budget" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-01-02 * "Strom GmbH | Strom GmbH" ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
   Expenses:Wohnen:Nebenkosten:Strom       48,00 EUR
@@ -203,10 +201,8 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                        -12,99 EUR
 
 2023-02-01 * "Current Year Budget for month 02" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-02-01 * "Current Month Budget" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-02-01 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       17,65 EUR
@@ -294,10 +290,8 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                          -25,00 EUR
 
 2023-03-01 * "Current Year Budget for month 03" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-03-01 * "Current Month Budget" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-03-01 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       16,15 EUR
@@ -428,10 +422,8 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                          -30,00 EUR
 
 2023-04-01 * "Current Year Budget for month 04" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-04-01 * "Current Month Budget" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-04-03 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       19,75 EUR
@@ -514,10 +506,8 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                          -25,00 EUR
 
 2023-05-01 * "Current Year Budget for month 05" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-05-01 * "Current Month Budget" ; budget:, modified:
-  Assets:Bank:Checking
 
 2023-05-02 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
   Expenses:Sonstiges:Bankgebuehren       17,05 EUR

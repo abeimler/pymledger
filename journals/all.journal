@@ -10,8 +10,6 @@
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-01-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
@@ -42,8 +40,6 @@
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)            150,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-01-02=2023-01-02 * (qwertz33) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
     Expenses:Wohnen:Nebenkosten:Strom       48,00 EUR
@@ -274,8 +270,6 @@
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-02-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
@@ -306,8 +300,6 @@
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)             50,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-02-01=2023-02-01 * (2023-02.0020) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       17,65 EUR
@@ -456,8 +448,6 @@
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-03-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
@@ -490,8 +480,6 @@
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)            150,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                     -150,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-03-01=2023-02-28 * (2023-03.0032) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       16,15 EUR
@@ -714,8 +702,6 @@
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-04-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:Multimedia)          45,00 EUR
@@ -746,8 +732,6 @@
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)             50,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-04-03=2023-04-01 * (2023-04.0021) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       19,75 EUR
@@ -890,8 +874,6 @@
     (Assets:Bank:Unbudget)                      -7,50 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Versicherungen)          0,83 EUR  ; Fielmann
     (Assets:Bank:Unbudget)                      -0,83 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                              0  ; generated-posting: = Assets:Bank:Checking
 
 2023-05-01 * Current Month Budget  ; budget:, modified:
     (Assets:Bank:Budget:Abo:DTicket)             49,00 EUR
@@ -924,8 +906,6 @@
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
     (Assets:Bank:Budget:Wunschliste)             50,00 EUR  ; Wunschliste
     (Assets:Bank:Unbudget)                      -50,00 EUR  ; generated-posting: = Assets:Bank:Budget
-    Assets:Bank:Checking
-    (Assets:Bank:Unbudget)                               0  ; generated-posting: = Assets:Bank:Checking
 
 2023-05-02=2023-04-29 * (2023-05.0013) Entgeltabrechnung  ; type:ENTGELTABSCHLUSS, payee:, modified:
     Expenses:Sonstiges:Bankgebuehren       17,05 EUR

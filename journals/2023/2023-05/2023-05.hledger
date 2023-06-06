@@ -15,6 +15,8 @@ account Assets:Bank:Budget:Wunschliste
 account Expenses:Computer:Hardware:Amazon                               
 account Expenses:Haushalt:Amazon                                        
 account Expenses:Spenden:PreventCancerFoundation                        
+account Expenses:unknown:Amazon                                         
+account Expenses:unknown:PayPal                                         
 account Income:Geschenk:Eltern:Bargeld                                  
 
 
