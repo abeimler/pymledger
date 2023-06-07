@@ -1,0 +1,10 @@
+- account: Assets:Bank:Checking                                                         
+  amount: 2179.78
+- account: Assets:Saving:Cash                                                           
+  amount: 2000.0
+  virtual: true
+- account: Assets:Bank:Budget:Wunschliste                                                    
+  amount: 50.0
+  budget: true
+- account: Assets:Cash                                                       
+  amount: 50.50

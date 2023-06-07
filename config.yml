@@ -47,6 +47,7 @@ accounts:
   unknown: 'Expenses:unknown'
   cash: 'Assets:Cash'
   salary: 'Income:Salary'
+  bank: 'Assets:Bank'
   budget: 'Assets:Bank:Budget'
   saving: 'Assets:Bank:Saving'
   unbudget: 'Assets:Bank:Unbudget'

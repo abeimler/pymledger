@@ -173,15 +173,21 @@ account ${unbudget_account}
 ;${start_year}-01-01 open unbudget       ; clopen:, opening:, unbudget:
 ;    ${unbudget_account}                     0${decimal_mark}0 ${currency} = 0${decimal_mark}0 ${currency}
 
+;; populate unbudget account
 = ${checking_account}                    ; unbudget:
     (${unbudget_account})                   *1
-
 = ${budget_account}                      ; unbudget:
     (${unbudget_account})                   *-1
-
 = ${saving_account}                      ; unbudget:
     (${unbudget_account})                   *-1
 
+;; rebalance bank account, so it's equals checking
+= ${budget_account}                      ; unbudget:
+    (${bank_account})                       *-1
+= ${saving_account}                      ; unbudget:
+    (${bank_account})                       *-1
+= ${unbudget_account}                    ; unbudget:
+    (${bank_account})                       *-1
 """)
 
 RECONCILE_CONTENT_TEMPLATE = Template(""";;do not change, generated file; month: ${year}-${month}
@@ -197,12 +203,12 @@ ${entires}
 """)
 
 TRANSACTION_MOD_ENTRY_TEMPLATE = Template("""= ${query} ${date_query}
-    ${account}                              *-1
+    ${account}                              *${amount}
 
 """)
 
 TRANSACTION_MOD_ENTRY_WITH_NOT_TEMPLATE = Template("""= ${query} ${not_query} ${date_query}
-    ${account}                              *-1
+    ${account}                              *${amount}
 
 """)
 

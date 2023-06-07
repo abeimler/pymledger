@@ -1,0 +1,26 @@
+;;do not change, generated file
+;
+; ${title}
+;
+
+${opening}
+
+;; journals years here
+${includes}
+
+;;; "unbudget" account = checking - budget - saving
+account ${unbudget_account}
+= ${checking_account}                    ; unbudget:
+    (${unbudget_account})                   *1
+= ${budget_account}                      ; unbudget:
+    (${unbudget_account})                   *-1
+= ${saving_account}                      ; unbudget:
+    (${unbudget_account})                   *-1
+
+;;; rebalance bank account, so it equals checking
+= ${budget_account}                      ; unbudget:
+    (${bank_account})                       *-1
+= ${saving_account}                      ; unbudget:
+    (${bank_account})                       *-1
+= ${unbudget_account}                    ; unbudget:
+    (${bank_account})                       *-1

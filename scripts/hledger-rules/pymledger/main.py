@@ -66,6 +66,7 @@ Options:
 import csv
 import os
 import tempfile
+from string import Template
 
 import colorama
 import yaml
@@ -204,7 +205,8 @@ def gen_all_journal_cmd(config, args):
                                                       opening=opening, unbudget_account=Const.UNBUDGET_ACCOUNT,
                                                       start_year=start_year, checking_account=Const.CHECKING_ACCOUNT,
                                                       budget_account=Const.BUDGET_ACCOUNT,
-                                                      saving_account=Const.SAVING_ACCOUNT))
+                                                      saving_account=Const.SAVING_ACCOUNT,
+                                                      bank_account=Const.BANK_ACCOUNT))
         utils.print_succ("write all journal: {}".format(all_filename))
 
     return 0
@@ -484,6 +486,8 @@ def init_globals(config):
     if 'ignore_amazon' in config:
         Const.IGNORE_AMAZONS = config['ignore_amazon']
 
+    if 'accounts' in config and 'bank' in config['accounts']:
+        Const.BANK_ACCOUNT = config['accounts']['bank']
     if 'accounts' in config and 'checking' in config['accounts']:
         Const.CHECKING_ACCOUNT = config['accounts']['checking']
     if 'accounts' in config and 'paypal_unknown' in config['accounts']:
@@ -517,6 +521,11 @@ def init_globals(config):
         Const.INCOME_ACCOUNT = config['accounts']['income']
     if 'accounts' in config and 'expenses' in config['accounts']:
         Const.EXPENSES_ACCOUNT = config['accounts']['expenses']
+
+    if os.path.exists(Const.ALL_HLEDGER_TEMPLATE_FILENAME):
+        with open(Const.ALL_HLEDGER_TEMPLATE_FILENAME) as file:
+            utils.print_verbose("read template: {}".format(Const.ALL_HLEDGER_TEMPLATE_FILENAME))
+            Templates.ALL_CONTENT_TEMPLATE = Template(file.read())
 
     if 'amazon_rules' in config:
         for amazon_rule in config['amazon_rules']:
@@ -818,6 +827,8 @@ def main():
             Const.TEMPLATES_DIR, 'post-common.csv.rules')
         Const.TRANSACTION_MOD_HLEDGER_TEMPLATE_FILENAME = os.path.join(
             Const.TEMPLATES_DIR, 'transaction-mod.hledger')
+        Const.ALL_HLEDGER_TEMPLATE_FILENAME = os.path.join(
+            Const.TEMPLATES_DIR, 'all.hledger')
 
     config_filename = 'config.yml'
     if '-c' in args and args['-c']:

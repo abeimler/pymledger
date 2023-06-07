@@ -33,6 +33,8 @@ POST_COMMON_CSV_RULES_TEMPLATE_FILENAME = os.path.join(
     TEMPLATES_DIR, 'post-common.csv.rules')
 TRANSACTION_MOD_HLEDGER_TEMPLATE_FILENAME = os.path.join(
     TEMPLATES_DIR, 'transaction-mod.hledger')
+ALL_HLEDGER_TEMPLATE_FILENAME = os.path.join(
+    TEMPLATES_DIR, 'all.hledger')
 
 AMAZON_CSV_RULES_FILENAME = 'amazon.csv.rules'
 BANK_CSV_RULES_FILENAME = 'bank.csv.rules'
@@ -57,6 +59,7 @@ SALERY_ACCOUNT = 'income:salary'
 BUDGET_ACCOUNT = 'assets:bank:budget'
 SAVING_ACCOUNT = 'assets:bank:saving'
 UNBUDGET_ACCOUNT = 'assets:bank:unbudget'
+BANK_ACCOUNT = 'assets:bank'
 
 CURRENCY = 'EUR'
 COMMODITY = '1000,00 EUR'

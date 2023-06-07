@@ -126,6 +126,7 @@ def gen_rule(if_conds, description, **kwargs):
 def gen_transaction_mod(query, account, **kwargs):
     not_query = ''
     date_query = ''
+    amount = -1
 
     for k, v in kwargs.items():
         if (k == 'not_acct' or k == 'not_account') and v:
@@ -136,6 +137,8 @@ def gen_transaction_mod(query, account, **kwargs):
             date_query = 'date:"{}"'.format(v)
         elif k == 'not_date' and v:
             date_query = 'not:date:"{}"'.format(v)
+        elif k == 'amount' and v:
+            amount = v
 
     if query and ' ' in query:
         if query[0] != '"':
@@ -149,12 +152,14 @@ def gen_transaction_mod(query, account, **kwargs):
                                                                                 account=Templates.ACCOUNT_FORMAT.format(
                                                                                     account=account.strip()),
                                                                                 not_query=not_query,
-                                                                                date_query=date_query)
+                                                                                date_query=date_query,
+                                                                                amount=amount)
         if query:
             return Templates.TRANSACTION_MOD_ENTRY_TEMPLATE.substitute(query=query.strip(),
                                                                        account=Templates.ACCOUNT_FORMAT.format(
                                                                            account=account.strip()),
-                                                                       date_query=date_query)
+                                                                       date_query=date_query,
+                                                                       amount=amount)
 
     return ''
 
@@ -311,7 +316,8 @@ def gen_transaction_mod_rules_content(config, year_str, transaction_mod_hledger_
                                                                                                    transaction.get(
                                                                                                        'not_account')),
                                                                           date="{}".format(
-                                                                              year_str) if year_str else '')
+                                                                              year_str) if year_str else '',
+                                                                          amount=1 if 'income' in transaction and transaction['income'] else -1)
     transaction_mod_hledger_content = transaction_mod_hledger_template.substitute({'transactions': transaction_mods})
     return transaction_mod_hledger_content
 
