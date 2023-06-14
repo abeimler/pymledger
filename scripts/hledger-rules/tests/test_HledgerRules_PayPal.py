@@ -20,7 +20,7 @@ class HledgerRulesGenPayPalRulesContentTestCase(unittest.TestCase):
     def test_gen_paypal_rules_content_no_name(self):
         config = {
             'paypal': {
-                'prefix': 'PP.6330.P',
+                'prefix': 'PP.[0-9]+.PP',
                 'suffix': 'PayPal',
                 'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -38,7 +38,7 @@ class HledgerRulesGenPayPalRulesContentTestCase(unittest.TestCase):
     def test_gen_paypal_rules_content_name(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -53,7 +53,7 @@ class HledgerRulesGenPayPalRulesContentTestCase(unittest.TestCase):
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.1234.PP.*GOG.*PayPal.*.*.*.*
+if PP.[0-9]+.PP.*GOG.*PayPal.*.*.*.*
 GOG.*PayPal.*.*.*.*
 GOG.*PAYPAL.*.*.*.*
     description %payee | PayPal GOG
@@ -66,7 +66,7 @@ GOG.*PAYPAL.*.*.*.*
     def test_gen_paypal_rules_content_names(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -85,13 +85,13 @@ GOG.*PAYPAL.*.*.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.1234.PP.*Steam.*PayPal.*.*.*.*
+if PP.[0-9]+.PP.*Steam.*PayPal.*.*.*.*
 Steam.*PayPal.*.*.*.*
 Steam.*PAYPAL.*.*.*.*
-PP.1234.PP.*STEAM.*PayPal.*.*.*.*
+PP.[0-9]+.PP.*STEAM.*PayPal.*.*.*.*
 STEAM.*PayPal.*.*.*.*
 STEAM.*PAYPAL.*.*.*.*
-PP.1234.PP.*steampowered.*PayPal.*.*.*.*
+PP.[0-9]+.PP.*steampowered.*PayPal.*.*.*.*
 steampowered.*PayPal.*.*.*.*
 steampowered.*PAYPAL.*.*.*.*
     description %payee | PayPal Steam
@@ -104,7 +104,7 @@ steampowered.*PAYPAL.*.*.*.*
     def test_gen_paypal_rules_content_ref(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -122,7 +122,7 @@ steampowered.*PAYPAL.*.*.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.1234.PP.*Google.*PayPal.*123456789.*.*
+if PP.[0-9]+.PP.*Google.*PayPal.*123456789.*.*
 Google.*PayPal.*123456789.*.*
 Google.*PAYPAL.*123456789.*.*
     description %payee | PayPal Google Play Store
@@ -135,7 +135,7 @@ Google.*PAYPAL.*123456789.*.*
     def test_gen_paypal_rules_content_payee(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -153,7 +153,7 @@ Google.*PAYPAL.*123456789.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.1234.PP.*Google.*PayPal.*.*.*.*
+if PP.[0-9]+.PP.*Google.*PayPal.*.*.*.*
 Google.*PayPal.*.*.*.*
 Google.*PAYPAL.*.*.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Google Play Store
@@ -166,7 +166,7 @@ Google.*PAYPAL.*.*.*.*
     def test_gen_paypal_rules_content_payee(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -184,7 +184,7 @@ Google.*PAYPAL.*.*.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.1234.PP.*Google.*PayPal.*.*.*.*
+if PP.[0-9]+.PP.*Google.*PayPal.*.*.*.*
 Google.*PayPal.*.*.*.*
 Google.*PAYPAL.*.*.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Google Play Store

@@ -13,10 +13,36 @@ class HledgerPayPalRulesGenPayPalRuleTestCase(unittest.TestCase):
         self.assertEqual(expected, actual)  # add assertion here
         self.assertEqual(None, account)  # add assertion here
 
+    def test_gen_paypal_rule_if_format(self):
+        config = {
+            'paypal': {
+                'if_format': [
+                    '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal',
+                    '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
+                ],
+                'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
+            },
+        }
+        rule = {
+            'name': 'Steam',
+            'account': 'Expenses:Hobbies:Gaming:Steam',
+        }
+        expected = """
+if .*.*PP.[0-9]+.PP.*Steam.*, Ihr Einkauf bei.*PayPal
+.*.*PP.[0-9]+.PP.*Steam.*, Ihr Einkauf bei.*PAYPAL
+    description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam
+    comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam
+    account1    Expenses:Hobbies:Gaming:Steam                                   
+
+"""
+        actual, account = gen_paypal_rule(config, rule)
+        self.assertEqual(expected, actual)  # add assertion here
+        self.assertEqual('Expenses:Hobbies:Gaming:Steam', account)  # add assertion here
+
     def test_gen_paypal_rule_name(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -26,7 +52,7 @@ class HledgerPayPalRulesGenPayPalRuleTestCase(unittest.TestCase):
             'account': 'Expenses:Hobbies:Gaming:Steam',
         }
         expected = """
-if PP.1234.PP.*Steam.*.*.*PayPal
+if PP.[0-9]+.PP.*Steam.*.*.*PayPal
 Steam.*.*.*PayPal
 Steam.*PAYPAL.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam
@@ -41,7 +67,7 @@ Steam.*PAYPAL.*.*
     def test_gen_paypal_rule_description(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -52,7 +78,7 @@ Steam.*PAYPAL.*.*
             'description': 'Steam'
         }
         expected = """
-if PP.1234.PP.*steampowered.*.*.*PayPal
+if PP.[0-9]+.PP.*steampowered.*.*.*PayPal
 steampowered.*.*.*PayPal
 steampowered.*PAYPAL.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam
@@ -67,7 +93,7 @@ steampowered.*PAYPAL.*.*
     def test_gen_paypal_rule_full_description(self):
         config = {
             'paypal': {
-                'prefix': 'PP.6330.P',
+                'prefix': 'PP.[0-9]+.PP',
                 'suffix': 'PayPal',
                 'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -78,7 +104,7 @@ steampowered.*PAYPAL.*.*
             'full_description': 'Google | Play Store'
         }
         expected = """
-if PP.1234.PP.*Google.*.*.*PayPal
+if PP.[0-9]+.PP.*Google.*.*.*PayPal
 Google.*.*.*PayPal
 Google.*PAYPAL.*.*
     description Google | Play Store
@@ -93,7 +119,7 @@ Google.*PAYPAL.*.*
     def test_gen_paypal_rule_payee(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -105,7 +131,7 @@ Google.*PAYPAL.*.*
             'payee': 'PayPal Europe S.a.r.l., et Cie S.C.A'
         }
         expected = """
-if PP.1234.PP.*steampowered.*.*.*PayPal
+if PP.[0-9]+.PP.*steampowered.*.*.*PayPal
 steampowered.*.*.*PayPal
 steampowered.*PAYPAL.*.*
     description PayPal Europe S.a.r.l., et Cie S.C.A | PayPal Steam
@@ -120,7 +146,7 @@ steampowered.*PAYPAL.*.*
     def test_gen_paypal_rule_no_payee(self):
         config = {
             'paypal': {
-                'prefix': 'PP.6330.P',
+                'prefix': 'PP.[0-9]+.PP',
                 'suffix': 'PayPal',
             },
         }
@@ -130,7 +156,7 @@ steampowered.*PAYPAL.*.*
             'description': 'Steam',
         }
         expected = """
-if PP.1234.PP.*steampowered.*.*.*PayPal
+if PP.[0-9]+.PP.*steampowered.*.*.*PayPal
 steampowered.*.*.*PayPal
 steampowered.*PAYPAL.*.*
     description %payee | PayPal Steam
@@ -145,7 +171,7 @@ steampowered.*PAYPAL.*.*
     def test_gen_paypal_rule_amount(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -158,8 +184,8 @@ steampowered.*PAYPAL.*.*
             'amount': -19.99,
         }
         expected = """
-if PP.1234.PP.*steampowered.*.*.*PayPal.*, -19,99
-PP.1234.PP.*steampowered.*.*.*PayPal.*,-19,99
+if PP.[0-9]+.PP.*steampowered.*.*.*PayPal.*, -19,99
+PP.[0-9]+.PP.*steampowered.*.*.*PayPal.*,-19,99
 steampowered.*.*.*PayPal.*, -19,99
 steampowered.*.*.*PayPal.*,-19,99
 steampowered.*PAYPAL.*.*.*, -19,99
@@ -176,7 +202,7 @@ steampowered.*PAYPAL.*.*.*,-19,99
     def test_gen_paypal_rule_currency(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -190,8 +216,8 @@ steampowered.*PAYPAL.*.*.*,-19,99
             'currency': 'EUR'
         }
         expected = """
-if PP.1234.PP.*steampowered.*.*.*PayPal.*, -19,99,EUR
-PP.1234.PP.*steampowered.*.*.*PayPal.*,-19,99,EUR
+if PP.[0-9]+.PP.*steampowered.*.*.*PayPal.*, -19,99,EUR
+PP.[0-9]+.PP.*steampowered.*.*.*PayPal.*,-19,99,EUR
 steampowered.*.*.*PayPal.*, -19,99,EUR
 steampowered.*.*.*PayPal.*,-19,99,EUR
 steampowered.*PAYPAL.*.*.*, -19,99,EUR
@@ -208,7 +234,7 @@ steampowered.*PAYPAL.*.*.*,-19,99,EUR
     def test_gen_paypal_rule_big_amount(self):
         config = {
             'paypal': {
-              'prefix': 'PP.6330.P',
+              'prefix': 'PP.[0-9]+.PP',
               'suffix': 'PayPal',
               'payee': 'PayPal Europe S.a.r.l. et Cie S.C.A',
             },
@@ -221,7 +247,7 @@ steampowered.*PAYPAL.*.*.*,-19,99,EUR
             'amount': -649.0,
         }
         expected = """
-if PP.1234.PP.*MMS E-Commerce GmbH.*.*.*PayPal.*,-649
+if PP.[0-9]+.PP.*MMS E-Commerce GmbH.*.*.*PayPal.*,-649
 MMS E-Commerce GmbH.*.*.*PayPal.*,-649
 MMS E-Commerce GmbH.*PAYPAL.*.*.*,-649
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Saturn
