@@ -2,8 +2,8 @@
 
 ;;; PayPal rules
 
-if .*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-20
-.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-20
+if .*.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PayPal.*,-20
+.*.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-20
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal PayPal Prevent cancer foundation
     account1    Expenses:Spenden:PreventCancerFoundation                        
 

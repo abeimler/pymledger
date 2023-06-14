@@ -10,18 +10,18 @@ include 2023/2023.hledger
 
 
 ;;; "unbudget" account = checking - budget - saving
-account Assets:Bank:Unbudget
+account Assets:Bank:Available
 = Assets:Bank:Checking                    ; unbudget:
-    (Assets:Bank:Unbudget)                   *1
+    (Assets:Bank:Available)                   *1
 = Assets:Bank:Budget                      ; unbudget:
-    (Assets:Bank:Unbudget)                   *-1
+    (Assets:Bank:Available)                   *-1
 = Assets:Bank:Saving                      ; unbudget:
-    (Assets:Bank:Unbudget)                   *-1
+    (Assets:Bank:Available)                   *-1
 
 ;;; rebalance bank account, so it equals checking
 = Assets:Bank:Budget                      ; unbudget:
     (Assets:Bank)                       *-1
 = Assets:Bank:Saving                      ; unbudget:
     (Assets:Bank)                       *-1
-= Assets:Bank:Unbudget                    ; unbudget:
+= Assets:Bank:Available                    ; unbudget:
     (Assets:Bank)                       *-1

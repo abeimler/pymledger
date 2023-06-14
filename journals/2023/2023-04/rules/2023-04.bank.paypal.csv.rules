@@ -2,15 +2,15 @@
 
 ;;; PayPal rules
 
-if .*.*PP.6330.PP.*dm-drogerie.*, Ihr Einkauf bei.*PayPal
-.*.*PP.6330.PP.*dm-drogerie.*, Ihr Einkauf bei.*PAYPAL
+if .*.*PP.[0-9]+.PP.*dm-drogerie.*, Ihr Einkauf bei.*PayPal
+.*.*PP.[0-9]+.PP.*dm-drogerie.*, Ihr Einkauf bei.*PAYPAL
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal dm-drogerie
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:dm-drogerie
     account1    Expenses:Haushalt:DmDrogerie                                    
 
 
-if 1234567893215.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-30
-1234567893215.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-30
+if 1234567893215.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PayPal.*,-30
+1234567893215.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-30
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567893215
     code 1234567893215

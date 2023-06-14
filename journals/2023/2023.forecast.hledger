@@ -3,7 +3,7 @@
 ;; Forecast, for this year $2023
 ~ 2023
     Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime            90,00 EUR
-    Expenses:Versicherung                                                  10,00 EUR
+    Expenses:Versicherung:Jaehrlich                                        10,00 EUR
     Assets:Bank:Checking
 
 ;; Budget for this year months

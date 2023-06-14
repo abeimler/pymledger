@@ -50,7 +50,7 @@ plugin "beancount.plugins.auto_accounts"
 1970-01-01 open Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll
 1970-01-01 open Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus
 1970-01-01 open Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix
-1970-01-01 open Expenses:Versicherungen:Brille
+1970-01-01 open Expenses:Versicherungen:Jaehrlich:Brille
 1970-01-01 open Expenses:Wohnen:Miete
 1970-01-01 open Expenses:Wohnen:Nebenkosten:Strom
 1970-01-01 open Income:Geschenk:Eltern:Bargeld
@@ -69,20 +69,20 @@ plugin "beancount.plugins.auto_accounts"
 2023-01-01 * "Current Month Budget" ; budget:, modified:
 
 2023-01-02 * "Strom GmbH | Strom GmbH" ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
-  Expenses:Wohnen:Nebenkosten:Strom       48,00 EUR
-  Assets:Bank:Checking                   -48,00 EUR
+  Expenses:Wohnen:Nebenkosten:Strom           48,00 EUR
+  Assets:Bank:Checking                       -48,00 EUR
 
 2023-01-02 * "Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio" ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
-  Expenses:Telekommunikation:Fernsehen:Rundfunk       17,49 EUR
-  Assets:Bank:Checking                               -17,49 EUR
+  Expenses:Telekommunikation:Fernsehen:Rundfunk          17,49 EUR
+  Assets:Bank:Checking                                  -17,49 EUR
 
 2023-01-02 * "Wohnen GmbH | Wohnen GmbH" ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
-  Expenses:Wohnen:Miete            499,20 EUR
-  Assets:Bank:Checking            -499,20 EUR
+  Expenses:Wohnen:Miete                      499,20 EUR
+  Assets:Bank:Checking                      -499,20 EUR
 
 2023-01-03 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
-  Expenses:Hobbies:Gaming:Nintendo        8,12 EUR
-  Assets:Bank:Checking                   -8,12 EUR
+  Expenses:Hobbies:Gaming:Nintendo                  8,12 EUR
+  Assets:Bank:Checking                             -8,12 EUR
 
 2023-01-03 * "AUDIBLE GMBH | Amazon Audible GmbH Hörbuch" ; type:FOLGELASTSCHRIFT, payee:AUDIBLE GMBH, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible        9,95 EUR
@@ -93,28 +93,28 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                             -6,99 EUR
 
 2023-01-03 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam, modified:
-  Expenses:Hobbies:Gaming:Steam           9,99 EUR
-  Assets:Bank:Checking                   -9,99 EUR
+  Expenses:Hobbies:Gaming:Steam                     9,99 EUR
+  Assets:Bank:Checking                             -9,99 EUR
 
 2023-01-03 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam, modified:
-  Expenses:Hobbies:Gaming:Steam          14,00 EUR
-  Assets:Bank:Checking                  -14,00 EUR
+  Expenses:Hobbies:Gaming:Steam                    14,00 EUR
+  Assets:Bank:Checking                            -14,00 EUR
 
 2023-01-03 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam, modified:
-  Expenses:Hobbies:Gaming:Steam          25,79 EUR
-  Assets:Bank:Checking                  -25,79 EUR
+  Expenses:Hobbies:Gaming:Steam                    25,79 EUR
+  Assets:Bank:Checking                            -25,79 EUR
 
 2023-01-03 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       35,00 EUR
-  Assets:Bank:Checking                      -35,00 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              35,00 EUR
+  Assets:Bank:Checking                             -35,00 EUR
 
 2023-01-09 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       25,84 EUR
-  Assets:Bank:Checking                      -25,84 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              25,84 EUR
+  Assets:Bank:Checking                             -25,84 EUR
 
 2023-01-13 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Hose" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567895462, modified:
-  Expenses:Kleidung:PayPal            17,50 EUR
-  Assets:Bank:Checking               -17,50 EUR
+  Expenses:Kleidung:PayPal                      17,50 EUR
+  Assets:Bank:Checking                         -17,50 EUR
 
 2023-01-13 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567892135, modified:
   Expenses:Unterhaltung:Konzert       97,26 EUR
@@ -125,76 +125,76 @@ plugin "beancount.plugins.auto_accounts"
 2023-01-16 balance Assets:Bank:Checking  1364,65 EUR
 
 2023-01-16 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl      139,26 EUR
-  Assets:Bank:Checking                     -139,26 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl             139,26 EUR
+  Assets:Bank:Checking                            -139,26 EUR
 
 2023-01-16 * "REWE SAGT DANKE | Einkaufen Rewe" ; type:KARTENZAHLUNG, payee:REWE SAGT DANKE, modified:
-  Expenses:Lebensmittel:Einkaufen:Rewe       25,80 EUR
-  Assets:Bank:Checking                      -25,80 EUR
+  Expenses:Lebensmittel:Einkaufen:Rewe              25,80 EUR
+  Assets:Bank:Checking                             -25,80 EUR
 
 2023-01-17 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
-  Assets:Bank:Checking                      -10,00 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          10,00 EUR
+  Assets:Bank:Checking                         -10,00 EUR
 
 2023-01-19 * "SCHLOSS BURGER GMBH | Essen Burger King" ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
-  Expenses:Lebensmittel:Essen:BurgerKing       10,99 EUR
-  Assets:Bank:Checking                        -10,99 EUR
+  Expenses:Lebensmittel:Essen:BurgerKing            10,99 EUR
+  Assets:Bank:Checking                             -10,99 EUR
 
 2023-01-23 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
-  Expenses:Hobbies:Merch:PayPal         200,00 EUR
-  Assets:Bank:Checking                 -200,00 EUR
+  Expenses:Hobbies:Merch:PayPal                   200,00 EUR
+  Assets:Bank:Checking                           -200,00 EUR
 
 2023-01-23 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
-  Expenses:Lebensmittel:Essen:Pizza       21,85 EUR
-  Assets:Bank:Checking                   -21,85 EUR
+  Expenses:Lebensmittel:Essen:Pizza                 21,85 EUR
+  Assets:Bank:Checking                             -21,85 EUR
 
 2023-01-23 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus        8,99 EUR
   Assets:Bank:Checking                                            -8,99 EUR
 
 2023-01-23 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       45,00 EUR
-  Assets:Bank:Checking                      -45,00 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              45,00 EUR
+  Assets:Bank:Checking                             -45,00 EUR
 
 2023-01-25 * "INTERNET GMBH | Internet GmbH" ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
   Expenses:Telekommunikation:Online-Dienste:Internet       40,00 EUR
   Assets:Bank:Checking                                    -40,00 EUR
 
 2023-01-27 * "Handy Deutschland GmbH | Handy-Internet" ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
-  Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
-  Assets:Bank:Checking                          -25,00 EUR
+  Expenses:Telekommunikation:Telefon:Handy               25,00 EUR
+  Assets:Bank:Checking                                  -25,00 EUR
 
 2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon Neuer Staubsauger" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., ref:CCCCCCCCCCCCCCCC, modified:
-  Expenses:Haushalt:Amazon            99,95 EUR
-  Assets:Bank:Checking               -99,95 EUR
+  Expenses:Haushalt:Amazon                      99,95 EUR
+  Assets:Bank:Checking                         -99,95 EUR
 
 2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
-  Expenses:Haushalt:Amazon           200,00 EUR
-  Assets:Bank:Checking              -200,00 EUR
+  Expenses:Haushalt:Amazon                     200,00 EUR
+  Assets:Bank:Checking                        -200,00 EUR
 
 2023-01-30 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234567 - Microwelle" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234567, modified:
-  Expenses:Haushalt:Amazon            55,95 EUR
-  Assets:Bank:Checking               -55,95 EUR
+  Expenses:Haushalt:Amazon                      55,95 EUR
+  Assets:Bank:Checking                         -55,95 EUR
 
 2023-01-30 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam, modified:
-  Expenses:Hobbies:Gaming:Steam          19,99 EUR
-  Assets:Bank:Checking                  -19,99 EUR
+  Expenses:Hobbies:Gaming:Steam                    19,99 EUR
+  Assets:Bank:Checking                            -19,99 EUR
 
 2023-01-30 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       30,99 EUR
-  Assets:Bank:Checking                      -30,99 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              30,99 EUR
+  Assets:Bank:Checking                             -30,99 EUR
 
 2023-01-30 * "SCHLOSS BURGER GMBH | Essen Burger King" ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
-  Expenses:Lebensmittel:Essen:BurgerKing        9,00 EUR
-  Assets:Bank:Checking                         -9,00 EUR
+  Expenses:Lebensmittel:Essen:BurgerKing             9,00 EUR
+  Assets:Bank:Checking                              -9,00 EUR
 
 2023-01-30 * "DB AUTOMAT | DB Fahrkarten" ; type:KARTENZAHLUNG, payee:DB AUTOMAT, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
-  Assets:Bank:Checking                      -10,00 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          10,00 EUR
+  Assets:Bank:Checking                         -10,00 EUR
 
 2023-01-30 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking       2100,00 EUR
-  Income:Salary             -2100,00 EUR
+  Assets:Bank:Checking        2100,00 EUR
+  Income:Salary              -2100,00 EUR
 
 2023-01-31 * "NETFLIX SERVICES GERMANY GMBH | Netflix" ; type:FOLGELASTSCHRIFT, payee:NETFLIX SERVICES GERMANY GMBH, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:Netflix       12,99 EUR
@@ -205,28 +205,28 @@ plugin "beancount.plugins.auto_accounts"
 2023-02-01 * "Current Month Budget" ; budget:, modified:
 
 2023-02-01 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
-  Expenses:Sonstiges:Bankgebuehren       17,65 EUR
-  Assets:Bank:Checking                  -17,65 EUR
+  Expenses:Sonstiges:Bankgebuehren               17,65 EUR
+  Assets:Bank:Checking                          -17,65 EUR
 
 2023-02-01 * "Strom GmbH | Strom GmbH" ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
-  Expenses:Wohnen:Nebenkosten:Strom       50,00 EUR
-  Assets:Bank:Checking                   -50,00 EUR
+  Expenses:Wohnen:Nebenkosten:Strom           50,00 EUR
+  Assets:Bank:Checking                       -50,00 EUR
 
 2023-02-01 * "Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio" ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
-  Expenses:Telekommunikation:Fernsehen:Rundfunk       17,49 EUR
-  Assets:Bank:Checking                               -17,49 EUR
+  Expenses:Telekommunikation:Fernsehen:Rundfunk          17,49 EUR
+  Assets:Bank:Checking                                  -17,49 EUR
 
 2023-02-02 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Essen Ausgeben" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234569874685, modified:
-  Expenses:Lebensmittel:Essen:PayPal        3,00 EUR
-  Assets:Bank:Checking                     -3,00 EUR
+  Expenses:Lebensmittel:Essen:PayPal                 3,00 EUR
+  Assets:Bank:Checking                              -3,00 EUR
 
 2023-02-02 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
   Expenses:Gesundheit:Medikamente:Apotheke       96,10 EUR
   Assets:Bank:Checking                          -96,10 EUR
 
 2023-02-02 * "Wohnen GmbH | Wohnen GmbH" ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
-  Expenses:Wohnen:Miete            500,00 EUR
-  Assets:Bank:Checking            -500,00 EUR
+  Expenses:Wohnen:Miete                      500,00 EUR
+  Assets:Bank:Checking                      -500,00 EUR
 
 2023-02-03 * "AUDIBLE GMBH | Amazon Audible GmbH Hörbuch" ; type:FOLGELASTSCHRIFT, payee:AUDIBLE GMBH, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Audible        9,95 EUR
@@ -237,36 +237,36 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                             -6,99 EUR
 
 2023-02-03 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       11,70 EUR
-  Assets:Bank:Checking                      -11,70 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          11,70 EUR
+  Assets:Bank:Checking                         -11,70 EUR
 
 2023-02-07 * "AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND | Amazon 123-1234567-1234599" ; type:FOLGELASTSCHRIFT, payee:AMAZON EU S.A R.L. NIEDERLASSUNG DEUTSCHLAND, order:123-1234567-1234599, ref:CCCCCCCCCCCCCCCC, modified:
-  Expenses:Haushalt:Amazon             8,50 EUR
-  Assets:Bank:Checking                -8,50 EUR
+  Expenses:Haushalt:Amazon                       8,50 EUR
+  Assets:Bank:Checking                          -8,50 EUR
 
 2023-02-08 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal dm-drogerie" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:dm-drogerie, modified:
-  Expenses:Haushalt:DmDrogerie        36,10 EUR
-  Assets:Bank:Checking               -36,10 EUR
+  Expenses:Haushalt:DmDrogerie                  36,10 EUR
+  Assets:Bank:Checking                         -36,10 EUR
 
 2023-02-09 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl      103,98 EUR
-  Assets:Bank:Checking                     -103,98 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl             103,98 EUR
+  Assets:Bank:Checking                            -103,98 EUR
 
 2023-02-14 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam, modified:
-  Expenses:Hobbies:Gaming:Steam          19,99 EUR
-  Assets:Bank:Checking                  -19,99 EUR
+  Expenses:Hobbies:Gaming:Steam                    19,99 EUR
+  Assets:Bank:Checking                            -19,99 EUR
 
 2023-02-17 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234599" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234599, modified:
-  Expenses:Haushalt:Amazon             7,00 EUR
-  Assets:Bank:Checking                -7,00 EUR
+  Expenses:Haushalt:Amazon                       7,00 EUR
+  Assets:Bank:Checking                          -7,00 EUR
 
 2023-02-17 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234599" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234599, modified:
-  Expenses:Haushalt:Amazon            25,00 EUR
-  Assets:Bank:Checking               -25,00 EUR
+  Expenses:Haushalt:Amazon                      25,00 EUR
+  Assets:Bank:Checking                         -25,00 EUR
 
 2023-02-20 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       90,12 EUR
-  Assets:Bank:Checking                      -90,12 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              90,12 EUR
+  Assets:Bank:Checking                             -90,12 EUR
 
 2023-02-21 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Disney Plus (Disney+)" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DISNEYPLUS, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus        8,99 EUR
@@ -274,7 +274,7 @@ plugin "beancount.plugins.auto_accounts"
 
 2023-02-21 * "Einkaufen Rewe"
   modified: ""
-  Expenses:Lebensmittel:Einkaufen:Rewe       21,84 EUR
+  Expenses:Lebensmittel:Einkaufen:Rewe              21,84 EUR
   Assets:Cash
 
 2023-02-24 * "INTERNET GMBH | Internet GmbH" ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
@@ -282,84 +282,84 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                    -40,00 EUR
 
 2023-02-24 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking       2100,00 EUR
-  Income:Salary             -2100,00 EUR
+  Assets:Bank:Checking        2100,00 EUR
+  Income:Salary              -2100,00 EUR
 
 2023-02-28 * "Handy Deutschland GmbH | Handy-Internet" ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
-  Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
-  Assets:Bank:Checking                          -25,00 EUR
+  Expenses:Telekommunikation:Telefon:Handy               25,00 EUR
+  Assets:Bank:Checking                                  -25,00 EUR
 
 2023-03-01 * "Current Year Budget for month 03" ; budget:, modified:
 
 2023-03-01 * "Current Month Budget" ; budget:, modified:
 
 2023-03-01 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
-  Expenses:Sonstiges:Bankgebuehren       16,15 EUR
-  Assets:Bank:Checking                  -16,15 EUR
+  Expenses:Sonstiges:Bankgebuehren               16,15 EUR
+  Assets:Bank:Checking                          -16,15 EUR
 
 2023-03-01 * "Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio" ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
-  Expenses:Telekommunikation:Fernsehen:Rundfunk       17,49 EUR
-  Assets:Bank:Checking                               -17,49 EUR
+  Expenses:Telekommunikation:Fernsehen:Rundfunk          17,49 EUR
+  Assets:Bank:Checking                                  -17,49 EUR
 
 2023-03-01 * "Strom GmbH | Strom GmbH" ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
-  Expenses:Wohnen:Nebenkosten:Strom       48,00 EUR
-  Assets:Bank:Checking                   -48,00 EUR
+  Expenses:Wohnen:Nebenkosten:Strom           48,00 EUR
+  Assets:Bank:Checking                       -48,00 EUR
 
 2023-03-01 * "MCDONALDS | Essen McDonalds" ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
-  Expenses:Lebensmittel:Essen:McDonalds       16,58 EUR
-  Assets:Bank:Checking                       -16,58 EUR
+  Expenses:Lebensmittel:Essen:McDonalds             16,58 EUR
+  Assets:Bank:Checking                             -16,58 EUR
 
 2023-03-02 * "Wohnen GmbH | Wohnen GmbH" ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
-  Expenses:Wohnen:Miete            500,00 EUR
-  Assets:Bank:Checking            -500,00 EUR
+  Expenses:Wohnen:Miete                      500,00 EUR
+  Assets:Bank:Checking                      -500,00 EUR
 
 2023-03-03 * "DB AUTOMAT | DB Fahrkarten" ; type:KARTENZAHLUNG, payee:DB AUTOMAT, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
-  Assets:Bank:Checking                      -10,00 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          10,00 EUR
+  Assets:Bank:Checking                         -10,00 EUR
 
 2023-03-03 * "MCDONALDS | Essen McDonalds" ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
-  Expenses:Lebensmittel:Essen:McDonalds        5,77 EUR
-  Assets:Bank:Checking                        -5,77 EUR
+  Expenses:Lebensmittel:Essen:McDonalds              5,77 EUR
+  Assets:Bank:Checking                              -5,77 EUR
 
 2023-03-06 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll        6,99 EUR
   Assets:Bank:Checking                                             -6,99 EUR
 
 2023-03-06 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       20,23 EUR
-  Assets:Bank:Checking                      -20,23 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              20,23 EUR
+  Assets:Bank:Checking                             -20,23 EUR
 
 2023-03-08 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (dpdhl group)" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Shop der Deutschen Post, modified:
-  Expenses:Sonstiges:Post              30,90 EUR
-  Assets:Bank:Checking                -30,90 EUR
+  Expenses:Sonstiges:Post                        30,90 EUR
+  Assets:Bank:Checking                          -30,90 EUR
 
 2023-03-08 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       20,61 EUR
-  Assets:Bank:Checking                      -20,61 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              20,61 EUR
+  Assets:Bank:Checking                             -20,61 EUR
 
 2023-03-08 * "SCHLOSS BURGER GMBH | Essen Burger King" ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
-  Expenses:Lebensmittel:Essen:BurgerKing       13,99 EUR
-  Assets:Bank:Checking                        -13,99 EUR
+  Expenses:Lebensmittel:Essen:BurgerKing            13,99 EUR
+  Assets:Bank:Checking                             -13,99 EUR
 
 2023-03-10 * "HORNBACH | Hornbach Wohnung Einkauf" ; type:SEPA-ELV-LASTSCHRIFT, payee:HORNBACH, modified:
-  Expenses:Haushalt:Hornbach          13,40 EUR
-  Assets:Bank:Checking               -13,40 EUR
+  Expenses:Haushalt:Hornbach                    13,40 EUR
+  Assets:Bank:Checking                         -13,40 EUR
 
 2023-03-14 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-5555568" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-5555568, ref:HHHHHHHHHHHHHHHH, modified:
-  Expenses:Haushalt:Amazon            14,95 EUR
-  Assets:Bank:Checking               -14,95 EUR
+  Expenses:Haushalt:Amazon                      14,95 EUR
+  Assets:Bank:Checking                         -14,95 EUR
 
 2023-03-14 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       11,70 EUR
-  Assets:Bank:Checking                      -11,70 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          11,70 EUR
+  Assets:Bank:Checking                         -11,70 EUR
 
 2023-03-14 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       43,15 EUR
-  Assets:Bank:Checking                      -43,15 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              43,15 EUR
+  Assets:Bank:Checking                             -43,15 EUR
 
 2023-03-16 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
-  Expenses:Hobbies:Merch:PayPal          38,00 EUR
-  Assets:Bank:Checking                  -38,00 EUR
+  Expenses:Hobbies:Merch:PayPal                    38,00 EUR
+  Assets:Bank:Checking                            -38,00 EUR
 
 2023-03-16 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
   Expenses:Hobbies:Sonstiges:PayPal       25,55 EUR
@@ -370,12 +370,12 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                            -8,99 EUR
 
 2023-03-21 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       65,00 EUR
-  Assets:Bank:Checking                      -65,00 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              65,00 EUR
+  Assets:Bank:Checking                             -65,00 EUR
 
 2023-03-23 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-3216548" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-3216548, ref:IIIIIIIIIIIIIIIII, modified:
-  Expenses:Hobbies:Merch:Amazon          15,99 EUR
-  Assets:Bank:Checking                  -15,99 EUR
+  Expenses:Hobbies:Merch:Amazon                    15,99 EUR
+  Assets:Bank:Checking                            -15,99 EUR
 
 2023-03-23 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 555-1234567-7894569" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:555-1234567-7894569, ref:JJJJJJJJJJJJJJJJ, modified:
   Expenses:Hobbies:Sonstiges:Amazon        4,45 EUR
@@ -390,64 +390,64 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                    -40,00 EUR
 
 2023-03-28 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
-  Expenses:Hobbies:Gaming:Nintendo        8,49 EUR
-  Assets:Bank:Checking                   -8,49 EUR
+  Expenses:Hobbies:Gaming:Nintendo                  8,49 EUR
+  Assets:Bank:Checking                             -8,49 EUR
 
 2023-03-28 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
-  Expenses:Hobbies:Gaming:Nintendo        9,99 EUR
-  Assets:Bank:Checking                   -9,99 EUR
+  Expenses:Hobbies:Gaming:Nintendo                  9,99 EUR
+  Assets:Bank:Checking                             -9,99 EUR
 
 2023-03-28 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Nintendo" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Nintendo, modified:
-  Expenses:Hobbies:Gaming:Nintendo        9,99 EUR
-  Assets:Bank:Checking                   -9,99 EUR
+  Expenses:Hobbies:Gaming:Nintendo                  9,99 EUR
+  Assets:Bank:Checking                             -9,99 EUR
 
 2023-03-29 * "Handy Deutschland GmbH | Handy-Internet" ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
-  Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
-  Assets:Bank:Checking                          -25,00 EUR
+  Expenses:Telekommunikation:Telefon:Handy               25,00 EUR
+  Assets:Bank:Checking                                  -25,00 EUR
 
 2023-03-29 * "DB AUTOMAT | DB Fahrkarten" ; type:KARTENZAHLUNG, payee:DB AUTOMAT, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
-  Assets:Bank:Checking                      -10,00 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          10,00 EUR
+  Assets:Bank:Checking                         -10,00 EUR
 
 2023-03-29 * "MCDONALDS | Essen McDonalds" ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
-  Expenses:Lebensmittel:Essen:McDonalds        5,99 EUR
-  Assets:Bank:Checking                        -5,99 EUR
+  Expenses:Lebensmittel:Essen:McDonalds              5,99 EUR
+  Assets:Bank:Checking                              -5,99 EUR
 
 2023-03-29 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking       2100,00 EUR
-  Income:Salary             -2100,00 EUR
+  Assets:Bank:Checking        2100,00 EUR
+  Income:Salary              -2100,00 EUR
 
 2023-03-30 * "Kaufland | Einkaufen Kaufland" ; type:KARTENZAHLUNG, payee:Kaufland, modified:
-  Expenses:Lebensmittel:Einkaufen:Kaufland       30,00 EUR
-  Assets:Bank:Checking                          -30,00 EUR
+  Expenses:Lebensmittel:Einkaufen:Kaufland          30,00 EUR
+  Assets:Bank:Checking                             -30,00 EUR
 
 2023-04-01 * "Current Year Budget for month 04" ; budget:, modified:
 
 2023-04-01 * "Current Month Budget" ; budget:, modified:
 
 2023-04-03 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
-  Expenses:Sonstiges:Bankgebuehren       19,75 EUR
-  Assets:Bank:Checking                  -19,75 EUR
+  Expenses:Sonstiges:Bankgebuehren               19,75 EUR
+  Assets:Bank:Checking                          -19,75 EUR
 
 2023-04-03 * "HANSEMERKUR SPEZIALE KV. AG | Brille Fielmann Nulltarifversicherung" ; type:FOLGELASTSCHRIFT, payee:HANSEMERKUR SPEZIALE KV. AG, modified:
-  Expenses:Versicherungen:Brille            10,00 EUR
-  Assets:Bank:Checking                     -10,00 EUR
+  Expenses:Versicherungen:Jaehrlich:Brille       10,00 EUR
+  Assets:Bank:Checking                          -10,00 EUR
 
 2023-04-03 * "Strom GmbH | Strom GmbH" ; type:DAUERAUFTRAG, payee:Strom GmbH, modified:
-  Expenses:Wohnen:Nebenkosten:Strom       50,00 EUR
-  Assets:Bank:Checking                   -50,00 EUR
+  Expenses:Wohnen:Nebenkosten:Strom           50,00 EUR
+  Assets:Bank:Checking                       -50,00 EUR
 
 2023-04-03 * "Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio" ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
-  Expenses:Telekommunikation:Fernsehen:Rundfunk       17,49 EUR
-  Assets:Bank:Checking                               -17,49 EUR
+  Expenses:Telekommunikation:Fernsehen:Rundfunk          17,49 EUR
+  Assets:Bank:Checking                                  -17,49 EUR
 
 2023-04-03 * "Wohnen GmbH | Wohnen GmbH" ; type:DAUERAUFTRAG, payee:Wohnen GmbH, modified:
-  Expenses:Wohnen:Miete            500,00 EUR
-  Assets:Bank:Checking            -500,00 EUR
+  Expenses:Wohnen:Miete                      500,00 EUR
+  Assets:Bank:Checking                      -500,00 EUR
 
 2023-04-03 * "SCHLOSS BURGER GMBH | Essen Burger King" ; type:KARTENZAHLUNG, payee:SCHLOSS BURGER GMBH, modified:
-  Expenses:Lebensmittel:Essen:BurgerKing       12,98 EUR
-  Assets:Bank:Checking                        -12,98 EUR
+  Expenses:Lebensmittel:Essen:BurgerKing            12,98 EUR
+  Assets:Bank:Checking                             -12,98 EUR
 
 2023-04-04 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll        6,99 EUR
@@ -458,24 +458,24 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                                -9,95 EUR
 
 2023-04-05 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       24,00 EUR
-  Assets:Bank:Checking                      -24,00 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              24,00 EUR
+  Assets:Bank:Checking                             -24,00 EUR
 
 2023-04-11 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       25,00 EUR
-  Assets:Bank:Checking                      -25,00 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              25,00 EUR
+  Assets:Bank:Checking                             -25,00 EUR
 
 2023-04-12 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       10,00 EUR
-  Assets:Bank:Checking                      -10,00 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          10,00 EUR
+  Assets:Bank:Checking                         -10,00 EUR
 
 2023-04-12 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234888" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234888, ref:FFFFFFFFFFFFFFFF, modified:
-  Expenses:Hobbies:Gaming:Amazon          8,99 EUR
-  Assets:Bank:Checking                   -8,99 EUR
+  Expenses:Hobbies:Gaming:Amazon                    8,99 EUR
+  Assets:Bank:Checking                             -8,99 EUR
 
 2023-04-14 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234567893215, modified:
-  Expenses:Lebensmittel:Essen:Pizza       30,00 EUR
-  Assets:Bank:Checking                   -30,00 EUR
+  Expenses:Lebensmittel:Essen:Pizza                 30,00 EUR
+  Assets:Bank:Checking                             -30,00 EUR
 
 2023-04-18 * "APOTHEKE | Einkaufen Apotheke" ; type:KARTENZAHLUNG, payee:APOTHEKE, modified:
   Expenses:Gesundheit:Medikamente:Apotheke        7,95 EUR
@@ -490,76 +490,76 @@ plugin "beancount.plugins.auto_accounts"
   Assets:Bank:Checking                                            -8,99 EUR
 
 2023-04-25 * "MCDONALDS | Essen McDonalds" ; type:KARTENZAHLUNG, payee:MCDONALDS, modified:
-  Expenses:Lebensmittel:Essen:McDonalds        5,99 EUR
-  Assets:Bank:Checking                        -5,99 EUR
+  Expenses:Lebensmittel:Essen:McDonalds              5,99 EUR
+  Assets:Bank:Checking                              -5,99 EUR
 
 2023-04-26 * "Arbeit GmbH | Einkommen von Arbeit GmbH" ; type:LOHN GEHALT, payee:Arbeit GmbH, modified:
-  Assets:Bank:Checking       2100,00 EUR
-  Income:Salary             -2100,00 EUR
+  Assets:Bank:Checking        2100,00 EUR
+  Income:Salary              -2100,00 EUR
 
 2023-04-28 * "INTERNET GMBH | Internet GmbH" ; type:FOLGELASTSCHRIFT, payee:INTERNET GMBH, modified:
   Expenses:Telekommunikation:Online-Dienste:Internet       40,00 EUR
   Assets:Bank:Checking                                    -40,00 EUR
 
 2023-04-28 * "Handy Deutschland GmbH | Handy-Internet" ; type:FOLGELASTSCHRIFT, payee:Handy Deutschland GmbH, modified:
-  Expenses:Telekommunikation:Telefon:Handy       25,00 EUR
-  Assets:Bank:Checking                          -25,00 EUR
+  Expenses:Telekommunikation:Telefon:Handy               25,00 EUR
+  Assets:Bank:Checking                                  -25,00 EUR
 
 2023-05-01 * "Current Year Budget for month 05" ; budget:, modified:
 
 2023-05-01 * "Current Month Budget" ; budget:, modified:
 
 2023-05-02 * "Entgeltabrechnung" ; type:ENTGELTABSCHLUSS, payee:, modified:
-  Expenses:Sonstiges:Bankgebuehren       17,05 EUR
-  Assets:Bank:Checking                  -17,05 EUR
+  Expenses:Sonstiges:Bankgebuehren               17,05 EUR
+  Assets:Bank:Checking                          -17,05 EUR
 
 2023-05-02 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Steam, modified:
-  Expenses:Hobbies:Gaming:Steam          22,49 EUR
-  Assets:Bank:Checking                  -22,49 EUR
+  Expenses:Hobbies:Gaming:Steam                    22,49 EUR
+  Assets:Bank:Checking                            -22,49 EUR
 
 2023-05-02 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal DB Ticket" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:DB Vertrieb, modified:
-  Expenses:Fahrtkosten:Fahrkarten:Bahn       11,70 EUR
-  Assets:Bank:Checking                      -11,70 EUR
+  Expenses:Fahrtkosten:Fahrkarten:Bahn          11,70 EUR
+  Assets:Bank:Checking                         -11,70 EUR
 
 2023-05-02 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal PayPal Prevent cancer foundation" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, modified:
   Expenses:Spenden:PreventCancerFoundation       20,00 EUR
   Assets:Bank:Checking                          -20,00 EUR
 
 2023-05-02 * "Rundfunk, ARD, ZDF, DRadio | Rundfunk, ARD, ZDF, DRadio" ; type:DAUERAUFTRAG, payee:Rundfunk ARD ZDF DRadio, modified:
-  Expenses:Telekommunikation:Fernsehen:Rundfunk       17,49 EUR
-  Assets:Bank:Checking                               -17,49 EUR
+  Expenses:Telekommunikation:Fernsehen:Rundfunk          17,49 EUR
+  Assets:Bank:Checking                                  -17,49 EUR
 
 2023-05-02 * "BACKWERK | Essen Baecker" ; type:KARTENZAHLUNG, payee:BACKWERK, modified:
-  Expenses:Lebensmittel:Essen:Baecker        7,50 EUR
-  Assets:Bank:Checking                      -7,50 EUR
+  Expenses:Lebensmittel:Essen:Baecker                7,50 EUR
+  Assets:Bank:Checking                              -7,50 EUR
 
 2023-05-03 * "PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Crunchyroll" ; type:FOLGELASTSCHRIFT, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Crunchyroll, modified:
   Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll        6,99 EUR
   Assets:Bank:Checking                                             -6,99 EUR
 
 2023-05-03 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234555" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234555, ref:HHHHHHHHHHHHHHH, modified:
-  Expenses:Computer:Hardware:Amazon       20,99 EUR
-  Assets:Bank:Checking                   -20,99 EUR
+  Expenses:Computer:Hardware:Amazon                20,99 EUR
+  Assets:Bank:Checking                            -20,99 EUR
 
 2023-05-03 * "AMAZON PAYMENTS EUROPE S.C.A. | Amazon 123-1234567-1234444" ; type:FOLGELASTSCHRIFT, payee:AMAZON PAYMENTS EUROPE S.C.A., order:123-1234567-1234444, ref:GGGGGGGGGGGGGGGG, modified:
-  Expenses:Haushalt:Amazon            50,51 EUR
-  Assets:Bank:Checking               -50,51 EUR
+  Expenses:Haushalt:Amazon                      50,51 EUR
+  Assets:Bank:Checking                         -50,51 EUR
 
 2023-05-08 * "LIDL DIENSTLEISTUNG GMBH UND CO KG | Einkaufen Lidl" ; type:KARTENZAHLUNG, payee:LIDL DIENSTLEISTUNG GMBH UND CO KG, modified:
-  Expenses:Lebensmittel:Einkaufen:Lidl       86,78 EUR
-  Assets:Bank:Checking                      -86,78 EUR
+  Expenses:Lebensmittel:Einkaufen:Lidl              86,78 EUR
+  Assets:Bank:Checking                             -86,78 EUR
 
 2023-05-08 * "DM FIL. | DM Drogerie Einkaufen" ; type:KARTENZAHLUNG, payee:DM FIL., modified:
-  Expenses:Haushalt:DmDrogerie        11,50 EUR
-  Assets:Bank:Checking               -11,50 EUR
+  Expenses:Haushalt:DmDrogerie                  11,50 EUR
+  Assets:Bank:Checking                         -11,50 EUR
 
 2023-05-15 * "DB Vertrieb GmbH | DB Reisezentrum D-Ticket" ; type:ERSTLASTSCHRIFT, payee:DB Vertrieb GmbH, modified:
   Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket       49,00 EUR
   Assets:Bank:Checking                                  -49,00 EUR
 
 2023-05-16 * "Bank | Kartenauszahlung" ; type:BARGELDAUSZAHLUNG, payee:, modified:
-  Assets:Cash                  50,00 EUR
-  Assets:Bank:Checking        -50,00 EUR
+  Assets:Cash                   50,00 EUR
+  Assets:Bank:Checking         -50,00 EUR
 
 2023-05-18 * "Geburtstagsgeld von Eltern"
   Income:Geschenk:Eltern:Bargeld      -50,00 EUR

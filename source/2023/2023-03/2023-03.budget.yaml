@@ -1,37 +1,37 @@
-- account: Assets:Bank:Budget:Abo:Multimedia
+- account: Assets:Bank:Budget:Monatlich:Abo:Multimedia
   amount: 45.0
-- account: Assets:Bank:Budget:Fahrgeld
+- account: Assets:Bank:Budget:Monatlich:Fahrgeld
   amount: 30.0
-- account: Assets:Bank:Budget:Haushalt
+- account: Assets:Bank:Budget:Monatlich:Haushalt
   amount: 50.0
-- account: Assets:Bank:Budget:Kleidung
+- account: Assets:Bank:Budget:Monatlich:Kleidung
   amount: 20.0
-- account: Assets:Bank:Budget:Lebensmittel
+- account: Assets:Bank:Budget:Monatlich:Lebensmittel
   amount: 250.0
-- account: Assets:Bank:Budget:Sonstiges
+- account: Assets:Bank:Budget:Monatlich:Sonstiges
   amount: 25.0
-- account: Assets:Bank:Budget:Telekommunikation
+- account: Assets:Bank:Budget:Monatlich:Telekommunikation
   amount: 55.0
   comment: Internet
-- account: Assets:Bank:Budget:Telekommunikation
+- account: Assets:Bank:Budget:Monatlich:Telekommunikation
   amount: 30.0
   comment: Handy
-- account: Assets:Bank:Budget:Telekommunikation
+- account: Assets:Bank:Budget:Monatlich:Telekommunikation
   amount: 20.0
   comment: Rundfunk
-- account: Assets:Bank:Budget:Versicherungen
+- account: Assets:Bank:Budget:Monatlich:Versicherungen
   amount: 10.0
-- account: Assets:Bank:Budget:Wohnen
+- account: Assets:Bank:Budget:Monatlich:Wohnen
   amount: 500.0
   comment: Miete
-- account: Assets:Bank:Budget:Wohnen
+- account: Assets:Bank:Budget:Monatlich:Wohnen
   amount: 50.0
   comment: Energie und Wasser
-- account: Assets:Bank:Budget:Wunschliste
+- account: Assets:Bank:Budget:Monatlich:Wunschliste
   amount: 150.0
   comment: Hobbies
-- account: Assets:Bank:Budget:Wunschliste
+- account: Assets:Bank:Budget:Monatlich:Wunschliste
   amount: 150.0
   comment: Wunschliste
-- account: Assets:Bank:Budget:Spenden
+- account: Assets:Bank:Budget:Monatlich:Spenden
   amount: 20.0

@@ -6,10 +6,10 @@ if Abo 123456789.*DB Vertrieb GmbH
     account1    Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket                
 
 
-if PP.6330.PP.*ebay.*PayPal.*.*.*.*
+if PP.1234.PP.*ebay.*PayPal.*.*.*.*
 ebay.*PayPal.*.*.*.*
 ebay.*PAYPAL.*.*.*.*
-PP.6330.PP.*EBAY.*PayPal.*.*.*.*
+PP.1234.PP.*EBAY.*PayPal.*.*.*.*
 EBAY.*PayPal.*.*.*.*
 EBAY.*PAYPAL.*.*.*.*
     description %payee | PayPal Ebay %verwendungszweck
@@ -17,13 +17,13 @@ EBAY.*PAYPAL.*.*.*.*
     account1    Expenses:unknown:ebay                                           
 
 
-if PP.6330.PP.*Steam.*PayPal.*.*.*.*
+if PP.1234.PP.*Steam.*PayPal.*.*.*.*
 Steam.*PayPal.*.*.*.*
 Steam.*PAYPAL.*.*.*.*
-PP.6330.PP.*STEAM.*PayPal.*.*.*.*
+PP.1234.PP.*STEAM.*PayPal.*.*.*.*
 STEAM.*PayPal.*.*.*.*
 STEAM.*PAYPAL.*.*.*.*
-PP.6330.PP.*steampowered.*PayPal.*.*.*.*
+PP.1234.PP.*steampowered.*PayPal.*.*.*.*
 steampowered.*PayPal.*.*.*.*
 steampowered.*PAYPAL.*.*.*.*
     description %payee | PayPal Steam
@@ -31,7 +31,7 @@ steampowered.*PAYPAL.*.*.*.*
     account1    Expenses:Hobbies:Gaming:Steam                                   
 
 
-if PP.6330.PP.*GOG.*PayPal.*.*.*.*
+if PP.1234.PP.*GOG.*PayPal.*.*.*.*
 GOG.*PayPal.*.*.*.*
 GOG.*PAYPAL.*.*.*.*
     description %payee | PayPal GOG
@@ -39,10 +39,10 @@ GOG.*PAYPAL.*.*.*.*
     account1    Expenses:Hobbies:Gaming:GOG                                     
 
 
-if PP.6330.PP.*Nintendo.*PayPal.*.*.*.*
+if PP.1234.PP.*Nintendo.*PayPal.*.*.*.*
 Nintendo.*PayPal.*.*.*.*
 Nintendo.*PAYPAL.*.*.*.*
-PP.6330.PP.*NINTENDO.*PayPal.*.*.*.*
+PP.1234.PP.*NINTENDO.*PayPal.*.*.*.*
 NINTENDO.*PayPal.*.*.*.*
 NINTENDO.*PAYPAL.*.*.*.*
     description %payee | PayPal Nintendo
@@ -50,10 +50,10 @@ NINTENDO.*PAYPAL.*.*.*.*
     account1    Expenses:Hobbies:Gaming:Nintendo                                
 
 
-if PP.6330.PP.*Humble Bundle.*PayPal.*.*.*.*
+if PP.1234.PP.*Humble Bundle.*PayPal.*.*.*.*
 Humble Bundle.*PayPal.*.*.*.*
 Humble Bundle.*PAYPAL.*.*.*.*
-PP.6330.PP.*HUMBLEBUNDL.*PayPal.*.*.*.*
+PP.1234.PP.*HUMBLEBUNDL.*PayPal.*.*.*.*
 HUMBLEBUNDL.*PayPal.*.*.*.*
 HUMBLEBUNDL.*PAYPAL.*.*.*.*
     description %payee | PayPal Humble Bundle
@@ -61,10 +61,10 @@ HUMBLEBUNDL.*PAYPAL.*.*.*.*
     account1    Expenses:Hobbies:Gaming:HumbleBundle                            
 
 
-if PP.6330.PP.*Ubisoft.*PayPal.*.*.*.*
+if PP.1234.PP.*Ubisoft.*PayPal.*.*.*.*
 Ubisoft.*PayPal.*.*.*.*
 Ubisoft.*PAYPAL.*.*.*.*
-PP.6330.PP.*UBISOFTEMEA.*PayPal.*.*.*.*
+PP.1234.PP.*UBISOFTEMEA.*PayPal.*.*.*.*
 UBISOFTEMEA.*PayPal.*.*.*.*
 UBISOFTEMEA.*PAYPAL.*.*.*.*
     description %payee | PayPal Ubisoft
@@ -72,10 +72,10 @@ UBISOFTEMEA.*PAYPAL.*.*.*.*
     account1    Expenses:Hobbies:Gaming:Ubisoft                                 
 
 
-if PP.6330.PP.*Spotify.*PayPal.*.*.*.*
+if PP.1234.PP.*Spotify.*PayPal.*.*.*.*
 Spotify.*PayPal.*.*.*.*
 Spotify.*PAYPAL.*.*.*.*
-PP.6330.PP.*SPOTIFY.*PayPal.*.*.*.*
+PP.1234.PP.*SPOTIFY.*PayPal.*.*.*.*
 SPOTIFY.*PayPal.*.*.*.*
 SPOTIFY.*PAYPAL.*.*.*.*
     description %payee | PayPal Spotify
@@ -83,7 +83,7 @@ SPOTIFY.*PAYPAL.*.*.*.*
     account1    Expenses:Unterhaltung:Multimedia:Musik:Streaming:Abo:Spotify    
 
 
-if PP.6330.PP.*DISNEYPLUS.*PayPal.*.*.*.*
+if PP.1234.PP.*DISNEYPLUS.*PayPal.*.*.*.*
 DISNEYPLUS.*PayPal.*.*.*.*
 DISNEYPLUS.*PAYPAL.*.*.*.*
     description %payee | PayPal Disney Plus (Disney+)
@@ -91,13 +91,13 @@ DISNEYPLUS.*PAYPAL.*.*.*.*
     account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:DisneyPlus       
 
 
-if PP.6330.PP.*Twitch Interactive.*PayPal.*.*.*.*
+if PP.1234.PP.*Twitch Interactive.*PayPal.*.*.*.*
 Twitch Interactive.*PayPal.*.*.*.*
 Twitch Interactive.*PAYPAL.*.*.*.*
-PP.6330.PP.*Twitch Interactive, Inc..*PayPal.*.*.*.*
+PP.1234.PP.*Twitch Interactive, Inc..*PayPal.*.*.*.*
 Twitch Interactive, Inc..*PayPal.*.*.*.*
 Twitch Interactive, Inc..*PAYPAL.*.*.*.*
-PP.6330.PP.*TWITCHINTER.*PayPal.*.*.*.*
+PP.1234.PP.*TWITCHINTER.*PayPal.*.*.*.*
 TWITCHINTER.*PayPal.*.*.*.*
 TWITCHINTER.*PAYPAL.*.*.*.*
     description %payee | PayPal Twitch
@@ -105,13 +105,13 @@ TWITCHINTER.*PAYPAL.*.*.*.*
     account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Twitch           
 
 
-if PP.6330.PP.*Crunchyroll.*PayPal.*.*.*.*
+if PP.1234.PP.*Crunchyroll.*PayPal.*.*.*.*
 Crunchyroll.*PayPal.*.*.*.*
 Crunchyroll.*PAYPAL.*.*.*.*
-PP.6330.PP.*CRUNCHYROLL.*PayPal.*.*.*.*
+PP.1234.PP.*CRUNCHYROLL.*PayPal.*.*.*.*
 CRUNCHYROLL.*PayPal.*.*.*.*
 CRUNCHYROLL.*PAYPAL.*.*.*.*
-PP.6330.PP.*Ellation Holdings.*PayPal.*.*.*.*
+PP.1234.PP.*Ellation Holdings.*PayPal.*.*.*.*
 Ellation Holdings.*PayPal.*.*.*.*
 Ellation Holdings.*PAYPAL.*.*.*.*
     description %payee | PayPal Crunchyroll
@@ -119,10 +119,10 @@ Ellation Holdings.*PAYPAL.*.*.*.*
     account1    Expenses:Unterhaltung:Multimedia:Streaming:Abo:Crunchyroll      
 
 
-if PP.6330.PP.*DB Vertrieb.*PayPal.*.*.*.*
+if PP.1234.PP.*DB Vertrieb.*PayPal.*.*.*.*
 DB Vertrieb.*PayPal.*.*.*.*
 DB Vertrieb.*PAYPAL.*.*.*.*
-PP.6330.PP.*DBVERTRIEBG.*PayPal.*.*.*.*
+PP.1234.PP.*DBVERTRIEBG.*PayPal.*.*.*.*
 DBVERTRIEBG.*PayPal.*.*.*.*
 DBVERTRIEBG.*PAYPAL.*.*.*.*
     description %payee | PayPal DB Ticket
@@ -130,7 +130,7 @@ DBVERTRIEBG.*PAYPAL.*.*.*.*
     account1    Expenses:Fahrtkosten:Fahrkarten:Bahn                            
 
 
-if PP.6330.PP.*AWV-MELDEPFLICHT.*PayPal.*.*.*.*
+if PP.1234.PP.*AWV-MELDEPFLICHT.*PayPal.*.*.*.*
 AWV-MELDEPFLICHT.*PayPal.*.*.*.*
 AWV-MELDEPFLICHT.*PAYPAL.*.*.*.*
     description %payee | PayPal AWV-MELDEPFLICHT %verwendungszweck

@@ -2,20 +2,20 @@ Auftragskonto,Buchungstag,Valutadatum,Buchungstext,Verwendungszweck,Glaeubiger I
 DE71440501990912158039,28.02.23,28.02.23,FOLGELASTSCHRIFT,Kundennummer 12345678912/RG 1234567892,,,,,,,Handy Deutschland GmbH     ,,,-25,EUR,Umsatz gebucht
 DE71440501990912158039,24.02.23,24.02.23,LOHN  GEHALT,LOHN / GEHALT ,,,,,,,Arbeit GmbH,,,2100,EUR,Umsatz gebucht
 DE71440501990912158039,24.02.23,24.02.23,FOLGELASTSCHRIFT,INTERNET GMBH KDNR.9876543213 RGN 00000000002,,,,,,,INTERNET GMBH,,,-40,EUR,Umsatz gebucht
-DE71440501990912158039,21.02.23,21.02.23,FOLGELASTSCHRIFT,"123456789444 PP.6330.PP . DisneyPlus, Ihr Einkauf bei DisneyPlus ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-8,99",EUR,Umsatz gebucht
+DE71440501990912158039,21.02.23,21.02.23,FOLGELASTSCHRIFT,"123456789444 PP.1234.PP . DisneyPlus, Ihr Einkauf bei DisneyPlus ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-8,99",EUR,Umsatz gebucht
 DE71440501990912158039,20.02.23,20.02.23,KARTENZAHLUNG,2023-02-18 Debitk.2 2025-12 ,,,,,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,,,"-90,12",EUR,Umsatz gebucht
 DE71440501990912158039,17.02.23,17.02.23,FOLGELASTSCHRIFT,123-1234567-1234599 AMZN Mktp DE AAAAAAAAAAAAAAAA ,,,,,,,AMAZON PAYMENTS EUROPE S.C.A.,,,-25,EUR,Umsatz gebucht
 DE71440501990912158039,17.02.23,17.02.23,FOLGELASTSCHRIFT,123-1234567-1234599 AMZN Mktp DE BBBBBBBBBBBBBBBB ,,,,,,,AMAZON PAYMENTS EUROPE S.C.A.,,,-7,EUR,Umsatz gebucht
-DE71440501990912158039,14.02.23,14.02.23,FOLGELASTSCHRIFT,"1234567896542 PP.6330.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-19,99",EUR,Umsatz gebucht
+DE71440501990912158039,14.02.23,14.02.23,FOLGELASTSCHRIFT,"1234567896542 PP.1234.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-19,99",EUR,Umsatz gebucht
 DE1,09.02.23,09.02.23,KARTENZAHLUNG,2023-02-08 Debitk.2 2025-12 ,,,,,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,,,"-103,98",EUR,Umsatz gebucht
-DE2,08.02.23,08.02.23,FOLGELASTSCHRIFT,"1025124505796 PP.6330.PP . dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-36,1",EUR,Umsatz gebucht
+DE2,08.02.23,08.02.23,FOLGELASTSCHRIFT,"1025124505796 PP.1234.PP . dm-drogerie markt GmbH + Co. KG, Ihr Einkauf bei dm-drogerie markt GmbH + Co. KG ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-36,1",EUR,Umsatz gebucht
 DE7,07.02.23,07.02.23,FOLGELASTSCHRIFT,123-1234567-1234599 AMZN Mktp DE CCCCCCCCCCCCCCCC ,,,,,,,"AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND",,,"-8,5",EUR,Umsatz gebucht
-DE11,03.02.23,03.02.23,FOLGELASTSCHRIFT,"1234596789999 PP.6330.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-11,7",EUR,Umsatz gebucht
-DE12,03.02.23,03.02.23,FOLGELASTSCHRIFT,"1234567898888 PP.6330.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc. ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-6,99",EUR,Umsatz gebucht
+DE11,03.02.23,03.02.23,FOLGELASTSCHRIFT,"1234596789999 PP.1234.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-11,7",EUR,Umsatz gebucht
+DE12,03.02.23,03.02.23,FOLGELASTSCHRIFT,"1234567898888 PP.1234.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc. ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-6,99",EUR,Umsatz gebucht
 DE13,03.02.23,03.02.23,FOLGELASTSCHRIFT,D00-1234567-4567899 Audible Gmbh BBBBBBBBBBBBBBBB,,,,,,,AUDIBLE GMBH,,,"-9,95",EUR,Umsatz gebucht
 DE14,02.02.23,02.02.23,DAUERAUFTRAG,1234/4568.00001.12,,,,,,,Wohnen GmbH,,,-500,EUR,Umsatz gebucht
-DE15,02.02.23,02.02.23,FOLGELASTSCHRIFT,"1234567896541 PP.6330.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-96,1",EUR,Umsatz gebucht
-DE16,02.02.23,02.02.23,FOLGELASTSCHRIFT,"1234569874685 PP.6330.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,-3,EUR,Umsatz gebucht
+DE15,02.02.23,02.02.23,FOLGELASTSCHRIFT,"1234567896541 PP.1234.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-96,1",EUR,Umsatz gebucht
+DE16,02.02.23,02.02.23,FOLGELASTSCHRIFT,"1234569874685 PP.1234.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,-3,EUR,Umsatz gebucht
 DE17,01.02.23,01.02.23,DAUERAUFTRAG,RF123456789123 ,,,,,,,"Rundfunk, ARD, ZDF, DRadio",,,"-17,49",EUR,Umsatz gebucht
 DE18,01.02.23,01.02.23,DAUERAUFTRAG,546789123,,,,,,,Strom GmbH,,,-50,EUR,Umsatz gebucht
 DE19,01.02.23,01.02.23,ENTGELTABSCHLUSS,Entgeltabrechnung siehe Anlage Abrechnung 31.01.2023,,,,,,,,,,"-17,65",EUR,Umsatz gebucht

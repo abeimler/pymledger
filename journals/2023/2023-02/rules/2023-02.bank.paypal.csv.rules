@@ -2,31 +2,31 @@
 
 ;;; PayPal rules
 
-if .*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*, -96,1
-.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-96,1
-.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*, -96,1
-.*.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-96,1
+if .*.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PayPal.*, -96,1
+.*.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PayPal.*,-96,1
+.*.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PAYPAL.*, -96,1
+.*.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-96,1
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal
     account1    Expenses:Gesundheit:Medikamente:Apotheke                        
 
 
-if 1234569874685.*PP.6330.PP.*.*, Ihr Einkauf bei.*PayPal.*,-3
-1234569874685.*PP.6330.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-3
+if 1234569874685.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PayPal.*,-3
+1234569874685.*PP.[0-9]+.PP.*.*, Ihr Einkauf bei.*PAYPAL.*,-3
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Essen Ausgeben
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, ref:1234569874685
     code 1234569874685
     account1    Expenses:Lebensmittel:Essen:PayPal                              
 
 
-if .*.*PP.6330.PP.*dm-drogerie.*, Ihr Einkauf bei.*PayPal
-.*.*PP.6330.PP.*dm-drogerie.*, Ihr Einkauf bei.*PAYPAL
+if .*.*PP.[0-9]+.PP.*dm-drogerie.*, Ihr Einkauf bei.*PayPal
+.*.*PP.[0-9]+.PP.*dm-drogerie.*, Ihr Einkauf bei.*PAYPAL
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal dm-drogerie
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:dm-drogerie
     account1    Expenses:Haushalt:DmDrogerie                                    
 
 
-if .*.*PP.6330.PP.*Shop der Deutschen Post.*, Ihr Einkauf bei.*PayPal
-.*.*PP.6330.PP.*Shop der Deutschen Post.*, Ihr Einkauf bei.*PAYPAL
+if .*.*PP.[0-9]+.PP.*Shop der Deutschen Post.*, Ihr Einkauf bei.*PayPal
+.*.*PP.[0-9]+.PP.*Shop der Deutschen Post.*, Ihr Einkauf bei.*PAYPAL
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Shop der deutschen post (dpdhl group)
     comment type:%buchungstext, payee:PayPal Europe S.a.r.l. et Cie S.C.A, name:Shop der Deutschen Post
     account1    Expenses:Sonstiges:Post                                         

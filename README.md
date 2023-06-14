@@ -103,7 +103,7 @@ common_rules:
       - AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
     description: Amazon %verwendungszweck
     account: Expenses:unknown:Amazon
-  - if: PP.6330.PP.*PayPal
+  - if: PP.[0-9]+.PP.*PayPal
     description: PayPal %verwendungszweck
     account: Expenses:unknown:PayPal
   - if: KARTENZAHLUNG
@@ -154,10 +154,10 @@ AMZN Mktp DE.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND'
     account1    Expenses:unknown:Amazon                                         
 
 
-if PP.6330.PP.*, Ihr Einkauf bei.*PayPal'
-PP.6330.PP.*, Ihr Einkauf bei.*PAYPAL'
-PP.6330.PP.*PayPal
-PP.6330.PP.*PAYPAL
+if PP.[0-9]+.PP.*, Ihr Einkauf bei.*PayPal'
+PP.[0-9]+.PP.*, Ihr Einkauf bei.*PAYPAL'
+PP.[0-9]+.PP.*PayPal
+PP.[0-9]+.PP.*PAYPAL
     description %beguenstigter_zahlungspflichtiger | PayPal %verwendungszweck
     account1    Expenses:unknown:PayPal                                         
 

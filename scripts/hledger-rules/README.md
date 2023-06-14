@@ -85,7 +85,7 @@ common_rules:
       - AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
     description: Amazon %verwendungszweck
     account: Expenses:unknown:Amazon
-  - if: PP.6330.PP.*PayPal
+  - if: PP.[0-9]+.PP.*PayPal
     description: PayPal %verwendungszweck
     account: Expenses:unknown:PayPal
   - if: KARTENZAHLUNG
@@ -136,10 +136,10 @@ AMZN Mktp DE.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND'
     account1    Expenses:unknown:Amazon                                         
 
 
-if PP.6330.PP.*, Ihr Einkauf bei.*PayPal'
-PP.6330.PP.*, Ihr Einkauf bei.*PAYPAL'
-PP.6330.PP.*PayPal
-PP.6330.PP.*PAYPAL
+if PP.1234.PP.*, Ihr Einkauf bei.*PayPal'
+PP.1234.PP.*, Ihr Einkauf bei.*PAYPAL'
+PP.1234.PP.*PayPal
+PP.1234.PP.*PAYPAL
     description %beguenstigter_zahlungspflichtiger | PayPal %verwendungszweck
     account1    Expenses:unknown:PayPal                                         
 
@@ -210,7 +210,7 @@ DE1,30.01.23,30.01.23,LOHN  GEHALT,LOHN / GEHALT ,124,asdfasdfasdf2,qwertz2,asdf
 DE2,30.01.23,30.01.23,KARTENZAHLUNG,2023-01-27 Debitk.2 2025-12 ,125,asdfasdfasdf3,qwertz3,asdf3,,,DB AUTOMAT,123123125,456456458,-10,EUR,Umsatz gebucht
 DE3,30.01.23,30.01.23,KARTENZAHLUNG,2023-01-27 Debitk.2 2025-12 ,126,asdfasdfasdf4,qwertz4,asdf4,,,SCHLOSS BURGER GMBH,123123126,456456459,-9,EUR,Umsatz gebucht
 DE4,30.01.23,30.01.23,KARTENZAHLUNG,2023-01-28 Debitk.2 2025-12 ,127,asdfasdfasdf5,qwertz5,asdf5,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,123123127,456456460,"-30,99",EUR,Umsatz gebucht
-DE5,30.01.23,30.01.23,FOLGELASTSCHRIFT,"123456789951 PP.6330.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com ",128,asdfasdfasdf6,qwertz6,asdf6,,,PayPal Europe S.a.r.l. et Cie S.C.A,123123128,456456461,"-19,99",EUR,Umsatz gebucht
+DE5,30.01.23,30.01.23,FOLGELASTSCHRIFT,"123456789951 PP.1234.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com ",128,asdfasdfasdf6,qwertz6,asdf6,,,PayPal Europe S.a.r.l. et Cie S.C.A,123123128,456456461,"-19,99",EUR,Umsatz gebucht
 ```
 
 **source/2023/2023-01/csv/2023-01.bank.csv**:
@@ -221,7 +221,7 @@ Auftragskonto,Buchungstag,Valutadatum,Buchungstext,Verwendungszweck,Glaeubiger I
 ***,30.01.23,30.01.23,KARTENZAHLUNG,2023-01-27 Debitk.2 2025-12,***,*************,qwertz3,*****,,,DB AUTOMAT,*********,*********,-10,EUR,Umsatz gebucht,qwertz3,DB AUTOMAT
 ***,30.01.23,30.01.23,KARTENZAHLUNG,2023-01-27 Debitk.2 2025-12,***,*************,qwertz4,*****,,,SCHLOSS BURGER GMBH,*********,*********,-9,EUR,Umsatz gebucht,qwertz4,SCHLOSS BURGER GMBH
 ***,30.01.23,30.01.23,KARTENZAHLUNG,2023-01-28 Debitk.2 2025-12,***,*************,qwertz5,*****,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,*********,*********,"-30,99",EUR,Umsatz gebucht,qwertz5,LIDL DIENSTLEISTUNG GMBH UND CO KG
-***,30.01.23,30.01.23,FOLGELASTSCHRIFT,"123456789951 PP.6330.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com",***,*************,qwertz6,*****,,,PayPal Europe S.a.r.l. et Cie S.C.A,*********,*********,"-19,99",EUR,Umsatz gebucht,qwertz6,PayPal Europe S.a.r.l. et Cie S.C.A
+***,30.01.23,30.01.23,FOLGELASTSCHRIFT,"123456789951 PP.1234.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com",***,*************,qwertz6,*****,,,PayPal Europe S.a.r.l. et Cie S.C.A,*********,*********,"-19,99",EUR,Umsatz gebucht,qwertz6,PayPal Europe S.a.r.l. et Cie S.C.A
 ```
 
 ### Generate Journals

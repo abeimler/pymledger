@@ -37,10 +37,10 @@ accounts:
   saving: 'Assets:Bank:Saving'
   unbudget: 'Assets:Bank:Unbudget'
 paypal:
-  # python format with ref and name, {ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal
+  # python format with ref and name, {ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal
   if_format:
-    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
-    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
+    - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
+    - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
   payee: 'PayPal Europe S.a.r.l. et Cie S.C.A' 
 amazon:
   # python format with order and ref, {order}.*Amazon.de.*{ref}.*AMAZON EU
@@ -83,7 +83,7 @@ common_rules:
       - AMZN Mktp DE.*AMAZON PAYMENTS EUROPE S.C.A.
     description: Amazon %verwendungszweck
     account: Expenses:unknown:Amazon
-  - if: PP.6330.PP.*PayPal
+  - if: PP.[0-9]+.PP.*PayPal
     description: PayPal %verwendungszweck
     account: Expenses:unknown:PayPal
   - if: KARTENZAHLUNG

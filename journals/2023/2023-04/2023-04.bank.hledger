@@ -3,8 +3,8 @@
     Assets:Bank:Checking                   EUR-19,75
 
 2023-04-03=2023-04-03 * (2023-04.0019) HANSEMERKUR SPEZIALE KV. AG | Brille Fielmann Nulltarifversicherung  ; type:FOLGELASTSCHRIFT, payee:HANSEMERKUR SPEZIALE KV. AG
-    Expenses:Versicherungen:Brille        EUR10,00
-    Assets:Bank:Checking                 EUR-10,00
+    Expenses:Versicherungen:Jaehrlich:Brille        EUR10,00
+    Assets:Bank:Checking                           EUR-10,00
 
 2023-04-03=2023-04-03 * (2023-04.0018) Strom GmbH | Strom GmbH  ; type:DAUERAUFTRAG, payee:Strom GmbH
     Expenses:Wohnen:Nebenkosten:Strom        EUR50,00

@@ -1,80 +1,83 @@
 ;;do not change, generated file from transaction-mod.hledger template
 
 = acct:"Expenses:Telekommunikation" date:"2023"
-    (Assets:Bank:Budget:Telekommunikation)                                                        *-1
+    (Assets:Bank:Budget:Monatlich:Telekommunikation)                                              *-1
 
 = acct:"Expenses:Kleidung" date:"2023"
-    (Assets:Bank:Budget:Kleidung)                                                                 *-1
+    (Assets:Bank:Budget:Monatlich:Kleidung)                                                       *-1
 
 = acct:"Expenses:Lebensmittel" date:"2023"
-    (Assets:Bank:Budget:Lebensmittel)                                                             *-1
+    (Assets:Bank:Budget:Monatlich:Lebensmittel)                                                   *-1
 
-= acct:"Expenses:Versicherung" date:"2023"
-    (Assets:Bank:Budget:Versicherungen)                                                           *-1
+= acct:"Expenses:Versicherung:Monatlich" date:"2023"
+    (Assets:Bank:Budget:Monatlich:Versicherungen)                                                 *-1
+
+= acct:"Expenses:Versicherung:Jaehrlich" date:"2023"
+    (Assets:Bank:Budget:Jaehrlich:Versicherungen)                                                 *-1
 
 = acct:"Expenses:Haushalt" date:"2023"
-    (Assets:Bank:Budget:Haushalt)                                                                 *-1
+    (Assets:Bank:Budget:Monatlich:Haushalt)                                                       *-1
 
 = acct:"Expenses:Wohnen" date:"2023"
-    (Assets:Bank:Budget:Wohnen)                                                                   *-1
+    (Assets:Bank:Budget:Monatlich:Wohnen)                                                         *-1
 
 = acct:"Expenses:Sonstiges" date:"2023"
-    (Assets:Bank:Budget:Sonstiges)                                                                *-1
+    (Assets:Bank:Budget:Monatlich:Sonstiges)                                                      *-1
 
 = acct:"Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket" date:"2023"
-    (Assets:Bank:Budget:Abo:DTicket)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Abo:DTicket)                                                    *-1
 
 = acct:"Expenses:Fahrtkosten:Fahrkarten:Bahn" not:acct:"Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket" date:"2023"
-    (Assets:Bank:Budget:Fahrgeld)                                                                 *-1
+    (Assets:Bank:Budget:Monatlich:Fahrgeld)                                                       *-1
 
 = acct:"Expenses:Computer" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Hobbies:Merch" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Hobbies:Musik" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Hobbies:Gaming" not:acct:"Expenses:Hobbies:Gaming:Abo" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Hobbies:Gaming:Abo" date:"2023"
-    (Assets:Bank:Budget:Abo:Gaming)                                                               *-1
+    (Assets:Bank:Budget:Monatlich:Abo:Gaming)                                                     *-1
 
 = acct:"Expenses:Hobbies:Pflanze" date:"2023"
-    (Assets:Bank:Budget:Haushalt)                                                                 *-1
+    (Assets:Bank:Budget:Monatlich:Haushalt)                                                       *-1
 
 = acct:"Expenses:Hobbies:Kunst" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Unterhaltung:Gaming" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Hobbies:Buecher" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Spenden" not:acct:"Expenses:Spenden:Abo" date:"2023"
-    (Assets:Bank:Budget:Spenden)                                                                  *-1
+    (Assets:Bank:Budget:Monatlich:Spenden)                                                        *-1
 
 = acct:"Expenses:Unterhaltung:Multimedia:Abo" not:acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
-    (Assets:Bank:Budget:Abo:Multimedia)                                                           *-1
+    (Assets:Bank:Budget:Monatlich:Abo:Multimedia)                                                 *-1
 
 = acct:"Expenses:Unterhaltung:Multimedia:Streaming" not:acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
-    (Assets:Bank:Budget:Abo:Multimedia)                                                           *-1
+    (Assets:Bank:Budget:Monatlich:Abo:Multimedia)                                                 *-1
 
 = acct:"Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime" date:"2023"
-    (Assets:Bank:Budget:Abo:Amazon:Prime)                                                         *-1
+    (Assets:Bank:Budget:Jaehrlich:Abo:Amazon:Prime)                                               *-1
 
 = acct:"Expenses:Unterhaltung:Multimedia:Musik:Streaming" date:"2023"
-    (Assets:Bank:Budget:Abo:Multimedia)                                                           *-1
+    (Assets:Bank:Budget:Monatlich:Abo:Multimedia)                                                 *-1
 
 = acct:"Expenses:Unterhaltung:Gaming" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Unterhaltung:Multimedia:Gaming" not:acct:"Expenses:Unterhaltung:Multimedia:Gaming:Abo:GamePass" date:"2023"
-    (Assets:Bank:Budget:Wunschliste)                                                              *-1
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                                                    *-1
 
 = acct:"Expenses:Unterhaltung:Multimedia:Gaming:Abo:GamePass" date:"2023"
-    (Assets:Bank:Budget:Abo:Multimedia)                                                           *-1
+    (Assets:Bank:Budget:Monatlich:Abo:Multimedia)                                                 *-1
 

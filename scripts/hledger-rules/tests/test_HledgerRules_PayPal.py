@@ -53,7 +53,7 @@ class HledgerRulesGenPayPalRulesContentTestCase(unittest.TestCase):
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.6330.PP.*GOG.*PayPal.*.*.*.*
+if PP.1234.PP.*GOG.*PayPal.*.*.*.*
 GOG.*PayPal.*.*.*.*
 GOG.*PAYPAL.*.*.*.*
     description %payee | PayPal GOG
@@ -85,13 +85,13 @@ GOG.*PAYPAL.*.*.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.6330.PP.*Steam.*PayPal.*.*.*.*
+if PP.1234.PP.*Steam.*PayPal.*.*.*.*
 Steam.*PayPal.*.*.*.*
 Steam.*PAYPAL.*.*.*.*
-PP.6330.PP.*STEAM.*PayPal.*.*.*.*
+PP.1234.PP.*STEAM.*PayPal.*.*.*.*
 STEAM.*PayPal.*.*.*.*
 STEAM.*PAYPAL.*.*.*.*
-PP.6330.PP.*steampowered.*PayPal.*.*.*.*
+PP.1234.PP.*steampowered.*PayPal.*.*.*.*
 steampowered.*PayPal.*.*.*.*
 steampowered.*PAYPAL.*.*.*.*
     description %payee | PayPal Steam
@@ -122,7 +122,7 @@ steampowered.*PAYPAL.*.*.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.6330.PP.*Google.*PayPal.*123456789.*.*
+if PP.1234.PP.*Google.*PayPal.*123456789.*.*
 Google.*PayPal.*123456789.*.*
 Google.*PAYPAL.*123456789.*.*
     description %payee | PayPal Google Play Store
@@ -153,7 +153,7 @@ Google.*PAYPAL.*123456789.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.6330.PP.*Google.*PayPal.*.*.*.*
+if PP.1234.PP.*Google.*PayPal.*.*.*.*
 Google.*PayPal.*.*.*.*
 Google.*PAYPAL.*.*.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Google Play Store
@@ -184,7 +184,7 @@ Google.*PAYPAL.*.*.*.*
         expected = """;;do not change, generated file from paypal.csv.rules template
 
 
-if PP.6330.PP.*Google.*PayPal.*.*.*.*
+if PP.1234.PP.*Google.*PayPal.*.*.*.*
 Google.*PayPal.*.*.*.*
 Google.*PAYPAL.*.*.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Google Play Store

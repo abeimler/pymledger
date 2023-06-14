@@ -2,17 +2,17 @@
 
 ;; Budget
 2023/04/01 * Current Month Budget ; budget:
-    (Assets:Bank:Budget:Abo:Multimedia)                                    45,00 EUR
-    (Assets:Bank:Budget:Fahrgeld)                                          20,00 EUR
-    (Assets:Bank:Budget:Haushalt)                                          50,00 EUR
-    (Assets:Bank:Budget:Kleidung)                                          20,00 EUR
-    (Assets:Bank:Budget:Lebensmittel)                                     250,00 EUR
-    (Assets:Bank:Budget:Sonstiges)                                         25,00 EUR
-    (Assets:Bank:Budget:Telekommunikation)                                 55,00 EUR ; Internet
-    (Assets:Bank:Budget:Telekommunikation)                                 30,00 EUR ; Handy
-    (Assets:Bank:Budget:Telekommunikation)                                 20,00 EUR ; Rundfunk
-    (Assets:Bank:Budget:Versicherungen)                                    10,00 EUR
-    (Assets:Bank:Budget:Wohnen)                                           500,00 EUR ; Miete
-    (Assets:Bank:Budget:Wohnen)                                            50,00 EUR ; Energie und Wasser
-    (Assets:Bank:Budget:Wunschliste)                                       50,00 EUR ; Hobbies
-    (Assets:Bank:Budget:Wunschliste)                                       50,00 EUR ; Wunschliste
+    (Assets:Bank:Budget:Monatlich:Abo:Multimedia)                          45,00 EUR
+    (Assets:Bank:Budget:Monatlich:Fahrgeld)                                20,00 EUR
+    (Assets:Bank:Budget:Monatlich:Haushalt)                                50,00 EUR
+    (Assets:Bank:Budget:Monatlich:Kleidung)                                20,00 EUR
+    (Assets:Bank:Budget:Monatlich:Lebensmittel)                           250,00 EUR
+    (Assets:Bank:Budget:Monatlich:Sonstiges)                               25,00 EUR
+    (Assets:Bank:Budget:Monatlich:Telekommunikation)                       55,00 EUR ; Internet
+    (Assets:Bank:Budget:Monatlich:Telekommunikation)                       30,00 EUR ; Handy
+    (Assets:Bank:Budget:Monatlich:Telekommunikation)                       20,00 EUR ; Rundfunk
+    (Assets:Bank:Budget:Monatlich:Versicherungen)                          10,00 EUR
+    (Assets:Bank:Budget:Monatlich:Wohnen)                                 500,00 EUR ; Miete
+    (Assets:Bank:Budget:Monatlich:Wohnen)                                  50,00 EUR ; Energie und Wasser
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                             50,00 EUR ; Hobbies
+    (Assets:Bank:Budget:Monatlich:Wunschliste)                             50,00 EUR ; Wunschliste

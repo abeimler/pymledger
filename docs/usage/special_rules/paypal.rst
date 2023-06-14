@@ -16,10 +16,10 @@ Regel als Fallback fest:
    common_rules:
      # Defaults/Fallbacks (first)
      - if: 
-         - PP.6330.PP.*, Ihr Einkauf bei.*PayPal'
-         - PP.6330.PP.*, Ihr Einkauf bei.*PAYPAL'
-         - PP.6330.PP.*PayPal
-         - PP.6330.PP.*PAYPAL
+         - PP.[0-9]+.PP.*, Ihr Einkauf bei.*PayPal'
+         - PP.[0-9]+.PP.*, Ihr Einkauf bei.*PAYPAL'
+         - PP.[0-9]+.PP.*PayPal
+         - PP.[0-9]+.PP.*PAYPAL
        description: PayPal %verwendungszweck
        account: Expenses:unknown:PayPal
 
@@ -37,10 +37,10 @@ definiert werden:
 .. code:: yml
 
    paypal:
-     # python format with ref and name, {ref}.*PP.6330.PP.*{name}, Ihr Einkauf bei.*PayPal
+     # python format with ref and name, {ref}.*PP.[0-9]+.PP.*{name}, Ihr Einkauf bei.*PayPal
      if_format:
-       - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
-       - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
+       - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
+       - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
      payee: 'PayPal Europe S.a.r.l. et Cie S.C.A' 
 
 Passen Sie die ``if_format`` entsprechend Ihrer Kontenauszüge an, um die
@@ -53,16 +53,16 @@ Beispiel
 
 .. code:: csv
 
-   ****,03.01.23,03.01.23,FOLGELASTSCHRIFT,"1234567893215 PP.6330.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com",***,,,****,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-25,79",EUR,Umsatz gebucht,2023-01.0025,PayPal Europe S.a.r.l. et Cie S.C.A
+   ****,03.01.23,03.01.23,FOLGELASTSCHRIFT,"1234567893215 PP.1234.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com",***,,,****,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-25,79",EUR,Umsatz gebucht,2023-01.0025,PayPal Europe S.a.r.l. et Cie S.C.A
 
-Beachten Sie die Spalte “Verwendungszweck”: ``1234567893215 PP.6330.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com``.
+Beachten Sie die Spalte “Verwendungszweck”: ``1234567893215 PP.1234.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com``.
 
 -  Referenz: ``1234567893215``
--  Suffix: ``PP.6330.PP``
+-  Suffix: ``PP.1234.PP``
 -  Name: ``www.steampowered.com``
 
 Daraus ergibt sich das ``if_format``:
-``{ref}.*PP.6330.PP.*{name}, Ihr Einkauf bei.*``
+``{ref}.*PP.[0-9]+.PP.*{name}, Ihr Einkauf bei.*``
 
 .. _monatliche-paypal-kaeufe-1:
 

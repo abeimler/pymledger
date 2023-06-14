@@ -194,3 +194,8 @@ tasks:
   docker:up:
     - docker-compose up
 
+  docs:
+    dir: "{{.PROJECT_DIR}}/docs"
+    cmds:
+      - make html
+

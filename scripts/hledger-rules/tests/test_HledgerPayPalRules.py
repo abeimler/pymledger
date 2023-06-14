@@ -26,7 +26,7 @@ class HledgerPayPalRulesGenPayPalRuleTestCase(unittest.TestCase):
             'account': 'Expenses:Hobbies:Gaming:Steam',
         }
         expected = """
-if PP.6330.PP.*Steam.*.*.*PayPal
+if PP.1234.PP.*Steam.*.*.*PayPal
 Steam.*.*.*PayPal
 Steam.*PAYPAL.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam
@@ -52,7 +52,7 @@ Steam.*PAYPAL.*.*
             'description': 'Steam'
         }
         expected = """
-if PP.6330.PP.*steampowered.*.*.*PayPal
+if PP.1234.PP.*steampowered.*.*.*PayPal
 steampowered.*.*.*PayPal
 steampowered.*PAYPAL.*.*
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Steam
@@ -78,7 +78,7 @@ steampowered.*PAYPAL.*.*
             'full_description': 'Google | Play Store'
         }
         expected = """
-if PP.6330.PP.*Google.*.*.*PayPal
+if PP.1234.PP.*Google.*.*.*PayPal
 Google.*.*.*PayPal
 Google.*PAYPAL.*.*
     description Google | Play Store
@@ -105,7 +105,7 @@ Google.*PAYPAL.*.*
             'payee': 'PayPal Europe S.a.r.l., et Cie S.C.A'
         }
         expected = """
-if PP.6330.PP.*steampowered.*.*.*PayPal
+if PP.1234.PP.*steampowered.*.*.*PayPal
 steampowered.*.*.*PayPal
 steampowered.*PAYPAL.*.*
     description PayPal Europe S.a.r.l., et Cie S.C.A | PayPal Steam
@@ -130,7 +130,7 @@ steampowered.*PAYPAL.*.*
             'description': 'Steam',
         }
         expected = """
-if PP.6330.PP.*steampowered.*.*.*PayPal
+if PP.1234.PP.*steampowered.*.*.*PayPal
 steampowered.*.*.*PayPal
 steampowered.*PAYPAL.*.*
     description %payee | PayPal Steam
@@ -158,8 +158,8 @@ steampowered.*PAYPAL.*.*
             'amount': -19.99,
         }
         expected = """
-if PP.6330.PP.*steampowered.*.*.*PayPal.*, -19,99
-PP.6330.PP.*steampowered.*.*.*PayPal.*,-19,99
+if PP.1234.PP.*steampowered.*.*.*PayPal.*, -19,99
+PP.1234.PP.*steampowered.*.*.*PayPal.*,-19,99
 steampowered.*.*.*PayPal.*, -19,99
 steampowered.*.*.*PayPal.*,-19,99
 steampowered.*PAYPAL.*.*.*, -19,99
@@ -190,8 +190,8 @@ steampowered.*PAYPAL.*.*.*,-19,99
             'currency': 'EUR'
         }
         expected = """
-if PP.6330.PP.*steampowered.*.*.*PayPal.*, -19,99,EUR
-PP.6330.PP.*steampowered.*.*.*PayPal.*,-19,99,EUR
+if PP.1234.PP.*steampowered.*.*.*PayPal.*, -19,99,EUR
+PP.1234.PP.*steampowered.*.*.*PayPal.*,-19,99,EUR
 steampowered.*.*.*PayPal.*, -19,99,EUR
 steampowered.*.*.*PayPal.*,-19,99,EUR
 steampowered.*PAYPAL.*.*.*, -19,99,EUR
@@ -221,7 +221,7 @@ steampowered.*PAYPAL.*.*.*,-19,99,EUR
             'amount': -649.0,
         }
         expected = """
-if PP.6330.PP.*MMS E-Commerce GmbH.*.*.*PayPal.*,-649
+if PP.1234.PP.*MMS E-Commerce GmbH.*.*.*PayPal.*,-649
 MMS E-Commerce GmbH.*.*.*PayPal.*,-649
 MMS E-Commerce GmbH.*PAYPAL.*.*.*,-649
     description PayPal Europe S.a.r.l. et Cie S.C.A | PayPal Saturn

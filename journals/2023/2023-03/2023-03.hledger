@@ -1,17 +1,17 @@
 ;;do not change, generated file; month: 2023-03
 
 ;; define monthly accounts 2023-03
-account Assets:Bank:Budget:Abo:Multimedia                               
-account Assets:Bank:Budget:Fahrgeld                                     
-account Assets:Bank:Budget:Haushalt                                     
-account Assets:Bank:Budget:Kleidung                                     
-account Assets:Bank:Budget:Lebensmittel                                 
-account Assets:Bank:Budget:Sonstiges                                    
-account Assets:Bank:Budget:Spenden                                      
-account Assets:Bank:Budget:Telekommunikation                            
-account Assets:Bank:Budget:Versicherungen                               
-account Assets:Bank:Budget:Wohnen                                       
-account Assets:Bank:Budget:Wunschliste                                  
+account Assets:Bank:Budget:Monatlich:Abo:Multimedia                     
+account Assets:Bank:Budget:Monatlich:Fahrgeld                           
+account Assets:Bank:Budget:Monatlich:Haushalt                           
+account Assets:Bank:Budget:Monatlich:Kleidung                           
+account Assets:Bank:Budget:Monatlich:Lebensmittel                       
+account Assets:Bank:Budget:Monatlich:Sonstiges                          
+account Assets:Bank:Budget:Monatlich:Spenden                            
+account Assets:Bank:Budget:Monatlich:Telekommunikation                  
+account Assets:Bank:Budget:Monatlich:Versicherungen                     
+account Assets:Bank:Budget:Monatlich:Wohnen                             
+account Assets:Bank:Budget:Monatlich:Wunschliste                        
 account Expenses:Haushalt:Amazon                                        
 account Expenses:Hobbies:Merch:Amazon                                   
 account Expenses:Hobbies:Merch:PayPal                                   

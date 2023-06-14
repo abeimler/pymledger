@@ -9,10 +9,10 @@ AMZN Mktp DE.*AMAZON EU S.A R.L., NIEDERLASSUNG DEUTSCHLAND'
     account1    Expenses:unknown:Amazon                                         
 
 
-if PP.6330.PP.*, Ihr Einkauf bei.*PayPal'
-PP.6330.PP.*, Ihr Einkauf bei.*PAYPAL'
-PP.6330.PP.*PayPal
-PP.6330.PP.*PAYPAL
+if PP.[0-9]+.PP.*, Ihr Einkauf bei.*PayPal'
+PP.[0-9]+.PP.*, Ihr Einkauf bei.*PAYPAL'
+PP.[0-9]+.PP.*PayPal
+PP.[0-9]+.PP.*PAYPAL
     description %beguenstigter_zahlungspflichtiger | PayPal %verwendungszweck
     account1    Expenses:unknown:PayPal                                         
 
@@ -59,22 +59,22 @@ if LOHN.*GEHALT.*Arbeit GmbH
 
 if Nulltarifversicherung.*Fielmann
     description %beguenstigter_zahlungspflichtiger | Brille Fielmann Nulltarifversicherung
-    account1    Expenses:Versicherungen:Brille                                  
+    account1    Expenses:Versicherungen:Jaehrlich:Brille                        
 
 
 if Rechtsschutzversicherung
     description %beguenstigter_zahlungspflichtiger | Rechtsschutzversicherung
-    account1    Expenses:Versicherungen:Rechtsschutz                            
+    account1    Expenses:Versicherungen:Monatlich:Rechtsschutz                  
 
 
 if Privathaftpflicht.*
     description %beguenstigter_zahlungspflichtiger | Privathaftpflicht
-    account1    Expenses:Versicherungen:Privathaftpflicht                       
+    account1    Expenses:Versicherungen:Monatlich:Privathaftpflicht             
 
 
 if Hausratversicherung.*
     description %beguenstigter_zahlungspflichtiger | Hausratversicherung
-    account1    Expenses:Versicherungen:Hausratversicherung                     
+    account1    Expenses:Versicherungen:Monatlich:Hausratversicherung           
 
 
 if 546789123.*Strom GmbH

@@ -5,10 +5,10 @@ DE2,08.05.23,08.05.23,KARTENZAHLUNG,2023-05-06T10:15 Debitk.2 2025-12 ,,,,,,,DM 
 DE3,08.05.23,08.05.23,KARTENZAHLUNG,2023-05-06T10:57 Debitk.2 2025-12 ,,,,,,,LIDL DIENSTLEISTUNG GMBH UND CO KG,,,"-86,78",EUR,Umsatz gebucht
 DE4,03.05.23,03.05.23,FOLGELASTSCHRIFT,123-1234567-1234444 AMZN Mktp DE GGGGGGGGGGGGGGGG,,,,,,,AMAZON PAYMENTS EUROPE S.C.A.,,,"-50,51",EUR,Umsatz gebucht
 DE5,03.05.23,03.05.23,FOLGELASTSCHRIFT,123-1234567-1234555 AMZN Mktp DE HHHHHHHHHHHHHHH ,,,,,,,AMAZON PAYMENTS EUROPE S.C.A.,,,"-20,99",EUR,Umsatz gebucht
-DE6,03.05.23,03.05.23,FOLGELASTSCHRIFT,"1234567899873 PP.6330.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc. ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-6,99",EUR,Umsatz gebucht
+DE6,03.05.23,03.05.23,FOLGELASTSCHRIFT,"1234567899873 PP.1234.PP . Ellation Holdings Inc., Ihr Einkauf bei Ellation Holdings Inc. ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-6,99",EUR,Umsatz gebucht
 DE7,02.05.23,02.05.23,KARTENZAHLUNG,2023-04-27 Debitk.2 2025-12 ,,,,,,,BACKWERK,,,"-7,5",EUR,Umsatz gebucht
 DE8,02.05.23,02.05.23,DAUERAUFTRAG,RF123456789123 ,,,,,,,"Rundfunk, ARD, ZDF, DRadio",,,"-17,49",EUR,Umsatz gebucht
-DE9,02.05.23,02.05.23,FOLGELASTSCHRIFT,"1234567892344 PP.6330.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,-20,EUR,Umsatz gebucht
-DE10,02.05.23,02.05.23,FOLGELASTSCHRIFT,"1234567896582 PP.6330.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-11,7",EUR,Umsatz gebucht
-DE11,02.05.23,02.05.23,FOLGELASTSCHRIFT,"1234567896543 PP.6330.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-22,49",EUR,Umsatz gebucht
+DE9,02.05.23,02.05.23,FOLGELASTSCHRIFT,"1234567892344 PP.1234.PP . , Ihr Einkauf bei ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,-20,EUR,Umsatz gebucht
+DE10,02.05.23,02.05.23,FOLGELASTSCHRIFT,"1234567896582 PP.1234.PP . DB Vertrieb GmbH, Ihr Einkauf bei DB Vertrieb GmbH ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-11,7",EUR,Umsatz gebucht
+DE11,02.05.23,02.05.23,FOLGELASTSCHRIFT,"1234567896543 PP.1234.PP . www.steampowered.com, Ihr Einkauf bei www.steampowered.com ",,,,,,,PayPal Europe S.a.r.l. et Cie S.C.A,,,"-22,49",EUR,Umsatz gebucht
 DE12,02.05.23,29.04.23,ENTGELTABSCHLUSS,Entgeltabrechnung siehe Anlage Abrechnung,,,,,,,,,,"-17,05",EUR,Umsatz gebucht

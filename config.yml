@@ -50,12 +50,12 @@ accounts:
   bank: 'Assets:Bank'
   budget: 'Assets:Bank:Budget'
   saving: 'Assets:Bank:Saving'
-  unbudget: 'Assets:Bank:Unbudget'
+  unbudget: 'Assets:Bank:Available'
 paypal:
-  # python format with ref and name, {ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal
+  # python format with ref and name, {ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal
   if_format:
-    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
-    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
+    - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
+    - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
   payee: 'PayPal Europe S.a.r.l. et Cie S.C.A' 
 amazon:
   # python format with order and ref, {order}.*Amazon.de.*{ref}.*AMAZON EU
@@ -172,10 +172,10 @@ common_rules:
     title: Amazon
     fallback: true
   - if: 
-      - PP.6330.PP.*, Ihr Einkauf bei.*PayPal'
-      - PP.6330.PP.*, Ihr Einkauf bei.*PAYPAL'
-      - PP.6330.PP.*PayPal
-      - PP.6330.PP.*PAYPAL
+      - PP.[0-9]+.PP.*, Ihr Einkauf bei.*PayPal'
+      - PP.[0-9]+.PP.*, Ihr Einkauf bei.*PAYPAL'
+      - PP.[0-9]+.PP.*PayPal
+      - PP.[0-9]+.PP.*PAYPAL
     description: PayPal %verwendungszweck
     account: Expenses:unknown:PayPal
     fallback: true
@@ -220,19 +220,19 @@ common_rules:
   # Versicherungen
   - if: Nulltarifversicherung.*Fielmann 
     description: Brille Fielmann Nulltarifversicherung
-    account: Expenses:Versicherungen:Brille   
+    account: Expenses:Versicherungen:Jaehrlich:Brille   
     title: Brille Fielmann 
   - if: Rechtsschutzversicherung
     description: Rechtsschutzversicherung
-    account: Expenses:Versicherungen:Rechtsschutz   
+    account: Expenses:Versicherungen:Monatlich:Rechtsschutz   
     title: Rechtsschutzversicherung
   - if: Privathaftpflicht.*
     description: Privathaftpflicht
-    account: Expenses:Versicherungen:Privathaftpflicht   
+    account: Expenses:Versicherungen:Monatlich:Privathaftpflicht   
     title: Privathaftpflicht
   - if: Hausratversicherung.*
     description: Hausratversicherung
-    account: Expenses:Versicherungen:Hausratversicherung
+    account: Expenses:Versicherungen:Monatlich:Hausratversicherung
     title: Hausratversicherung
   # Wohung/Miete 
   - if:
@@ -398,138 +398,140 @@ post_common_rules:
 transactions:
   # Basics
   - expense: Expenses:Telekommunikation
-    asset: Assets:Bank:Budget:Telekommunikation
+    asset: Assets:Bank:Budget:Monatlich:Telekommunikation
   - expense: Expenses:Kleidung
-    asset: Assets:Bank:Budget:Kleidung
+    asset: Assets:Bank:Budget:Monatlich:Kleidung
   - expense: Expenses:Lebensmittel
-    asset: Assets:Bank:Budget:Lebensmittel
-  - expense: Expenses:Versicherung
-    asset: Assets:Bank:Budget:Versicherungen
+    asset: Assets:Bank:Budget:Monatlich:Lebensmittel
+  - expense: Expenses:Versicherung:Monatlich
+    asset: Assets:Bank:Budget:Monatlich:Versicherungen
+  - expense: Expenses:Versicherung:Jaehrlich
+    asset: Assets:Bank:Budget:Jaehrlich:Versicherungen
   - expense: Expenses:Haushalt
-    asset: Assets:Bank:Budget:Haushalt
+    asset: Assets:Bank:Budget:Monatlich:Haushalt
   - expense: Expenses:Wohnen
-    asset: Assets:Bank:Budget:Wohnen
+    asset: Assets:Bank:Budget:Monatlich:Wohnen
   - expense: Expenses:Sonstiges
-    asset: Assets:Bank:Budget:Sonstiges
+    asset: Assets:Bank:Budget:Monatlich:Sonstiges
   # Fahrtkosten
   - expense: Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:DTicket
-    asset: Assets:Bank:Budget:Abo:DTicket
+    asset: Assets:Bank:Budget:Monatlich:Abo:DTicket
   - expense: Expenses:Fahrtkosten:Fahrkarten:Bahn
-    asset: Assets:Bank:Budget:Fahrgeld
+    asset: Assets:Bank:Budget:Monatlich:Fahrgeld
     not_acct: 'Expenses:Fahrtkosten:Fahrkarten:Abo:Bahn:.*Ticket'
   # Wunschliste
   - expense: Expenses:Computer
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
   - expense: Expenses:Hobbies:Merch
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
   - expense: Expenses:Hobbies:Musik
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
   - expense: Expenses:Hobbies:Gaming
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
     not_acct: 'Expenses:Hobbies:Gaming:Abo'
   - expense: Expenses:Hobbies:Gaming:Abo
-    asset: Assets:Bank:Budget:Abo:Gaming
+    asset: Assets:Bank:Budget:Monatlich:Abo:Gaming
   # Andere Hobbies
   - expense: Expenses:Hobbies:Pflanze
-    asset: Assets:Bank:Budget:Haushalt
+    asset: Assets:Bank:Budget:Monatlich:Haushalt
   - expense: Expenses:Hobbies:Kunst
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
   - expense: Expenses:Unterhaltung:Gaming
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
   - expense: Expenses:Hobbies:Buecher
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
   # Spenden
   - expense: Expenses:Spenden
-    asset: Assets:Bank:Budget:Spenden
+    asset: Assets:Bank:Budget:Monatlich:Spenden
     not_acct: 'Expenses:Spenden:Abo'
   # Unterhaltung
   ## Multimedia
   - expense: Expenses:Unterhaltung:Multimedia:Abo
-    asset: Assets:Bank:Budget:Abo:Multimedia
+    asset: Assets:Bank:Budget:Monatlich:Abo:Multimedia
     not_acct: 'Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime'
   - expense: Expenses:Unterhaltung:Multimedia:Streaming
-    asset: Assets:Bank:Budget:Abo:Multimedia
+    asset: Assets:Bank:Budget:Monatlich:Abo:Multimedia
     not_acct: 'Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime'
   - expense: Expenses:Unterhaltung:Multimedia:Streaming:Abo:Amazon:Prime
-    asset: Assets:Bank:Budget:Abo:Amazon:Prime
+    asset: Assets:Bank:Budget:Jaehrlich:Abo:Amazon:Prime
   - expense: Expenses:Unterhaltung:Multimedia:Musik:Streaming
-    asset: Assets:Bank:Budget:Abo:Multimedia
+    asset: Assets:Bank:Budget:Monatlich:Abo:Multimedia
   ## Wunschliste
   - expense: Expenses:Unterhaltung:Gaming
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
   - expense: Expenses:Unterhaltung:Multimedia:Gaming
-    asset: Assets:Bank:Budget:Wunschliste
+    asset: Assets:Bank:Budget:Monatlich:Wunschliste
     not_acct: 'Expenses:Unterhaltung:Multimedia:Gaming:Abo:GamePass'
   - expense: Expenses:Unterhaltung:Multimedia:Gaming:Abo:GamePass
-    asset: Assets:Bank:Budget:Abo:Multimedia
+    asset: Assets:Bank:Budget:Monatlich:Abo:Multimedia
 monthly:
   forecast_income: 2100.0
   # default budget for the month
   budget:
     # Basics
-    - account: Assets:Bank:Budget:Telekommunikation
+    - account: Assets:Bank:Budget:Monatlich:Telekommunikation
       comment: Internet
       amount: 55.0
       title: Telekommunikation
-    - account: Assets:Bank:Budget:Telekommunikation
+    - account: Assets:Bank:Budget:Monatlich:Telekommunikation
       comment: Handy
       amount: 30.0
       title: Telekommunikation
-    - account: Assets:Bank:Budget:Telekommunikation
+    - account: Assets:Bank:Budget:Monatlich:Telekommunikation
       comment: Rundfunk
       amount: 20.0
       title: Telekommunikation
-    - account: Assets:Bank:Budget:Kleidung
+    - account: Assets:Bank:Budget:Monatlich:Kleidung
       amount: 20.0
       title: Kleidung
-    - account: Assets:Bank:Budget:Lebensmittel
+    - account: Assets:Bank:Budget:Monatlich:Lebensmittel
       amount: 250.0
       title: Einkaufen
-    - account: Assets:Bank:Budget:Versicherungen
+    - account: Assets:Bank:Budget:Monatlich:Versicherungen
       amount: 0.0
       title: Versicherungen
     # Fahrkosten
-    - account: Assets:Bank:Budget:Fahrgeld
+    - account: Assets:Bank:Budget:Monatlich:Fahrgeld
       amount: 20.0
       title: Fahrgeld
-    - account: Assets:Bank:Budget:Abo:DTicket
+    - account: Assets:Bank:Budget:Monatlich:Abo:DTicket
       amount: 49.0
       title: DB Ticket (Abo)
     # Wohnung
-    - account: Assets:Bank:Budget:Wohnen
+    - account: Assets:Bank:Budget:Monatlich:Wohnen
       amount: 500.0
       comment: Miete
-    - account: Assets:Bank:Budget:Wohnen
+    - account: Assets:Bank:Budget:Monatlich:Wohnen
       amount: 50.0
       comment: Energie und Wasser
     # Wunschliste
-    - account: Assets:Bank:Budget:Wunschliste
+    - account: Assets:Bank:Budget:Monatlich:Wunschliste
       comment: Hobbies
       amount: 50.0
       title: Wunschliste
-    - account: Assets:Bank:Budget:Wunschliste
+    - account: Assets:Bank:Budget:Monatlich:Wunschliste
       comment: Wunschliste
       amount: 50.0
       title: Wunschliste
     # Unterhaltung
-    - account: Assets:Bank:Budget:Abo:Multimedia
+    - account: Assets:Bank:Budget:Monatlich:Abo:Multimedia
       amount: 45.0
       title: Multimedia (Abo)
     # Haushalt
-    - account: Assets:Bank:Budget:Haushalt
+    - account: Assets:Bank:Budget:Monatlich:Haushalt
       amount: 50.0
       title: Haushalt
     # Sonstiges
-    - account: Assets:Bank:Budget:Sonstiges
+    - account: Assets:Bank:Budget:Monatlich:Sonstiges
       amount: 25.0
       title: Sonstiges
 yearly:
   # default budget for the year
   budget:
-    - account: Assets:Bank:Budget:Abo:Amazon:Prime
+    - account: Assets:Bank:Budget:Jaehrlich:Abo:Amazon:Prime
       amount: 90.0
       title: Amazon Prime
-    - account: Assets:Bank:Budget:Versicherungen
+    - account: Assets:Bank:Budget:Jaehrlich:Versicherungen
       amount: 10
       comment: Fielmann
       title: Brille (Versicherungen)

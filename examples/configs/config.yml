@@ -51,10 +51,10 @@ accounts:
   saving: 'Assets:Bank:Saving'
   unbudget: 'Assets:Bank:Unbudget'
 paypal:
-  # python format with ref and name, {ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal
+  # python format with ref and name, {ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal
   if_format:
-    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
-    - '{ref}.*PP.6330.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
+    - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PayPal'
+    - '{ref}.*PP.[0-9]+.PP.*{name}.*, Ihr Einkauf bei.*PAYPAL'
   payee: 'PayPal Europe S.a.r.l. et Cie S.C.A' 
 amazon:
   # python format with order and ref, {order}.*Amazon.de.*{ref}.*AMAZON EU
@@ -171,10 +171,10 @@ common_rules:
     title: Amazon
     fallback: true
   - if: 
-      - PP.6330.PP.*, Ihr Einkauf bei.*PayPal'
-      - PP.6330.PP.*, Ihr Einkauf bei.*PAYPAL'
-      - PP.6330.PP.*PayPal
-      - PP.6330.PP.*PAYPAL
+      - PP.[0-9]+.PP.*, Ihr Einkauf bei.*PayPal'
+      - PP.[0-9]+.PP.*, Ihr Einkauf bei.*PAYPAL'
+      - PP.[0-9]+.PP.*PayPal
+      - PP.[0-9]+.PP.*PAYPAL
     description: PayPal %verwendungszweck
     account: Expenses:unknown:PayPal
     fallback: true
