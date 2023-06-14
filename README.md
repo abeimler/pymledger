@@ -1,5 +1,9 @@
 # pYMLedger - python hledger generator
 
+![GitHub](https://img.shields.io/github/license/abeimler/pymledger)
+![python](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.9-blue)
+![hledger](https://img.shields.io/badge/hledger-1.29%2B-blue)
+
 pYMLedger ist eine Projekt-Vorlage fürs [PTA](https://plaintextaccounting.org/), basierent auf [hledger](https://hledger.org/).
 Zusammen mit den Python-Skript [hledger-rules](scripts/hledger-rules) ist es möglich hledger-Regeln und -Buchungen aus einer Konfigurationsdatei im YAML-Format zu generieren.
 
