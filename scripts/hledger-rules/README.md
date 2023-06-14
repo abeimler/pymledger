@@ -1,5 +1,10 @@
 # hledger-rules
 
+![GitHub branch checks state](https://img.shields.io/github/checks-status/abeimler/pymledger/main)
+![GitHub](https://img.shields.io/github/license/abeimler/pymledger)
+![python](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.9-blue)
+![hledger](https://img.shields.io/badge/hledger-1.29%2B-blue)
+
 This is a command-line interface (CLI) Python script allows you to generate ledger rules and journals using YAML and CSV files. The script provides various commands and options to perform different tasks related to [hledger](https://github.com/simonmichael/hledger).
 
 ## Installation
